@@ -1,0 +1,6 @@
+game/python-packages/__pycache__/**
+example.log
+
+**/*.pyc
+CLAUDE.md
+.vscode
