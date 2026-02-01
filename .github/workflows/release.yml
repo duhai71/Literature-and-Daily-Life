@@ -25,7 +25,7 @@ jobs:
     - name: Extract version from api.rpy
       id: get_version
       run: |
-        version=$(grep "version='" game/Submods/Literature_and_Daily_Life/L&DL_head/L&DL_head.rpy | cut -d\' -f2)
+        version=$(grep "version='" game/Submods/Literature_and_Daily_Life/L\&DL_head/L\&DL_head.rpy | cut -d\' -f2)
         echo "Extracted version: $version"
         echo "version=$version" >> $GITHUB_OUTPUT
 
