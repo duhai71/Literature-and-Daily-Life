@@ -11,6 +11,7 @@ init python:
         rec_layer=MASMonika.PST_ACS
     )
 
+
 style monika_lad_ctext:
     font "mod_assets/font/shangshouyurenti.ttf"
     color "#fff"
@@ -291,24 +292,26 @@ label lad_show_text_v2:
 
 # 事件定义
 init 5 python:
+    import datetime
     addEvent(Event(persistent.event_database,
         eventlabel="Monika_YBWM_again",
         category=["音乐"],
         prompt="你可以为我再唱一次<You belong with me>吗",
         pool=True,
-        unlocked=False,
+        unlocked=False
         )
     )
 
 
 init 5 python:
-        addEvent(Event(persistent.event_database,
-            eventlabel="lad_music1",
-            category=["音乐"],
-            prompt="YBWM",
-            pool=False,
-            conditional="_mas_getAffection() >= 600",
-            action=EV_ACT_PUSH
+    import datetime
+    addEvent(Event(persistent.event_database,
+        eventlabel="lad_music1",
+        category=["音乐"],
+        prompt="YBWM",
+        pool=False,
+        conditional="_mas_getAffection() >= 600",
+        action=EV_ACT_PUSH
             )
         )
 
@@ -324,7 +327,7 @@ init 5 python:
     )
 
 init 5 python:
-        addEvent(Event(persistent.event_database,
+    addEvent(Event(persistent.event_database,
             eventlabel="lad_music2",
             category=["音乐"],
             prompt="AIWFCIY",
@@ -373,6 +376,8 @@ label Monika_YBWM_again_v2(skip_leadin=False):
     $ mas_drawSpaceroomMasks(dissolve_masks=False)
     
     m 1hua "让我们开始吧"####################
+    $ persistent.ladl_songs_seen.add("ybwm")
+
     $ original_music = renpy.music.get_playing(channel='music')
     $HKBHideButtons()
     window hide
@@ -423,7 +428,7 @@ label ybwm_lyric_loop:
             jump ybwm_lyric_loop
     else:
         # 播放器未运行，直接结束
-        jump ybwm_lyric_loop
+        jump ybwm_lyric_end
     
 label ybwm_lyric_end:
     hide screen lad_texts
@@ -453,6 +458,7 @@ label ybwm_cleanup:
         m 3eubfb "为了你,哪怕付出多少时间我都愿意."
         $ persistent.monika_ybwm = True
     m 5fubfb "爱你,[player]."
+    $ persistent.last_song_end_time = datetime.datetime.now()
     return "love"
 
 # 圣诞歌曲标签（保持不变）

@@ -1649,6 +1649,7 @@ init 6 python:
             prompt="关于逻辑",
             conditional="mas_canShowRisque(aff_thresh=400)",
             random=True,
+            pool=False
         )
     )
 
@@ -1739,7 +1740,7 @@ init 6 python:
             prompt="分类",
             conditional="store.mas_getEVL_shown_count('monika_luojizhishi1') >= 1",
             action=EV_ACT_RANDOM,
-            pool=True,
+            pool=False,
             aff_range=(mas_aff.ENAMORED, None)
         )
     )
@@ -1897,6 +1898,7 @@ init 6 python:
             category=['逻辑'],
             prompt="非形式谬误的分类",
             conditional="store.mas_getEVL_shown_count('duhailuojimiuwufenlei1') >= 1",
+            pool=False
             action=EV_ACT_RANDOM,
             aff_range=(mas_aff.ENAMORED, None)
         )
@@ -2466,9 +2468,10 @@ default available_events = [
     "duhai_question_5",
     "duhai_question_6",
     "duhai_question_7",
-    "duhai_question_8"
+    "duhai_question_8",
+    "duhai_question_9"
 ]
-#57-65
+#57-66
 default used_events = []
 init 5 python:
     addEvent(
@@ -2502,8 +2505,9 @@ label Monika_random_question:
     return
 label duhai_question_1:
     m 1hua "好的,[player]."
-    m 1fua "\"给我一个支点,我将撬起地球\",这句话是谁说的呢?"
+    m 1fua "\"给我一个支点,我将撬起地球\",这句话是谁说的呢?{nw}"
     menu:
+        "\"给我一个支点,我将撬起地球\",这句话是谁说的?{fast}"
         "阿基米德":
             $ mc.add_history(None,"","阿基米德")
             m 3hub "真厉害,宝宝,居然能答对这道题."
@@ -2529,8 +2533,9 @@ label duhai_question_1:
 
 label duhai_question_2:
     m 5hua "好的,[player]."
-    m 3tub "请听题,在《三国演义》中,关羽在华容道放走了谁?"
+    m 3tub "请听题,在《三国演义》中,关羽在华容道放走了谁?{nw}"
     menu:
+        "《三国演义》中,关羽在华容道放走了谁?{fast}"
         "斯大林":
             $ mc.add_history(None,"","""斯大林""")
             m 1tua "这里面会有斯大林吗?好像不是吧."
@@ -2555,8 +2560,9 @@ label duhai_question_2:
 
 label duhai_question_3:
     m 6eub "好的."
-    m 3tua "请问在《西游记》中,猴王孙悟空是在哪学到的72般变化呢?"
+    m 3tua "请问在《西游记》中,猴王孙悟空是在哪学到的72般变化呢?{nw}"
     menu:
+        "请问在《西游记》中,猴王孙悟空是在哪学到的72般变化呢?{fast}"
         "五庄观":
             $ mc.add_history(None,"","""五庄观""")
             m 1hua "答错了哦,[player]."
@@ -2588,8 +2594,9 @@ label duhai_question_3:
 
 label duhai_question_4:
     m 1eua "好的,那么请听题."
-    m 5fublb "源于中国的端午节是为了纪念哪位历史人物呢?"
+    m 5fublb "源于中国的端午节是为了纪念哪位历史人物呢?{nw}"
     menu:
+        "源于中国的端午节是为了纪念哪位历史人物呢?{fast}"#
         "屈原":
             $ mc.add_history(None,"","""屈原""")
             m 1fua "答对了."
@@ -2618,8 +2625,9 @@ label duhai_question_4:
     return
 label duhai_question_5:
     m 1hua "好的,那我开始问了."
-    m 3eua "在感恩节的时候,美国人一般吃什么呢?"#没活就去咬打火机
+    m 3eua "在感恩节的时候,美国人一般吃什么呢?{nw}"#没活就去咬打火机
     menu:
+        "在感恩节的时候,美国人一般吃什么?{fast}"#
         "寿司":
             $ mc.add_history(None,"","""寿司""")
             m 1hua "答错了,[player]."
@@ -2641,8 +2649,9 @@ label duhai_question_5:
 label duhai_question_6:
     m 1eua "好的..."
     m 3ruc "我想想......"
-    m 3eub "世界中古七大奇迹之一的长城上有着三道著名的关卡,分别是山海关、{w=0.6}居庸关和什么关呢?" 
+    m 3eub "世界中古七大奇迹之一的长城上有着三道著名的关卡,分别是山海关、{w=0.6}居庸关和什么关呢?{nw}" 
     menu:
+        "世界中古七大奇迹之一的长城上有着三道著名的关卡,分别是山海关、居庸关和什么关呢?{fast}"
         "鬼门关":
             $ mc.add_history(None,"","""鬼门关""")
             m 1wud "这不是中国神话传说中阴曹地府的关隘吗?"
@@ -2664,8 +2673,9 @@ label duhai_question_6:
     return
 label duhai_question_7:
     m 1eua "好的...{w=0.5}我想想题目."
-    m 3tua "在雷雨天气中,为什么先看到闪电后看到雷声呢?"
+    m 3tua "在雷雨天气中,为什么先看到闪电后看到雷声呢?{nw}"
     menu:
+        "在雷雨天气中,为什么先看到闪电后看到雷声呢?{fast}"#
         "因为光速比声速快":
             m 1eua "答对了."
             m 5fub "光在空气中的传播速度约为30万公里每秒,几乎瞬间到达人眼,即使距离很远,延迟也微乎其微."
@@ -2697,8 +2707,9 @@ label duhai_question_7:
 
 label duhai_question_8:
     m 1hua "好的,我现在想想题目."
-    m 3tub "请问夏树喜欢做的甜点是什么呢?"
+    m 3tub "请问夏树喜欢做的甜点是什么呢?{nw}"
     menu:
+        "夏树喜欢做的甜点是什么呢?{fast}"
         "纸杯蛋糕":
             m 5fub "答对了哎,[player],你记的好清楚."
             m 3eua "她的纸杯蛋糕的确美味,我忍不住多回想了一下."
@@ -2716,17 +2727,63 @@ label duhai_question_8:
             m 6hua "答错了哦,[player]."
             m 3tua "正确答案应该是纸杯蛋糕了."
     return        
+label duhai_question_9:
+    m 6eua "知道了,我现在想想."
+    m 1eub "嗯......"
+    m 3eua "在真人快打11中,哪个是刘康这个人物的招式?{nw}"
+    menu:
+        "在真人快打11中,哪个是刘康这个人物的招式?{fast}"#Techno Syndrome
+        "佛山无影脚.":
+            m 3hublb "答对了哦."
+            m 5tub "刘康在其中的设定是少林寺弟子,会些中国功夫是正常的."
+            m 1hua "你真厉害,在这么多选项面前都能答对."
+        "盛大落幕":
+            m 5ruc "......不太对."
+            m 3eud "这个是其中的联动角色'小丑'的技能."
+            m 3tua "正确答案应该是'佛山无影脚'了."
+        "妈妈说要多吃菜":
+            m 2hubla "......什么嘛."
+            m 2hublb "怎么有个这么奇怪的招式?"
+            m 5eub "哦,这应该是卡诺的招式."
+            m 5hua "是不是还挺有趣的?"
+            m 3tub "不过正确答案是'佛山无影脚'哦."
+        "敲死你丫":
+            m 6ruc "......不太对."
+            m 2eud "这个应该是牛仔的招式."
+            m 5hua "他还有个踩别人脚再往对方身上丢鞭炮的招式,我觉得好好笑."
+
+        "空中管控":
+            m 6ruc "......好像不太对."
+            m 3eud "这个招式是索尼娅的招式了,[player]."
+            m 3hua "正确答案是佛山无影脚哦."
+            m 5eub "刘康在其中的设定是少林寺弟子,会些中国功夫是正常的."
+    return
 
 
 
 
 
 
+#67 真人快打 
+#V3更新到75吧
+init 6 python:
+    addEvent(
+        Event(
+            persistent.event_database,
+            eventlabel="duhai_mortal_kombat",
+            category=['游戏'],
+            prompt="真人快打",
+            conditional="mas_canShowRisque(aff_thresh=400)",
+            random=True,
+            pool=False
+        )
+    )
 
-
-
-
-
+label duhai_mortal_kombat:
+    m 1eua "嘿,[player]."
+    m 5hua "我想和你聊聊'真人快打'这个游戏."
+    m 3eub "这是我最近在网络上发现一款格斗游戏."
+    m 6
 
 
 

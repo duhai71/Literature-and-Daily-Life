@@ -16,10 +16,10 @@ init 5 python:
     if not persistent.played_songs:
         persistent.played_songs = []
 
-label Monika_random_songs72:
+label Monika_random_songs72(skip_leadin=False):
     python:
 
-        all_songs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        all_songs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]#更新到总共三十首，我的天，要我命了
         
         available_songs = [song for song in all_songs if song not in persistent.played_songs]
         
@@ -365,7 +365,7 @@ init 5 python:
         )
     )
 
-label Monika_MAICA_DCC:
+label Monika_MAICA_DCC(skip_leadin=False):
     m 1eua "好的,[player]."
     show monika at Transform(xpos=-800) with move
     m 2fua "如果你还想再听的话,和我说声就好了."
@@ -408,7 +408,7 @@ init 5 python:
         )
     )
 
-label Monika_Secret:
+label Monika_Secret(skip_leadin=False):
     m 5eua "好的,[player]."
     m 3fub "等我想想怎么弹的."
     show monika at Transform(xpos=-800) with move
@@ -452,7 +452,7 @@ init 5 python:
         )
     )
 
-label Monika_If_Love_Is_Forgotten_71:
+label Monika_If_Love_Is_Forgotten_71(skip_leadin=False):
     m 5eua "好的,[player]."
     m 3fub "我去把钢琴拿出来."
     show monika at Transform(xpos=-800) with move
@@ -495,7 +495,7 @@ init 5 python:
         )
     )
 
-label Monika_Love_Me_Like_You_Do:
+label Monika_Love_Me_Like_You_Do(skip_leadin=False):
     m 1hua "好,我现在就去准备"
     show monika at Transform(xpos=-800) with move
     m 2fua "What are you waiting for~"
@@ -539,7 +539,7 @@ init 5 python:
         )
     )
 
-label Monika_Are_You_Lost:
+label Monika_Are_You_Lost(skip_leadin=False):
     m 1hua "好的呢,[player]."
     show monika at Transform(xpos=-800) with move
     window hide
@@ -581,7 +581,7 @@ init 5 python:
         )
     )
 
-label Monika_One_Last_Kiss:
+label Monika_One_Last_Kiss(skip_leadin=False):
     m 1eua "好,我现在就去准备一下."
     show monika at Transform(xpos=-800) with move
     window hide
@@ -623,7 +623,7 @@ init 5 python:
         )
     )
 
-label Monika_Odoru_Pompokolin_again:
+label Monika_Odoru_Pompokolin_again(skip_leadin=False):
     m 5fua "好啊."
     m 3fua "我去准备一下."
     show monika at Transform(xpos=-800) with move
@@ -668,7 +668,7 @@ init 5 python:
         )
     )
 
-label Monika_Piano_YBWM:
+label Monika_Piano_YBWM(skip_leadin=False):
     m 1hublb "好的."   
     m 5fubfa "我去准备一下."
     show monika at Transform(xpos=-800) with move
@@ -712,7 +712,7 @@ init 5 python:
             rules={"no_unlock": None}
         )
     )
-label Monika_Kami_no_Mani_Mani_again:    
+label Monika_Kami_no_Mani_Mani_again(skip_leadin=False):    
     m 5fua "好啊."
     m 3fua "我现在去准备一下."
     show monika at Transform(xpos=-800) with move
@@ -755,7 +755,7 @@ init 5 python:
         )
     )
 
-label Monika_you_hear_again:
+label Monika_you_hear_again(skip_leadin=False):
     m 5fua "好的."
     m 3eua "我很高兴你想听这些."
     show monika at Transform(xpos=-800) with move
@@ -799,7 +799,7 @@ init 5 python:
         )
     )
 
-label Monika_Shelter_again:
+label Monika_Shelter_again(skip_leadin=False):
     m 5fua "好的."
     m 3hua "我现在去把钢琴推过来."
     show monika at Transform(xpos=-800) with move
