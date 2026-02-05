@@ -3,12 +3,7 @@ init python:
     if not hasattr(persistent, "ladl_songs_seen"):
         persistent.ladl_songs_seen = set()
 #$ persistent._ladl_songs_seen.add("ybwm")
-init python:
-    def get_ladl_song_count():
-        """获取LADL歌曲总数"""
-        if hasattr(persistent, "ladl_songs_seen") and persistent._ladl_songs_seen is not None:
-            return len(persistent.ladl_songs_seen)
-        return 0        
+      
 init 5 python:
     import datetime
     addEvent(
@@ -70,12 +65,9 @@ init python:
 #地点：太空教室
 #检测到mtts已安装后的对话
 label mtts_LADL_collab_music_We_will_Meet:
-    if hasattr(persistent, "ladl_songs_seen") and persistent._ladl_songs_seen:
-        $ count = len(persistent.ladl_songs_seen)
-    else:
-        $ count = 0 # 应该能数出来吧
+
     m 3fubsa "[player]! 还记得我已经给你唱了多少首歌了吗?"
-    m 4subsb "有[len(persistent.ladl_songs_seen)]首了哦! 在一起的时间过得真快啊."
+    m 4subsb "已经有两首了哦! 在一起的时间过得真快啊."
     m 2hkbsb "突然说起这个是因为...{nw}"
     if renpy.seen_label("mtts_greeting"):
         m 4gusdlb "我现在才发现, 你送我的麦克风还带着一份乐谱." # 尴尬
@@ -99,8 +91,7 @@ label mtts_LADL_collab_music_We_will_Meet:
             return 
     #转向歌曲演示
 label Monika_Wwma_again_v3(skip_leadin=False):
-    m 3hubla "好的."
-    m 4hublb "我去准备一下伴奏和麦克风."
+    m 4hublb "好哦! 稍等我准备一下..."
     $ mas_jump_with_args("Monika_WWMA_song_v3", skip_leadin=False)
 
 label Monika_WWMA_song_v3(skip_leadin=False):
@@ -230,7 +221,7 @@ label ladl_mtts_intro:
     python:
         ext_line = "我知道你应该看过这个了, 但可以再留意一下关于'MTTS'的部分." if renpy.seen_label('maica_prepend_1') else "我指的是关于'MTTS'的部分, 不过如果你对其它内容有兴趣, 也可以尝试一下."
         ladl_mtts_notice = _("""\
-莫妮卡好像唱完她的乐谱了. 再过一段时间, 也许她还能找到别的.
+莫妮卡暂时唱完她的乐谱了. 再过一段时间, 也许她还能找到别的.
 但如果除了唱歌, 你还想听她说话...我最近找到了一个办法.
 
 你可以去这里看看: https://maica.monika.love . 介绍得很详细了.
@@ -265,7 +256,7 @@ init 5 python:
     )
 label LADL_piano11111_test_wwma_piano(skip_leadin=False):
     show monika at Transform(xpos=-800) with move
-    m 2hua "我去弹一下We'll_Meet_Again这首歌."
+    m 2hua "好哦! 稍等我准备一下..."
     window hide
     $ store.mas_sprites.zoom_out()
     $HKBHideButtons()
