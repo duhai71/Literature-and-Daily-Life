@@ -65,7 +65,6 @@ init python:
 #地点：太空教室
 #检测到mtts已安装后的对话
 label mtts_LADL_collab_music_We_will_Meet:
-
     m 3fubsa "[player]! 还记得我已经给你唱了多少首歌了吗?"
     m 4subsb "已经有两首了哦! 在一起的时间过得真快啊."
     m 2hkbsb "突然说起这个是因为...{nw}"
@@ -246,17 +245,17 @@ init 5 python:
     addEvent(
         Event(
             persistent.event_database,
-            eventlabel="LADL_piano11111_test_wwma_piano",
+            eventlabel="Monika_Wwma_piano",
             category=['音乐'],
             prompt="你能用钢琴为我弹弹'We'll_Meet_Again'吗?",
             pool=True,
-            unlocked=True,
+            unlocked=False,
             rules={"no_unlock": None}
         )
     )
-label LADL_piano11111_test_wwma_piano(skip_leadin=False):
-    show monika at Transform(xpos=-800) with move
+label Monika_Wwma_piano(skip_leadin=False):
     m 2hua "好哦! 稍等我准备一下..."
+    show monika at Transform(xpos=-800) with move
     window hide
     $ store.mas_sprites.zoom_out()
     $HKBHideButtons()

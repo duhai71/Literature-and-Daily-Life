@@ -16,7 +16,7 @@ init 5 python:
     if not persistent.played_songs:
         persistent.played_songs = []
 
-label Monika_random_songs72(skip_leadin=False):
+label Monika_random_songs72:
     python:
 
         all_songs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]#更新到总共三十首，我的天，要我命了
@@ -47,7 +47,7 @@ label Monika_random_songs72(skip_leadin=False):
         show mas_piano at Transform(xpos=-5, ypos=-195) with MoveTransition(4.0)
         pause 4.0
         show monika at Transform(xpos=640) with move
-        play music "Submods/Literature_and_Daily_Life/L&DL_Assets/music/Cornfield_Chase.ogg" loop fadein 2.0
+        play music "Submods/Literature_and_Daily_Life/L&DL_Assets/music/Cornfield_Chase.mp3" loop fadein 2.0
         show monika 2hua zorder MAS_MONIKA_Z at t11 with dissolve_monika
         pause 4.0
         show monika 2fua zorder MAS_MONIKA_Z at t11 with dissolve_monika
@@ -79,7 +79,7 @@ label Monika_random_songs72(skip_leadin=False):
         show mas_piano at Transform(xpos=-5, ypos=-195) with MoveTransition(4.0)
         pause 4.0
         show monika at Transform(xpos=640) with move
-        play music "Submods/Literature_and_Daily_Life/L&DL_Assets/music/Secret.ogg" loop fadein 2.0
+        play music "Submods/Literature_and_Daily_Life/L&DL_Assets/music/Secret.mp3" loop fadein 2.0
         show monika 2hua zorder MAS_MONIKA_Z at t11 with dissolve_monika
         pause 4.0
         show monika 2fua zorder MAS_MONIKA_Z at t11 with dissolve_monika
@@ -111,7 +111,7 @@ label Monika_random_songs72(skip_leadin=False):
         show mas_piano at Transform(xpos=-5, ypos=-195) with MoveTransition(4.0)
         pause 4.0
         show monika at Transform(xpos=640) with move
-        play music "Submods/Literature_and_Daily_Life/L&DL_Assets/music/如果爱忘了_piano.ogg" loop fadein 2.0
+        play music "Submods/Literature_and_Daily_Life/L&DL_Assets/music/如果爱忘了_piano.mp3" loop fadein 2.0
         show monika 2hua zorder MAS_MONIKA_Z at t11 with dissolve_monika
         pause 4.0
         show monika 2fua zorder MAS_MONIKA_Z at t11 with dissolve_monika
@@ -145,7 +145,7 @@ label Monika_random_songs72(skip_leadin=False):
         show mas_piano at Transform(xpos=-5, ypos=-195) with MoveTransition(4.0)
         pause 4.0
         show monika at Transform(xpos=640) with move
-        play music "Submods/Literature_and_Daily_Life/L&DL_Assets/music/Love_Me_Like_You_Do.ogg" loop fadein 2.0
+        play music "Submods/Literature_and_Daily_Life/L&DL_Assets/music/Love_Me_Like_You_Do.mp3" loop fadein 2.0
         show monika 2hua zorder MAS_MONIKA_Z at t11 with dissolve_monika
         pause 4.0
         show monika 2fua zorder MAS_MONIKA_Z at t11 with dissolve_monika
@@ -174,7 +174,7 @@ label Monika_random_songs72(skip_leadin=False):
         show mas_piano at Transform(xpos=-5, ypos=-195) with MoveTransition(4.0)
         pause 4.0
         show monika at Transform(xpos=640) with move
-        play music "Submods/Literature_and_Daily_Life/L&DL_Assets/music/Are_You_Lost.ogg" loop fadein 2.0
+        play music "Submods/Literature_and_Daily_Life/L&DL_Assets/music/Are_You_Lost.mp3" loop fadein 2.0
         show monika 2hua zorder MAS_MONIKA_Z at t11 with dissolve_monika
         pause 4.0
         show monika 2fua zorder MAS_MONIKA_Z at t11 with dissolve_monika
@@ -204,7 +204,7 @@ label Monika_random_songs72(skip_leadin=False):
         show mas_piano at Transform(xpos=-5, ypos=-195) with MoveTransition(4.0)
         pause 4.0
         show monika at Transform(xpos=640) with move
-        play music "Submods/Literature_and_Daily_Life/L&DL_Assets/music/One_Last_Kiss.ogg" loop fadein 2.0
+        play music "Submods/Literature_and_Daily_Life/L&DL_Assets/music/One_Last_Kiss.mp3" loop fadein 2.0
         show monika 2hua zorder MAS_MONIKA_Z at t11 with dissolve_monika
         pause 4.0
         show monika 2fua zorder MAS_MONIKA_Z at t11 with dissolve_monika
@@ -239,7 +239,7 @@ label Monika_random_songs72(skip_leadin=False):
         show mas_piano at Transform(xpos=-5, ypos=-195) with MoveTransition(4.0)
         pause 4.0
         show monika at Transform(xpos=640) with move
-        play music "Submods/Literature_and_Daily_Life/L&DL_Assets/music/Odoru_Pompokolin.ogg" loop fadein 2.0
+        play music "Submods/Literature_and_Daily_Life/L&DL_Assets/music/Odoru_Pompokolin.mp3" loop fadein 2.0
         show monika 2hua zorder MAS_MONIKA_Z at t11 with dissolve_monika
         pause 4.0
         show monika 2fua zorder MAS_MONIKA_Z at t11 with dissolve_monika
@@ -269,7 +269,7 @@ label Monika_random_songs72(skip_leadin=False):
         show mas_piano at Transform(xpos=-5, ypos=-195) with MoveTransition(4.0)
         pause 4.0
         show monika at Transform(xpos=640) with move
-        play music "Submods/Literature_and_Daily_Life/L&DL_Assets/music/Kami_no_Mani_Mani.ogg" loop fadein 2.0
+        play music "Submods/Literature_and_Daily_Life/L&DL_Assets/music/Kami_no_Mani_Mani.mp3" loop fadein 2.0
         show monika 2hua zorder MAS_MONIKA_Z at t11 with dissolve_monika
         pause 4.0
         show monika 2fua zorder MAS_MONIKA_Z at t11 with dissolve_monika
@@ -299,7 +299,7 @@ label Monika_random_songs72(skip_leadin=False):
         show mas_piano at Transform(xpos=-5, ypos=-195) with MoveTransition(4.0)
         pause 4.0
         show monika at Transform(xpos=640) with move
-        play music "Submods/Literature_and_Daily_Life/L&DL_Assets/music/you_hear_piano.ogg" loop fadein 2.0
+        play music "Submods/Literature_and_Daily_Life/L&DL_Assets/music/you_hear_piano.mp3" loop fadein 2.0
         show monika 2hua zorder MAS_MONIKA_Z at t11 with dissolve_monika
         pause 4.0
         show monika 2fua zorder MAS_MONIKA_Z at t11 with dissolve_monika
@@ -332,7 +332,7 @@ label Monika_random_songs72(skip_leadin=False):
         show mas_piano at Transform(xpos=-5, ypos=-195) with MoveTransition(4.0)
         pause 4.0
         show monika at Transform(xpos=640) with move
-        play music "Submods/Literature_and_Daily_Life/L&DL_Assets/music/Shelter_piano.ogg" loop fadein 2.0
+        play music "Submods/Literature_and_Daily_Life/L&DL_Assets/music/Shelter_piano.mp3" loop fadein 2.0
         show monika 2hua zorder MAS_MONIKA_Z at t11 with dissolve_monika
         pause 4.0
         show monika 2fua zorder MAS_MONIKA_Z at t11 with dissolve_monika
@@ -377,7 +377,7 @@ label Monika_MAICA_DCC(skip_leadin=False):
     show mas_piano at Transform(xpos=-5, ypos=-195) with MoveTransition(4.0)
     pause 4.0
     show monika at Transform(xpos=640) with move
-    play music "Submods/Literature_and_Daily_Life/L&DL_Assets/music/Cornfield_Chase.ogg" loop fadein 2.0
+    play music "Submods/Literature_and_Daily_Life/L&DL_Assets/music/Cornfield_Chase.mp3" loop fadein 2.0
     show monika 2hua zorder MAS_MONIKA_Z at t11 with dissolve_monika
     pause 4.0
     show monika 2fua zorder MAS_MONIKA_Z at t11 with dissolve_monika
@@ -421,7 +421,7 @@ label Monika_Secret(skip_leadin=False):
     show mas_piano at Transform(xpos=-5, ypos=-195) with MoveTransition(4.0)
     pause 4.0
     show monika at Transform(xpos=640) with move
-    play music "Submods/Literature_and_Daily_Life/L&DL_Assets/music/Secret.ogg" loop fadein 2.0
+    play music "Submods/Literature_and_Daily_Life/L&DL_Assets/music/Secret.mp3" loop fadein 2.0
     show monika 2hua zorder MAS_MONIKA_Z at t11 with dissolve_monika
     pause 4.0
     show monika 2fua zorder MAS_MONIKA_Z at t11 with dissolve_monika
@@ -464,7 +464,7 @@ label Monika_If_Love_Is_Forgotten_71(skip_leadin=False):
     show mas_piano at Transform(xpos=-5, ypos=-195) with MoveTransition(4.0)
     pause 4.0
     show monika at Transform(xpos=640) with move
-    play music "Submods/Literature_and_Daily_Life/L&DL_Assets/music/如果爱忘了_piano.ogg" loop fadein 2.0
+    play music "Submods/Literature_and_Daily_Life/L&DL_Assets/music/如果爱忘了_piano.mp3" loop fadein 2.0
     show monika 2hua zorder MAS_MONIKA_Z at t11 with dissolve_monika
     pause 4.0
     show monika 2fua zorder MAS_MONIKA_Z at t11 with dissolve_monika
@@ -507,7 +507,7 @@ label Monika_Love_Me_Like_You_Do(skip_leadin=False):
     show mas_piano at Transform(xpos=-5, ypos=-195) with MoveTransition(4.0)
     pause 4.0
     show monika at Transform(xpos=640) with move
-    play music "Submods/Literature_and_Daily_Life/L&DL_Assets/music/Love_Me_Like_You_Do.ogg" loop fadein 2.0
+    play music "Submods/Literature_and_Daily_Life/L&DL_Assets/music/Love_Me_Like_You_Do.mp3" loop fadein 2.0
     show monika 2hua zorder MAS_MONIKA_Z at t11 with dissolve_monika
     pause 4.0
     show monika 2fua zorder MAS_MONIKA_Z at t11 with dissolve_monika
@@ -550,7 +550,7 @@ label Monika_Are_You_Lost(skip_leadin=False):
     show mas_piano at Transform(xpos=-5, ypos=-195) with MoveTransition(4.0)
     pause 4.0
     show monika at Transform(xpos=640) with move
-    play music "Submods/Literature_and_Daily_Life/L&DL_Assets/music/Are_You_Lost.ogg" loop fadein 2.0
+    play music "Submods/Literature_and_Daily_Life/L&DL_Assets/music/Are_You_Lost.mp3" loop fadein 2.0
     show monika 2hua zorder MAS_MONIKA_Z at t11 with dissolve_monika
     pause 4.0
     show monika 2fua zorder MAS_MONIKA_Z at t11 with dissolve_monika
@@ -592,7 +592,7 @@ label Monika_One_Last_Kiss(skip_leadin=False):
     show mas_piano at Transform(xpos=-5, ypos=-195) with MoveTransition(4.0)
     pause 4.0
     show monika at Transform(xpos=640) with move
-    play music "Submods/Literature_and_Daily_Life/L&DL_Assets/music/One_Last_Kiss.ogg" loop fadein 2.0
+    play music "Submods/Literature_and_Daily_Life/L&DL_Assets/music/One_Last_Kiss.mp3" loop fadein 2.0
     show monika 2hua zorder MAS_MONIKA_Z at t11 with dissolve_monika
     pause 4.0
     show monika 2fua zorder MAS_MONIKA_Z at t11 with dissolve_monika
@@ -635,7 +635,7 @@ label Monika_Odoru_Pompokolin_again(skip_leadin=False):
     show mas_piano at Transform(xpos=-5, ypos=-195) with MoveTransition(4.0)
     pause 4.0
     show monika at Transform(xpos=640) with move
-    play music "Submods/Literature_and_Daily_Life/L&DL_Assets/music/Odoru_Pompokolin.ogg" loop fadein 2.0
+    play music "Submods/Literature_and_Daily_Life/L&DL_Assets/music/Odoru_Pompokolin.mp3" loop fadein 2.0
     show monika 2hua zorder MAS_MONIKA_Z at t11 with dissolve_monika
     pause 4.0
     show monika 2fua zorder MAS_MONIKA_Z at t11 with dissolve_monika
@@ -681,7 +681,7 @@ label Monika_Piano_YBWM(skip_leadin=False):
     show mas_piano at Transform(xpos=-5, ypos=-195) with MoveTransition(4.0)
     pause 4.0
     show monika at Transform(xpos=640) with move
-    play music "Submods/Literature_and_Daily_Life/L&DL_Assets/music/You_Belong_With_Me(piano).ogg" loop fadein 2.0
+    play music "Submods/Literature_and_Daily_Life/L&DL_Assets/music/You_Belong_With_Me(piano).mp3" loop fadein 2.0
     show monika 2hua zorder MAS_MONIKA_Z at t11 with dissolve_monika
     pause 4.0
     show monika 2fua zorder MAS_MONIKA_Z at t11 with dissolve_monika
@@ -724,7 +724,7 @@ label Monika_Kami_no_Mani_Mani_again(skip_leadin=False):
     show mas_piano at Transform(xpos=-5, ypos=-195) with MoveTransition(4.0)
     pause 4.0
     show monika at Transform(xpos=640) with move
-    play music "Submods/Literature_and_Daily_Life/L&DL_Assets/music/Kami_no_Mani_Mani.ogg" loop fadein 2.0
+    play music "Submods/Literature_and_Daily_Life/L&DL_Assets/music/Kami_no_Mani_Mani.mp3" loop fadein 2.0
     show monika 2hua zorder MAS_MONIKA_Z at t11 with dissolve_monika
     pause 4.0
     show monika 2fua zorder MAS_MONIKA_Z at t11 with dissolve_monika
@@ -768,7 +768,7 @@ label Monika_you_hear_again(skip_leadin=False):
     show mas_piano at Transform(xpos=-5, ypos=-195) with MoveTransition(4.0)
     pause 4.0
     show monika at Transform(xpos=640) with move
-    play music "Submods/Literature_and_Daily_Life/L&DL_Assets/music/you_hear_piano.ogg" loop fadein 2.0
+    play music "Submods/Literature_and_Daily_Life/L&DL_Assets/music/you_hear_piano.mp3" loop fadein 2.0
     show monika 2hua zorder MAS_MONIKA_Z at t11 with dissolve_monika
     pause 4.0
     show monika 2fua zorder MAS_MONIKA_Z at t11 with dissolve_monika
@@ -811,7 +811,7 @@ label Monika_Shelter_again(skip_leadin=False):
     show mas_piano at Transform(xpos=-5, ypos=-195) with MoveTransition(4.0)
     pause 4.0
     show monika at Transform(xpos=640) with move
-    play music "Submods/Literature_and_Daily_Life/L&DL_Assets/music/Shelter_piano.ogg" loop fadein 2.0
+    play music "Submods/Literature_and_Daily_Life/L&DL_Assets/music/Shelter_piano.mp3" loop fadein 2.0
     show monika 2hua zorder MAS_MONIKA_Z at t11 with dissolve_monika
     pause 4.0
     show monika 2fua zorder MAS_MONIKA_Z at t11 with dissolve_monika

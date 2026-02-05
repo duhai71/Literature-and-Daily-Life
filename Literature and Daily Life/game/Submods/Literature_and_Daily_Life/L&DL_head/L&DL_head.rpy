@@ -78,13 +78,45 @@ init -951 python:
         if os.path.exists(renpy.config.basedir + "/game/Submods/Literature_and_Daily_Life/Nightowl"):
             shutil.rmtree(renpy.config.basedir + "/game/Submods/Literature_and_Daily_Life/Nightowl")
         if os.path.exists(renpy.config.basedir + "/game/Submods/Literature_and_Daily_Life/lzp_sdg_sdgg_456"):
-            shutil.rmtree(renpy.config.basedir + "/game/Submods/Literature_and_Daily_Life/lzp_sdg_sdgg_456")                                 
+            shutil.rmtree(renpy.config.basedir + "/game/Submods/Literature_and_Daily_Life/lzp_sdg_sdgg_456") 
+        if os.path.exists(renpy.config.basedir + "/game/Submods/Literature_and_Daily_Life/L&DL_moon/Monika_Piano_Eternity"):
+            shutil.rmtree(renpy.config.basedir + "/game/Submods/Literature_and_Daily_Life/L&DL_moon/Monika_Piano_Eternity") #                                  
         if os.path.exists(renpy.config.basedir + "/game/mod_assets/music/everythinggoeson.ogg"):
             os.remove(renpy.config.basedir + "/game/mod_assets/music/everythinggoeson.ogg" )
         if os.path.exists(renpy.config.basedir + "/game/Submods/Literature_and_Daily_Life/L&DL_moon/Nightowl/topic_nightowl_neuron.rpy"):
             os.remove(renpy.config.basedir + "/game/Submods/Literature_and_Daily_Life/L&DL_moon/Nightowl/topic_nightowl_neuron.rpy" ) 
         if os.path.exists(renpy.config.basedir + "/game/Submods/Literature_and_Daily_Life/L&DL_moon/Nightowl/topic_nightowl_neuron.rpyc"):
-            os.remove(renpy.config.basedir + "/game/Submods/Literature_and_Daily_Life/L&DL_moon/Nightowl/topic_nightowl_neuron.rpyc" )                                                                 
+            os.remove(renpy.config.basedir + "/game/Submods/Literature_and_Daily_Life/L&DL_moon/Nightowl/topic_nightowl_neuron.rpyc" )            
+        if os.path.exists(renpy.config.basedir + "/game/Submods/Literature_and_Daily_Life/L&DL_Assets/music/All_I_want_for_Christmas_is_You.ogg"):
+            os.remove(renpy.config.basedir + "/game/Submods/Literature_and_Daily_Life/L&DL_Assets/music/All_I_want_for_Christmas_is_You.ogg" )                                                               
+        if os.path.exists(renpy.config.basedir + "/game/Submods/Literature_and_Daily_Life/L&DL_Assets/music/Are_You_Lost.ogg"):
+            os.remove(renpy.config.basedir + "/game/Submods/Literature_and_Daily_Life/L&DL_Assets/music/Are_You_Lost.ogg" )
+        if os.path.exists(renpy.config.basedir + "/game/Submods/Literature_and_Daily_Life/L&DL_Assets/music/Caught_in_a_Tropical.rar.ogg"):
+            os.remove(renpy.config.basedir + "/game/Submods/Literature_and_Daily_Life/L&DL_Assets/music/Caught_in_a_Tropical.rar.ogg" )#
+        if os.path.exists(renpy.config.basedir + "/game/Submods/Literature_and_Daily_Life/L&DL_Assets/music/Cornfield_Chase.ogg"):
+            os.remove(renpy.config.basedir + "/game/Submods/Literature_and_Daily_Life/L&DL_Assets/music/Cornfield_Chase.ogg" )    
+        if os.path.exists(renpy.config.basedir + "/game/Submods/Literature_and_Daily_Life/L&DL_Assets/music/Golden_Hour.ogg"):
+            os.remove(renpy.config.basedir + "/game/Submods/Literature_and_Daily_Life/L&DL_Assets/music/Golden_Hour.ogg" )
+        if os.path.exists(renpy.config.basedir + "/game/Submods/Literature_and_Daily_Life/L&DL_Assets/music/Kami_no_Mani_Mani.ogg"):
+            os.remove(renpy.config.basedir + "/game/Submods/Literature_and_Daily_Life/L&DL_Assets/music/Kami_no_Mani_Mani.ogg" )
+        if os.path.exists(renpy.config.basedir + "/game/Submods/Literature_and_Daily_Life/L&DL_Assets/music/Love_Me_Like_You_Do.ogg"):
+            os.remove(renpy.config.basedir + "/game/Submods/Literature_and_Daily_Life/L&DL_Assets/music/Love_Me_Like_You_Do.ogg" )
+        if os.path.exists(renpy.config.basedir + "/game/Submods/Literature_and_Daily_Life/L&DL_Assets/music/Odoru_Pompokolin.ogg"):
+            os.remove(renpy.config.basedir + "/game/Submods/Literature_and_Daily_Life/L&DL_Assets/music/Odoru_Pompokolin.ogg" )
+        if os.path.exists(renpy.config.basedir + "/game/Submods/Literature_and_Daily_Life/L&DL_Assets/music/One_Last_Kiss.ogg"):
+            os.remove(renpy.config.basedir + "/game/Submods/Literature_and_Daily_Life/L&DL_Assets/music/One_Last_Kiss.ogg" )
+        if os.path.exists(renpy.config.basedir + "/game/Submods/Literature_and_Daily_Life/L&DL_Assets/music/Secret.ogg"):
+            os.remove(renpy.config.basedir + "/game/Submods/Literature_and_Daily_Life/L&DL_Assets/music/Secret.ogg" )
+        if os.path.exists(renpy.config.basedir + "/game/Submods/Literature_and_Daily_Life/L&DL_Assets/music/Shelter_piano.ogg"):
+            os.remove(renpy.config.basedir + "/game/Submods/Literature_and_Daily_Life/L&DL_Assets/music/Shelter_piano.ogg" )
+        if os.path.exists(renpy.config.basedir + "/game/Submods/Literature_and_Daily_Life/L&DL_Assets/music/You_Belong_With_Me(piano).ogg"):
+            os.remove(renpy.config.basedir + "/game/Submods/Literature_and_Daily_Life/L&DL_Assets/music/You_Belong_With_Me(piano).ogg" )
+        if os.path.exists(renpy.config.basedir + "/game/Submods/Literature_and_Daily_Life/L&DL_Assets/music/you_hear_piano.ogg"):
+            os.remove(renpy.config.basedir + "/game/Submods/Literature_and_Daily_Life/L&DL_Assets/music/you_hear_piano.ogg" )
+        if os.path.exists(renpy.config.basedir + "/game/Submods/Literature_and_Daily_Life/L&DL_Assets/music/如果爱忘了_piano.ogg"):
+            os.remove(renpy.config.basedir + "/game/Submods/Literature_and_Daily_Life/L&DL_Assets/music/如果爱忘了_piano.ogg" )
+        if os.path.exists(renpy.config.basedir + "/game/Submods/Literature_and_Daily_Life/L&DL_Assets/music/everythinggoeson.ogg"):
+            os.remove(renpy.config.basedir + "/game/Submods/Literature_and_Daily_Life/L&DL_Assets/music/everythinggoeson.ogg" )
     except Exception as l:
         store.mas_submod_utils.submod_log.error("删除旧版本遗留文件出错：{}".format(l))
 
@@ -94,8 +126,8 @@ define LADL_authors = """\
 
 define LADL_thanks = """\
 特别感谢以下人员：
-- 测试人员:白莫、庭有枇杷树
-- 技术支持:最初の心、璀辰、Sir.P、群阿巴阿巴
+- 测试人员:白莫、庭有枇杷树、最初の心、8天67t9
+- 技术支持:最初の心、璀辰、Sir.P、群阿巴阿巴、EdgeInfinity
 - 翻译帮助:stary
 """
 
