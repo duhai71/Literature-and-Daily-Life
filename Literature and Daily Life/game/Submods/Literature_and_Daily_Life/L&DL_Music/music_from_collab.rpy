@@ -12,7 +12,7 @@ init 5 python:
         eventlabel="mtts_LADL_collab_music_We_will_Meet",
         category=["音乐"],
         prompt="We Will Meet Again",
-        pool=True,
+        pool=False,
         conditional="store._collab_music_condition()",
         action=EV_ACT_QUEUE,
         )
@@ -94,7 +94,9 @@ label Monika_Wwma_again_v3(skip_leadin=False):
     $ mas_jump_with_args("Monika_WWMA_song_v3", skip_leadin=False)
 
 label Monika_WWMA_song_v3(skip_leadin=False):
-    $ lad_music = 2
+    $ lad_music = 0
+    if wwma_player:
+        $ wwma_player.reset()
     $ persistent._mas_disable_animations = True
     
     # 去拿麦克风
@@ -116,7 +118,6 @@ label Monika_WWMA_song_v3(skip_leadin=False):
     $ mas_drawSpaceroomMasks(dissolve_masks=False)
     
     m 1hua "好啦!"
-    $ persistent.ladl_songs_seen.add("wwma")
 
     $ original_music = renpy.music.get_playing(channel='music')
     $HKBHideButtons()
@@ -134,11 +135,9 @@ label Monika_WWMA_song_v3(skip_leadin=False):
 
     $ wwma_player.play()
     show ladtback zorder 49 at lad_back with dissolve
-    show monika 1eua zorder 50
+    show monika 1eua zorder 40
     $ info = wwma_player.get_current_lyric()
     #歌曲展示
-    show ladtback zorder 49 at lad_back with dissolve
-    show monika 1eua zorder 50
 label wwma_lyric_loop:
     if wwma_player and wwma_player._playing:
         $ info = wwma_player.get_current_lyric()
@@ -186,7 +185,7 @@ label wwma_cleanup:
     call mas_transition_from_emptydesk()
     
     # 解锁
-    $ mas_unlockEVL("Monika_Wwma_again", "EVE") 
+    $ mas_unlockEVL("Monika_Wwma_again_v3", "EVE") 
     $ mas_unlockEVL("Monika_Wwma_piano", "EVE")  #钢琴
     $ persistent._mas_disable_animations = False
     $ HKBShowButtons()

@@ -70,19 +70,19 @@ init 5 python:
     addEvent(Event(persistent.event_database,eventlabel="duhaimonika_likemusic",category=['浪漫','音乐'],prompt="We Don't Talk Anymore",random=True,action=EV_ACT_RANDOM))
 
 label duhaimonika_likemusic:    
-    m 1eub "{b}{i}I just hope you're lyin' next to somebody~{/i}{/b}"
-    m 1gfd "{b}{i}Who knows how to love you like me~{/i}{/b}"
-    m 5dsc "{b}{i}There must be a good reason that you're gone~{/i}{/b}"
-    m 4dsd "{b}{i}Every now and then I think you~{/i}{/b}"    
-    m 3eub "{b}{i}Might want me to come show up at your door~{/i}{/b}"
-    m 1tkb "{b}{i}But I'm just too afraid that I'll be wrong~{/i}{/b}"
-    m 3hud "{b}{i}Don't wanna know~{/i}{/b}"
-    m 1ekd "{b}{i}If you're lookin' into her eyes~{/i}{/b}"
-    m 3eub "{b}{i}If she's holdin' onto you so tight the way I did before~{/i}{/b}"
-    m 3fsd "{b}{i}I overdosed~{/i}{/b}"
-    m 1ekb "{b}{i}Should've known your love was a game~{/i}{/b}"
-    m 1ekd "{b}{i}Now I can't get you out of my brain~{/i}{/b}"
-    m 5tuu "{b}{i}Oh it's such a shame~{/i}{/b}"
+    m 1eub "{b}{i}I just hope you're lyin' next to somebody~~{/i}{/b}"
+    m 1gfd "{b}{i}Who knows how to love you like me~~{/i}{/b}"
+    m 5dsc "{b}{i}There must be a good reason that you're gone~~{/i}{/b}"
+    m 4dsd "{b}{i}Every now and then I think you~~{/i}{/b}"    
+    m 3eub "{b}{i}Might want me to come show up at your door~~{/i}{/b}"
+    m 1tkb "{b}{i}But I'm just too afraid that I'll be wrong~~{/i}{/b}"
+    m 3hud "{b}{i}Don't wanna know~~{/i}{/b}"
+    m 1ekd "{b}{i}If you're lookin' into her eyes~~{/i}{/b}"
+    m 3eub "{b}{i}If she's holdin' onto you so tight the way I did before~~{/i}{/b}"
+    m 3fsd "{b}{i}I overdosed~~{/i}{/b}"
+    m 1ekb "{b}{i}Should've known your love was a game~~{/i}{/b}"
+    m 1ekd "{b}{i}Now I can't get you out of my brain~~{/i}{/b}"
+    m 5tuu "{b}{i}Oh it's such a shame~~{/i}{/b}"
     m 3fua "嘿嘿,这首歌是由Charlie Puth与Selena Gomez共同演唱的一首流行歌曲呢,"
     extend 1fua "这也是一首讲述分手后无法释怀,痛苦无奈的歌曲."
     return
@@ -488,8 +488,8 @@ label duhaiDetectiveChinatown32:
     m 1eua "这时车光打在秦风脸上,一半黑,{w=1}一半亮"
     m 1eta "总而言之,这部变格推理的电影在上映后得到了许多人的好评,哪怕推理深度弱于第一部.但它的喜剧部分依旧出众."
     m 3fub "里面的音乐也很好听,"
-    extend 2hua "{b}{i}~Welcome to New York~{/i}{/b}"
-    m 1hub "{b}{i}~It's been waiting for you~{/i}{/b}"
+    extend 2hua "{b}{i}~Welcome to New York~~{/i}{/b}"
+    m 1hub "{b}{i}~It's been waiting for you~~{/i}{/b}"
     m 5hua "..."
     m 5fublb "我看完之后还有一句话想和你说,"
     extend 6fubfd "那就是...{w=1}立刻有."
@@ -811,27 +811,27 @@ init 5 python:
     )
 
 label duhaiwoheni:
-    m 5fublb "{b}{i}晴天,有点孤单~{/i}{/b}"
-    m 2hsbsd "{b}{i}玩具,丢在旁边~{/i}{/b}"
-    m 1fubfb "{b}{i}电视里没有新鲜~{/i}{/b}"
-    extend 6eubfd "{b}{i}球鞋跑不过时间~{/i}{/b}"
-    m 3fubfb "{b}{i}我要更大的世界,装满不同的探险~{/i}{/b}"
+    m 5fublb "{b}{i}晴天,有点孤单~~{/i}{/b}"
+    m 2hsbsd "{b}{i}玩具,丢在旁边~~{/i}{/b}"
+    m 1fubfb "{b}{i}电视里没有新鲜~~{/i}{/b}"
+    extend 6eubfd "{b}{i}球鞋跑不过时间~~{/i}{/b}"
+    m 3fubfb "{b}{i}我要更大的世界,装满不同的探险~~{/i}{/b}"
     menu:
         "当然你陪在身边.":
              jump duhaiyouandmesongs
 
 label duhaiyouandmesongs:
-    m 5fubfb "{b}{i}每秒每天~{/i}{/b}"
-    m 1fubfa "{b}{i}我和你飞到蓝蓝的天边,我和你种下满满的花园~{/i}{/b}"
+    m 5fubfb "{b}{i}每秒每天~~{/i}{/b}"
+    m 1fubfa "{b}{i}我和你飞到蓝蓝的天边,我和你种下满满的花园~~{/i}{/b}"
     menu:
         "我和你分享暖暖的光线":
              jump duhaiyouandmesong
 
 label duhaiyouandmesong:
-    m 6eublb "{b}{i}再靠近一点~{/i}{/b}"
-    m 3fubsd "{b}{i}我和你就像蓝蓝的天边,{w=2}我和你就像满满的花园~{/i}{/b}"
-    m 1eubsb "{b}{i}我和你就像暖暖的光线,{w=2}把地球照亮~{/i}{/b}"
-    m 2fublb "{b}{i}再靠近一点~{/i}{/b}"
+    m 6eublb "{b}{i}再靠近一点~~{/i}{/b}"
+    m 3fubsd "{b}{i}我和你就像蓝蓝的天边,{w=2}我和你就像满满的花园~~{/i}{/b}"
+    m 1eubsb "{b}{i}我和你就像暖暖的光线,{w=2}把地球照亮~~{/i}{/b}"
+    m 2fublb "{b}{i}再靠近一点~~{/i}{/b}"
     menu:
         "再靠近一点":
              jump duhaizaikaojinyidian

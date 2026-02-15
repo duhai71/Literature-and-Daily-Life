@@ -364,6 +364,8 @@ label Monika_YBWM_again(skip_leadin=False):
 # 新版唱歌标签 - 使用歌词播放器和表情同步
 label Monika_YBWM_again_v2(skip_leadin=False):
     $ lad_music = 0
+    if youbelongwithme_player:
+        $ youbelongwithme_player.reset()
     $ persistent._mas_disable_animations = True
     
     # 去拿麦克风
@@ -376,7 +378,6 @@ label Monika_YBWM_again_v2(skip_leadin=False):
     $ mas_drawSpaceroomMasks(dissolve_masks=False)
     
     m 1hua "让我们开始吧"####################
-    $ persistent.ladl_songs_seen.add("ybwm")
 
     $ original_music = renpy.music.get_playing(channel='music')
     $HKBHideButtons()
@@ -400,7 +401,7 @@ label Monika_YBWM_again_v2(skip_leadin=False):
     
     $ youbelongwithme_player.play()
     show ladtback zorder 49 at lad_back with dissolve
-    show monika 1eua zorder 50
+    show monika 1eua zorder 40
     $ info = youbelongwithme_player.get_current_lyric()
 
 label ybwm_lyric_loop:

@@ -29,6 +29,19 @@ init -977 python:
             # 重置时间
             persistent.collab_music_ready_time = None
             return False   
+    def _ouatoh_music_condition(): 
+        # 1
+        if store.mas_getEVL_shown_count("Monika_LADL_date") >= 1:
+            # 2. 等待
+            if persistent.ouatoh_music_ready_time is None:
+                persistent.ouatoh_music_ready_time = datetime.datetime.now()
+                return False
+            time_passed = datetime.datetime.now() - persistent.ouatoh_music_ready_time
+            return time_passed >= datetime.timedelta(hours=72) #
+        else:
+            # 重置时间
+            persistent.ouatoh_music_ready_time = None
+            return False        
 
 
 init 5 python:
@@ -131,9 +144,8 @@ label lad_show_text_v2:
 label lad_music_ty:
     m 1eua "嘿,[player]."
     m 3eud "我们在这度过了一段很长的时间,不是吗?"
-    m 5tua "我记得在这些天,我们说过、说过许多现象、说过各种各样的奇闻异事."#唱完说
-    m 2fub "说过了很多的话呢."#唱完说
-    m 3eud "在和你去到了海边之后,我说了我因为曾经的事引发的心结."
+    m 5tua "我记得在这些天,我们说过了很多人、说过许多现象、说过各种各样的奇闻异事."#唱完说
+    m 3eud "在和你去到了海边之后,我也说了我因为曾经的事引发的心结."
     m 6eub "在解开那个由往事形成的心结时,我心中有一种释然的感觉"
     m 1fublb "因为你,[player],你总是能让我倾诉这些心事."
     m 3eubfb "为此,我在回来之后的这段时间练习一首曲子,正好我想唱给你听听."
@@ -147,6 +159,8 @@ label Monika_ty_again_v3(skip_leadin=False):
     jump Monika_ty_v3
 
 label Monika_ty_v3(skip_leadin=False):
+    if ty_player:
+        $ ty_player.reset()
     $ lad_music = 0
     $ persistent._mas_disable_animations = True
     
@@ -160,7 +174,6 @@ label Monika_ty_v3(skip_leadin=False):
     $ mas_drawSpaceroomMasks(dissolve_masks=False)
     
     m 1hua "希望你会喜欢......"####################
-    $ persistent.ladl_songs_seen.add("thank_you")
 
     $ original_music = renpy.music.get_playing(channel='music')
     $HKBHideButtons()
@@ -184,7 +197,7 @@ label Monika_ty_v3(skip_leadin=False):
     
     $ ty_player.play()
     show ladtback zorder 49 at lad_back with dissolve
-    show monika 1eua zorder 50
+    show monika 1eua zorder 40
     $ info = ty_player.get_current_lyric()
 
 label ty_lyric_loop:
