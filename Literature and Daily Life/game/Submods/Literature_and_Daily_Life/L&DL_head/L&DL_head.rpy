@@ -121,7 +121,7 @@ init -951 python:
         store.mas_submod_utils.submod_log.error("删除旧版本遗留文件出错：{}".format(l))
 
 define LADL_authors = """\
-度海、moon、456、Kxiangtang、哞尼卡、君翌、俩fish、龟酱.
+度海、moon、456、Kxiangtang、哞尼卡、君翌、俩fish、龟酱、Lasagna.
 """
 
 define LADL_thanks = """\
