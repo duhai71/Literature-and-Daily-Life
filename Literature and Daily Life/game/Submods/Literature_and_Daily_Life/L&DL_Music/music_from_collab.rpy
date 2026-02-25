@@ -67,6 +67,7 @@ init python:
 label mtts_LADL_collab_music_We_will_Meet:
     m 3fubsa "[player]! 还记得我已经给你唱了多少首歌了吗?"
     m 4subsb "已经有两首了哦! 在一起的时间过得真快啊."
+    $ mas_unlockEVL("Monika_Wwma_again_v3", "EVE") 
     m 2hkbsb "突然说起这个是因为...{nw}"
     if renpy.seen_label("mtts_greeting"):
         m 4gusdlb "我现在才发现, 你送我的麦克风还带着一份乐谱." # 尴尬

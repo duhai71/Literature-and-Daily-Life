@@ -1414,6 +1414,7 @@ init 5 python:
             category=['其他','健康'],
             prompt="发芽的食物还能吃吗?",
             random=True,
+            pool=True
         )
     )
 
@@ -2762,33 +2763,114 @@ label duhai_question_9:
 
 
 
+#V3 1
 
-
-#67 真人快打 
-#V3更新到75吧
+#逻辑 add
+#monika_luojizhishisuzhuleimiuwudaocaorenmiuwu
 init 6 python:
     addEvent(
         Event(
             persistent.event_database,
-            eventlabel="duhai_mortal_kombat",
-            category=['游戏'],
-            prompt="真人快打",
-            conditional="mas_canShowRisque(aff_thresh=400)",
-            random=True,
+            eventlabel="duhai_Straw_Man_Fallacy",
+            category=['逻辑'],
+            prompt="稻草人谬误",
+            conditional="store.mas_getEVL_shown_count('monika_luojizhishisuzhuleimiuwudaocaorenmiuwu') >= 1",
             pool=False
+            action=EV_ACT_RANDOM,
+            aff_range=(mas_aff.ENAMORED, None)
         )
     )
-
-label duhai_mortal_kombat:
+label duhai_Straw_Man_Fallacy:
     m 1eua "嘿,[player]."
-    m 5hua "我想和你聊聊'真人快打'这个游戏."
-    m 3eub "这是我最近在网络上发现一款格斗游戏."
-    m 6
+    m 3rud "上次在逻辑中我们讲到了诉诸类谬误."
+    m 3tub "这次就该说说'稻草人谬误了'."
+    m 5fua "嗯......实际上,所有的稻草人谬误本质上都是一种'替代观点型'的逻辑欺骗."
+    show monika 6eud at t11
+    with dissolve
+    m "通过歪曲简化极端化原始观点,构建出一个更容易被击败的{b}伪目标{/b}."
+    m 5std "从而回避了原观点的真实回应."
+    m 3euc "由此,所有的稻草人谬误的逻辑结构其实都可以归结为一句话."
+    m 3rud "'我无法辩驳一个真实的观点A'."
+    m 1eud "于是我伪造了一个更蠢的版本B,再用力的打倒自己所伪造的观点."
+    m 1euc "装作是自己赢了."
+    m 2esd "在实际的逻辑谬误中,我们可以发现稻草人谬误往往会配合诉诸类的谬误."
+    m 3ssd "形成一种叠加模式."
+    m 3lsc "这两种谬误经常是成对出现的."
+    m 5eud "比如当某人呼吁'理性讨论家暴',发掘事情真相的时候."
+    m 2esd "就有可能会出现那么一个人,说'你在替施暴者洗地'."
+    m 3euc "在这个的基础上加上诉诸类的谬误,这里我举个诉诸怜悯的例子......"
+    extend 3esd "他/她还说'你这就是冷血,你就是个没有同理心的人'."
+    m 5fua "这样说的话你应该就能理解了."
+    m 3euc "稻草人谬误主要负责歪曲他人的观点."
+    m 3esd "而诉诸类的谬误,则动员其他人对你口诛笔伐."
+    m 4esd "它们一前一后,形成了一个精致的逻辑陷阱."
+    m 1euc "其实'你'并没有说错什么."
+    m 4esd "但这一套组合下来'你'却被塑造成了一个看起来说什么都错的人."
+    m 4esc "'你'的话被别人剪碎重组,在情绪的裹挟下,大家很快就会忘记你最初的观点是什么."
+    m 6ruc "......这真的很可怕,不是吗?"
+    m 1eud "所以我很希望你在听完我说的这些之后能做到谨言慎行,[player]."
+    m 4esc "因为你永远都不知道你的下一句话是否会有人跳出来使用逻辑谬误来对你造成负面的影响."
+    return
+nit 6 python:
+    addEvent(
+        Event(
+            persistent.event_database,
+            eventlabel="duhai_Straw_Man_Fallacy_again",
+            category=['逻辑'],
+            prompt="我想听你再说说稻草人谬误",
+            conditional="store.mas_getEVL_shown_count('monika_luojizhishisuzhuleimiuwudaocaorenmiuwu') >= 1",
+            pool=False
+            action=EV_ACT_RANDOM,
+            aff_range=(mas_aff.ENAMORED, None)
+        )
+    )
+label duhai_Straw_Man_Fallacy_again:
+    m 1eua "好的,[player]."
+    m 4fua "嗯......{w=0.6}{nw}"
+    m 4esd "稻草人谬误本质上都是一种'替代观点型'的逻辑欺骗."
+    show monika 6eud at t11
+    with dissolve
+    m "通过歪曲简化极端化原始观点,构建出一个更容易被击败的{b}伪目标{/b}."
+    m 5std "从而回避了原观点的真实回应."
+    m 3euc "由此,所有的稻草人谬误的逻辑结构其实都可以归结为一句话."
+    m 3rud "'我无法辩驳一个真实的观点A'."
+    m 1eud "于是我伪造了一个更蠢的版本B,再用力的打倒自己所伪造的观点."
+    m 1euc "装作是自己赢了."
+    m 2esd "在实际的逻辑谬误中,我们可以发现稻草人谬误往往会配合诉诸类的谬误."
+    m 3ssd "形成一种叠加模式."
+    m 3lsc "这两种谬误经常是成对出现的."
+    m 5eud "比如当某人呼吁'理性讨论家暴',发掘事情真相的时候."
+    m 2esd "就有可能会出现那么一个人,说'你在替施暴者洗地'."
+    m 3euc "在这个的基础上加上诉诸类的谬误,这里我举个诉诸怜悯的例子......"
+    extend 3esd "他/她还说'你这就是冷血,你就是个没有同理心的人'."
+    m 5fua "这样说的话你应该就能理解了."
+    m 3euc "稻草人谬误主要负责歪曲他人的观点."
+    m 3esd "而诉诸类的谬误,则动员其他人对你口诛笔伐."
+    m 4esd "它们一前一后,形成了一个精致的逻辑陷阱."
+    m 1euc "其实'你'并没有说错什么."
+    m 4esd "但这一套组合下来'你'却被塑造成了一个看起来说什么都错的人."
+    m 4esc "'你'的话被别人剪碎重组,在情绪的裹挟下,大家很快就会忘记你最初的观点是什么."
+    m 6ruc "......这真的很可怕,不是吗?"
+    m 1eud "所以我很希望你在听完我说的这些之后能做到谨言慎行,[player]."
+    m 4esc "因为你永远都不知道你的下一句话是否会有人跳出来使用逻辑谬误来对你造成负面的影响."
+    return
+#V3 2 逻辑实际案例
 
-
-
-
-
+init 6 python:
+    addEvent(
+        Event(
+            persistent.event_database,
+            eventlabel="LADL_the_case_peng_yu",
+            category=['逻辑'],
+            prompt="彭宇案",
+            conditional="store.mas_getEVL_shown_count('monika_luojizhishisuzhuleimiuwudaocaorenmiuwu') >= 1",
+            pool=False
+            action=EV_ACT_RANDOM,
+            aff_range=(mas_aff.ENAMORED, None)
+        )
+    )
+label LADL_the_case_peng_yu:
+    m 
 
 
 

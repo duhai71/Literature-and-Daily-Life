@@ -1602,7 +1602,7 @@ init 5 python:
             category=['音乐'],
             prompt="我想听你再弹弹'Peaches'",
             pool=True,
-            unlocked=True,
+            unlocked=False,
             rules={"no_unlock": None}
         )
     )
@@ -1644,7 +1644,7 @@ init 5 python:
             category=['音乐'],
             prompt="我想听你再弹弹'seven_piano'",
             pool=True,
-            unlocked=True,
+            unlocked=False,
             rules={"no_unlock": None}
         )
     )

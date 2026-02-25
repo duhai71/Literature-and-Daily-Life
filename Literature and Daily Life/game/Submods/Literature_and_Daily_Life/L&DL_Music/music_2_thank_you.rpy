@@ -94,8 +94,8 @@ init python:
     # 导入并初始化歌词播放器，传入歌曲总时长
     try:
         from Netease_lyric_player import NeteaseLyricPlayer
-        #thank you 总时长 214.0 秒
-        ty_player = NeteaseLyricPlayer(ty_raw, song_duration=214.0)
+        #thank you 总时长 216.0 秒
+        ty_player = NeteaseLyricPlayer(ty_raw, song_duration=216.0)
     except Exception as e:
         # 如果导入失败，创建一个空的播放器对象
         ty_player = None
