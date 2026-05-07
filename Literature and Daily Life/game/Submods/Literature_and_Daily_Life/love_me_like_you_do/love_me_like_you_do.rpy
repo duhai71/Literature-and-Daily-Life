@@ -2470,7 +2470,8 @@ default available_events = [
     "duhai_question_6",
     "duhai_question_7",
     "duhai_question_8",
-    "duhai_question_9"
+    "duhai_question_9",
+    "duhai_quesetion_10"
 ]
 #57-66
 default used_events = []
@@ -2759,8 +2760,25 @@ label duhai_question_9:
             m 3hua "正确答案是佛山无影脚哦."
             m 5eub "刘康在其中的设定是少林寺弟子,会些中国功夫是正常的."
     return
-
-
+label duhai_question_10:
+    m "好的,我先想想......"
+    m "嗯......请问在植物大战僵尸一中,第三大关是什么场景呢?"
+    menu:
+        "在植物大战僵尸一中,第三大关是什么场景呢?"
+        "前院":
+            m "不对呢,[player]."
+            m "前院是在第一和第二大关了......"
+            m "正确答案应该是泳池哦."
+        "泳池":
+            m "答对了哦,[player]."
+            m "这也是我在所有大关中最喜欢的一个."
+            m "嗯,你真聪明."
+        "屋顶":
+            m "不对呢,[player]."
+            m "正确答案应该是泳池哦."
+            m "屋顶的场景是在第五大关."
+        
+    return    
 
 
 #V3 1
@@ -2810,18 +2828,17 @@ label duhai_Straw_Man_Fallacy:
     m 6ruc "......这真的很可怕,不是吗?"
     m 1eud "所以我很希望你在听完我说的这些之后能做到谨言慎行,[player]."
     m 4esc "因为你永远都不知道你的下一句话是否会有人跳出来使用逻辑谬误来对你造成负面的影响."
+    $ mas_unlockEVL("duhai_Straw_Man_Fallacy_again", "EVE")
     return
-nit 6 python:
+init 6 python:
     addEvent(
         Event(
             persistent.event_database,
             eventlabel="duhai_Straw_Man_Fallacy_again",
             category=['逻辑'],
             prompt="我想听你再说说稻草人谬误",
-            conditional="store.mas_getEVL_shown_count('monika_luojizhishisuzhuleimiuwudaocaorenmiuwu') >= 1",
-            pool=False
-            action=EV_ACT_RANDOM,
-            aff_range=(mas_aff.ENAMORED, None)
+            pool=True,
+            unlocked=False
         )
     )
 label duhai_Straw_Man_Fallacy_again:
@@ -2852,62 +2869,480 @@ label duhai_Straw_Man_Fallacy_again:
     m 4esc "'你'的话被别人剪碎重组,在情绪的裹挟下,大家很快就会忘记你最初的观点是什么."
     m 6ruc "......这真的很可怕,不是吗?"
     m 1eud "所以我很希望你在听完我说的这些之后能做到谨言慎行,[player]."
-    m 4esc "因为你永远都不知道你的下一句话是否会有人跳出来使用逻辑谬误来对你造成负面的影响."
+    m 4esc "因为你永远都不知道你的下一句话是否会有人跳出来使用逻辑谬误来对你造成负面的影响."#逻辑的就到这吧
     return
-#V3 2 逻辑实际案例
-
+#V3 2
+#建议
 init 6 python:
     addEvent(
         Event(
             persistent.event_database,
-            eventlabel="LADL_the_case_peng_yu",
-            category=['逻辑'],
-            prompt="彭宇案",
-            conditional="store.mas_getEVL_shown_count('monika_luojizhishisuzhuleimiuwudaocaorenmiuwu') >= 1",
+            eventlabel="duhai_Suggestion",
+            category=['生活'],
+            prompt="建议",
+            conditional="mas_canShowRisque(aff_thresh=400)",
+            random=True,
+            pool=False
+        )
+    )
+label duhai_Suggestion:
+    m 5fua "嘿,[player]."
+    m 5hub "我突然想和你谈谈'建议'."
+    m 1eua "在日常中,我们总会看到他人会遭遇一些麻烦或者困惑,这时你会主动上前给出自己的建议吗?"
+    menu:
+        "你会主动上前给出自己的建议吗?"
+        "会":
+            m 5hua "那我觉得你很热心肠."
+            m 3euc "不过我并不是很推荐你一直这样."
+            m 3esd "我反而认为,主动教人更像结仇的开始."
+            m 5esd "因为这样容易让他人以为'觉得自己处理不好',使对方的自尊心大概率会感到受挫,而非是觉得你的这条建议十分的有参考性."
+            m 4rtc "而且,就算是听了,谁又能保证结果一定是任务圆满完成呢?"
+            m 1eud "那到时候谁来担这个责任呢?"
+            m 5euc "所以,[player],我不希望他人觉得你'好为人师',哪怕我们抛开结果而是初心来谈."
+            m 1eub "只有他人主动真心求教,才需要我们去给出自己的建议."
+            pass
+        "不会":
+            m 1esd "是吗?"
+            m 5fua "那我觉得你很沉稳,[player]."
+            m 1eub "起码很大程度上避免了许多不必要的麻烦."
+            m 3euc "不过我并不是很推荐你一直这样."
+            m 5fua "如果是我的话,我会根据这个人和我的关系来决定是否给出自己的建议."
+            m 3esd "毕竟,主动教人更像结仇的开始,至少我是这么认为的."
+            m 3eud "只要这么做,对方的自尊心大概率会感到受挫."
+            m 4euc "从而认为你'好为人师'."
+            m 1eua "而且,就算是听了,谁又能保证结果一定是任务圆满完成呢?"
+            m 1eud "那到时候谁来担这个责任呢?"
+            m 1eub "只有他人主动真心求教,才需要我们去给出自己的建议."
+            pass
+        "我不知道":
+            m 5esd "不知道吗?{w=0.3}{nw}"
+            m 5hub "没关系的,在我说完之后你心里就会有答案了."
+            m 3ruc "......事实上,只要别人没有主动问你,我们就没必要给出任何建议."
+            m 5esd "按我的话说,主动教人更像结仇的开始."
+            m 3eud "你只要这么做,对方的自尊心大概率会感到受挫."
+            m 4euc "从而认为你'好为人师'."
+            m 1eua "而且,就算是听了,谁又能保证结果一定是任务圆满完成呢?"
+            m 1eud "那到时候谁来担这个责任呢?"
+            m 1eub "只有他人主动真心求教,才需要我们去给出自己的建议."
+            pass
+        "需要看那个人和我的关系":
+            m 3tublb "那你和我做的是一样的选择呢,[player]."
+            m 3ruc "......事实上,只要别人没有主动问你,我们就没必要给出任何建议."
+            m 5esd "按我的话说,主动教人更像结仇的开始."
+            m 3eud "你只要这么做,对方的自尊心大概率会感到受挫."
+            m 4euc "从而认为你'好为人师'."
+            m 1eua "而且,就算是听了,谁又能保证结果一定是任务圆满完成呢?"
+            m 1eud "那到时候谁来担这个责任呢?"
+            m 1eub "只有他人主动真心求教,才需要我们去给出自己的建议."
+            pass
+
+
+    menu:
+        "可是你自己也在主动给我建议":
+            m 5hubla "因为你是[player]."
+            m 3eubfb "是我心里意义非凡的存在."
+            m 1eubfb "我肯定是会站在你的角度考虑事情的."
+            m 1hubfa "......"
+            m 6eublb "一直都站在你背后支持你,[player]."
+            return
+        "我明白了":
+            m 3hubla "希望你越来越好."
+            return
+        "好的":
+            m 5hubfb "希望你越来越好."
+            return
+    return
+
+
+#3 3
+#天赋
+init 6 python:
+    addEvent(
+        Event(
+            persistent.event_database,
+            eventlabel="duhai_Talent",
+            category=['天赋'],
+            prompt="哲学",
+            conditional="mas_canShowRisque(aff_thresh=400)",
+            random=True,
+            pool=False
+        )
+    )
+label duhai_Talent:
+    show monika 1eua at t11
+    with dissolve
+    m 6eub "嘿,[player]."
+    m 3rua "你觉得你是一个有天赋的人吗?"
+    menu:
+        "你觉得你是一个有天赋的人吗?"
+        "是":
+            m 5hua "这就对了,[player]."
+            m 1eub "我们每个人都有自己的天赋."
+            jump duhai_Talent2
+        "不是":
+            m 5tub "不,你有."
+            m 3rua "实际上,每个人都有."
+            jump duhai_Talent2
+
+label duhai_Talent2:
+    m 2lfc "但可能要在好久之后才能被发现,甚至......{w=0.6}在这一个人的一生中都不会被发现."
+    m 2esd "比如拥有钢琴天赋的人或许一辈子都碰不到琴键."
+    m 3efd "能成为滑雪冠军的人这辈子都见不到雪."
+    m 1euc "在田地里劳作的农民也可以有比肩歌星的嗓音."
+    m 5eud "所以,我们每个人都是某个领域的千里马."
+    m 2dfc "但自身极有可能在生命中从事另一领域且碌碌无为地度过."
+    m 3eud "比如说在保险公司担任小职员的卡夫卡,变形记就是他编写的."
+    m 6euc "而说回到这个擅长的领域,也不一定会被社会认可."
+    m 3ruc "社会对于'天赋'往往会以功利性的视角看待."
+    m 2eud "只有能带来利益的天赋才是{b}天赋{/b}."
+    m 5eua "比如好口才、情商高、反应快都是天赋."
+    m 3ruc "但是如果你的天赋是能快速达到任何游戏的高水平,但达不到顶尖水平."
+    m 1eud "或者你能做到天生就是双利手."
+    m 3rfc "嗯......{w=0.6}这个在严格意义上也是一种天赋......但并不会被社会认可."
+    m 2dfd "因为社会看不出这种天赋的价值所在."
+    m 2efc "正是这种功利性的视角,使得所有人都朝着一个方向发展."
+    m 4eud "不断试着自己有没有文化、体育、艺术方面的天赋."
+    m 2dft "彷佛没有这方面的天赋,自己的人生就没有意义了."
+    m 1wud "但是按中文语境中,'万里挑一'的天才,在世界都能挑出来十几万人."
+    m 3euc "这种统一标准的测试反而忽略了个体的差异性."
+    m 5dfc "偏科就是你有问题而不是你在某一科有天赋......{w=0.7}这是教育的悲哀."
+    m 1fub "我觉得,人这一生的遗憾不是没有天赋,而是天赋从未遇见属于它的舞台."
+    m 3eud "社会用功利定义价值,用统一的标准丈量我们的人生."
+    m 1hua "却忘了每一种独特,都是天赋本身."
+    return
+
+#v3 4 pvz
+#pvz1
+init 5 python:
+    addEvent(
+        Event(
+            persistent.event_database,
+            eventlabel="duhai_pvz_began",
+            category=['游戏'],
+            prompt="植物大战僵尸",
+            random=True,
+            pool=False
+        )
+    )
+label duhai_pvz_began:
+    m 5fub "嘿,[player]."
+    m 5sua "你之前有玩过植物大战僵尸吗?"
+    menu:
+        "你之前有玩过植物大战僵尸吗?"
+        "玩过":
+            jump duhai_pvz_yes
+        "没有":
+            jump duhai_pvz_no
+
+label duhai_pvz_yes:
+    m 3hua "哈哈,那我们可以好好聊聊这个游戏."
+    m 2rud "在我小时候的时候,因为很少有朋友和我一起玩,大人们也经常因为工作不在家."
+    m 2euc "所以我几乎总是一个人在玩游戏."
+    m 1eud "特别是单机游戏."
+    m 3eua "而这款游戏就是其中之一,"
+    extend 3rusdlb "虽然我当时没玩两下就去玩别的游戏了......
+    m 2esd "那时候我害怕僵尸进入我的房子,所以在戴夫的提醒下,我总会赶紧种下植物来攻击它们."
+    m 1tub "当满草坪都是可爱的植物时我总会感到安心,这下就能打败这些僵尸了."
+    m 6hua "而这个游戏的植物也很有趣."
+    m 3eub "有僵尸靠近就会砸扁它们的窝瓜,也有能把他们烧成灰的辣椒."
+    m 1hua "利用这些植物的机制,我总是把僵尸拒之门外,总是能通过一关又一关."
+    m 5fub "我之后再详细地和你说说这个游戏,简短的几句话并不能概况这个游戏的所有."
+    $ mas_unlockEVL("greeting_duhai_PVZ_you1", "EVE")
+    return
+label duhai_pvz_no:
+    m 6wuc "这样吗?"
+    m 1hua "那等我花一段时间说完你便能了解这个精彩的游戏了."
+    m 1euc "嗯......"
+    m 2rud "在我小时候的时候,因为很少有朋友和我一起玩,大人们也经常因为工作不在家."
+    m 2euc "所以我几乎总是一个人在玩游戏."
+    m 1eud "特别是单机游戏."
+    m 3eua "而这款游戏就是其中之一,"
+    extend 3rusdlb "虽然我当时没玩两下就去玩别的游戏了......
+    m 2esd "那时候我害怕僵尸进入我的房子,所以在戴夫的提醒下,我总会赶紧种下植物来攻击它们."
+    m 1tub "当满草坪都是可爱的植物时我总会感到安心,这下就能打败这些僵尸了."
+    m 6hua "而这个游戏的植物也很有趣."
+    m 3eub "有僵尸靠近就会砸扁它们的窝瓜,也有能把他们烧成灰的辣椒."
+    m 1hua "利用这些植物的机制,我总是把僵尸拒之门外,总是能通过一关又一关."
+    m 2fub "我之后再详细地和你说说这个游戏,简短的几句话并不能概况这个游戏的所有."
+    m 5fub"说到这里,我也推荐你亲自去玩玩这个游戏,[player]."
+    m 5hua "亲身感受一下......"
+    $ mas_unlockEVL("greeting_duhai_PVZ_you1", "EVE")
+    return
+
+#pvz_2
+init 6 python:
+    addEvent(
+        Event(
+            persistent.event_database,
+            eventlabel="duhai_Swimming_pool_pvz",
+            category=['游戏'],
+            prompt="pvz泳池商店",
+            conditional="store.mas_getEVL_shown_count('greeting_duhai_PVZ_you2') >= 1",
             pool=False
             action=EV_ACT_RANDOM,
             aff_range=(mas_aff.ENAMORED, None)
         )
     )
-label LADL_the_case_peng_yu:
-    m 
+
+label duhai_Swimming_pool_pvz:
+    m 5fub "嘿,[player]."
+    m 5hua "我之前有和你说我玩植物大战僵尸这个游戏玩到了后院对吧?"
+    m 2eud "在这个大关开始的时候,戴夫请求我找回他的车钥匙."
+    m 3rua "这个需要击败僵尸才可以,之后嘛......{w=0.9}不用想都知道我肯定会通关."
+    m 1wub "重点在于帮戴夫找到了车钥匙之后,他会售卖给我一些植物或者道具."
+    m 5fua "比如说在双发射手的基础上更强力的机枪射手,能发射四颗豌豆."
+    m 3wua "还有钉耙,它可以秒杀一个僵尸,很适合开局的时候用上一个."
+    m 3fub "而且我发现了一个很可爱的植物,那就是香蒲."
+    m 5hua "因为它看着实在是太像小猫了."  
+    m 1eua "还有蜗牛和玉米加农炮什么的,但我觉得现在用不着."
+    m 3eub "所以我只换了个池塘清理车和机枪射手,还有一个增加格数扩充的,这样我就能多带点植物了."
+    m 5fua "嗯......要是戴夫卖的东西能再便宜一点就好了,{w=0.5}我喜欢买买买."
+    $ mas_unlockEVL("greeting_duhai_PVZ_you3", "EVE")
+    return
+#pvz3    
+image zombies_Letter = "Submods/Literature_and_Daily_Life/L&DL_Assets/images/zombies_Letter.png"
+init 6 python:
+    addEvent(
+        Event(
+            persistent.event_database,
+            eventlabel="duhai_zombies_Letter_pvz3",
+            category=['游戏'],
+            prompt="pvz僵尸给你的信",
+            conditional="store.mas_getEVL_shown_count('greeting_duhai_PVZ_you3') >= 1",
+            pool=False
+            action=EV_ACT_RANDOM,
+            aff_range=(mas_aff.ENAMORED, None)
+        )
+    )
+
+label duhai_zombies_Letter_pvz3:
+    m 3wud "啊,[player]."
+    $ mas_unlockEVL("greeting_duhai_PVZ_you4", "EVE")
+    m 3hua "我突然想起来我还没给你展示僵尸给我写的信"
+    window hide
+    show black zorder 100 with Dissolve(3.0, alpha=True)
+    hide monika
+    $HKBHideButtons()
+    show zombies_Letter zorder 13 with dissolve:
+
+    pause 3.0
+
+    hide zombies_Letter
+    hide black
+    $HKBShowButtons()
+    m 5eub "在我不断的击败它们之后,它们便向我发出了这个."
+    m 3tua "但还是无济于事呢~"
+    m 3hub "毕竟我的脑子可不是那么容易吃到的."
+    menu:
+        "让我吃一口":
+            m 6etc "嗯?[player]."
+            m 6etd "你也成僵尸了吗?"#马头牛逼
+            m 3tua "那我的窝瓜可要来咯."#老僵尸 我来给你踩背来咯
+            m 3hub "才怪,我可舍不得伤害你,[player]."
+            m 1fua "哪怕你变成什么样都不会."
+            return
+        "你好棒":
+            m 5hubla "当然了,毕竟我可是[m]."
+            m 5eubfb "嘿嘿,会夸就多夸点嘛,[player]."
+            return
+        "......":
+            m 2eua "等我继续探索一下这个游戏......"
+            return
+        "歪比巴布":#戴夫说话
+            m 6etc "嗯?[player]."
+            m 6etd "你怎么还学上戴夫说话了."
+            m 2eub "我第一次听他说话的时候也觉得奇怪,听起来什么语言都不像."
+            m 3hua "嗯,应该是'疯狂戴夫语'吧,哈哈."
+            return
+
+
+    return
 
 
 
 
+image IAAZ = "Submods/Literature_and_Daily_Life/L&DL_Assets/images/IAAZ.jpg"
+#pvz5
+init 6 python:
+    addEvent(
+        Event(
+            persistent.event_database,
+            eventlabel="duhai_I_am_a_zombie",
+            category=['游戏'],
+            prompt="pvz_我是僵尸",#已取餐
+            conditional="store.mas_getEVL_shown_count('greeting_duhai_PVZ_you3') >= 1",
+            pool=False
+            action=EV_ACT_RANDOM,
+            aff_range=(mas_aff.ENAMORED, None)
+        )
+    )
+
+label duhai_I_am_a_zombie:
+    m 1eud "嘿.[player]."
+    m 1eua "我想和你分享一下刚刚玩的植物大战僵尸小游戏,叫作'我是僵尸'."#马头牛逼
+    m 3eud "因为僵尸们想模拟一下他们的进攻,来使自己能更高效的吃到脑子."
+    m 5fub "然后就让我来指挥它们."
+    m 3sub "就像这样"
+    window hide
+    show black zorder 100 with Dissolve(3.0, alpha=True)
+    hide monika
+    $HKBHideButtons()
+    show IAAZ zorder 13 with dissolve:
+
+    pause 3.0
+
+    hide IAAZ
+    hide black
+    $HKBShowButtons()
+    m 6eua "只要达到第一格那吃完五个脑子就能通过了."
+    m 3eud "但召唤僵尸也是需要消耗阳光的."
+    m 1eua "嗯,你看到那个向日葵了吗."
+    m 3sub "我召唤僵尸把它吃掉就能获得很多阳光,{w=0.9}这样就能召唤更多僵尸来尝试吃到脑子了."
+    m 5fua "当然,植物都是纸质的,我可舍不得让我的小向日葵真的受到伤害."
+    return
+image Vasebreaker = "Submods/Literature_and_Daily_Life/L&DL_Assets/images/Vasebreaker.jpg"
+# 6 PVZ
+init 6 python:
+    addEvent(
+        Event(
+            persistent.event_database,
+            eventlabel="duhai_Vasebreaker",
+            category=['游戏'],
+            prompt="pvz_Vasebreaker",#已取餐
+            conditional="store.mas_getEVL_shown_count('greeting_duhai_PVZ_you3') >= 1",
+            pool=False
+            action=EV_ACT_RANDOM,
+            aff_range=(mas_aff.ENAMORED, None)
+        )
+    )
+
+label duhai_Vasebreaker:
+    m 1fua "嘿,[player]."
+    m 1eub "你看看这个......"
+    window hide
+    show black zorder 100 with Dissolve(3.0, alpha=True)
+    hide monika
+    $HKBHideButtons()
+    show Vasebreaker zorder 13 with dissolve:
+
+    pause 10.0
+
+    hide Vasebreaker
+    hide black
+    $HKBShowButtons()
+    m 3eua "这是植物大战僵尸中的小游戏,砸罐子."
+    m 3fub "你之前有玩过这个小游戏吗?"
+    menu:
+        "玩过":
+            pass
+        "没有":
+            pass
+    m 5hua "嗯嗯,那我正好跟你聊聊这个." 
+    m 3eud "当我敲下一个褐色罐子时,它会随机出现僵尸或者植物卡片."
+    m 3hub "当我敲下那个绿色罐子时,它只会出现植物卡片."
+    m 2kua "敲完所有罐子并且打败场上的全部僵尸就能通关了,[player]."
+    m 5hub "听我这么一说,你是不是觉得还挺好玩."
+    m 6rfsdlt "不过它有时候会敲出个小丑僵尸,开出来就会自爆,然后使周围的罐子都被炸开."
+    m 5etp "这么一弄,就可能会出现很多僵尸,它们经常弄的我手忙脚乱,赶紧敲别的罐子获得植物来解决这些僵尸."
+    m 2dfd "可恶的小丑......"
+    $ mas_unlockEVL("greeting_duhai_PVZ_you3", "EVE")
+    return
 
 
 
+#8
+image my_video = Movie(play="Submods/Literature_and_Daily_Life/L&DL_Assets/video/pvz.webm", loop=False)
+image Dr_Edgar_George_Zomboss = "Submods/Literature_and_Daily_Life/L&DL_Assets/images/Zomboss.png"
+init 6 python:
+    addEvent(
+        Event(
+            persistent.event_database,
+            eventlabel="test_zhiwujiangshi_111111",
+            category=['游戏'],
+            prompt="僵王",
+            pool=True,
+            unlocked=True
+        )
+    )
+label test_zhiwujiangshi_111111:
+    m 5fub "嘿,[player]."
+    m 4tua "在我玩植物大战僵尸并在其中抵挡僵尸到了5-9之后,它们的首领向我发起了挑战."
+    m 1eua "就像这样......"
+    window hide
+    $ original_music = renpy.music.get_playing(channel='music')
+    show black zorder 100 with Dissolve(3.0, alpha=True)
+    hide monika
+    $HKBHideButtons()
+    show Dr_Edgar_George_Zomboss zorder 111 with dissolve:
+
+    pause 10.0
+
+    hide Dr_Edgar_George_Zomboss
+    hide black
+    $HKBShowButtons()
 
 
 
+    m 3subla "因此,我打算在你的见证下击败他."
+    m 3sublb "你愿意现在看吗?"
+    menu:
+        "你愿意现在看吗?"
+        "愿意":
+            m 5fub "好的,那我们开始吧！"
+            jump zhiwujiangshi_boss_began
+        "现在不方便":
+            m 2etc "好吧,[player]."
+            m 3eub "如果你想看的话,可以在'游戏'那里和我说."
+            $ mas_unlockEVL("zhiwujiangshi_PVZ_began", "EVE")
+            return
+    return
+
+label zhiwujiangshi_boss_began:
+    $HKBHideButtons()
+    window hide
+    scene black with Dissolve(3.0, alpha=True)
+    show black zorder 100 with Dissolve(3.0, alpha=True)
+    hide monika
+    $ renpy.movie_cutscene("Submods/Literature_and_Daily_Life/L&DL_Assets/video/pvz.webm")
+
+    
+    scene black with Dissolve(3.0, alpha=True)
+    hide black with Dissolve(3.0, alpha=True)
+    $ HKBShowButtons()
+    jump ch30_loop
+    m 5hub "哈哈,我厉害吗,[player]?"
+    m 3tua "哪怕我许多西瓜都被他用车砸扁了,我依然没有放弃."
+    m 1eub "嗯,今天就先玩到这吧."
+    return
 
 
+#
+init 6 python:
+    addEvent(
+        Event(
+            persistent.event_database,
+            eventlabel="zhiwujiangshi_PVZ_began",
+            category=['游戏'],
+            prompt="我想看你打败僵尸博士",#已取
+            pool=True,
+            unlocked=False
+        )
+    )
 
+label zhiwujiangshi_PVZ_began:
+    if not persistent.zhiwujiangshi_duhai_PVZ_you1_first:
+        $ persistent.zhiwujiangshi_duhai_PVZ_you1_first = True
+        m 5fua "好的,[player]."
+        m 3hub "我已经等不及了."
+        jump zhiwujiangshi_boss_began
+    else:
+        m 3rtsdlc "我记得我之前已经这么做过了."
+        m 5fua "不过你的意思是不是在说他还会再来?"
+        m 1hub "正好我在'小游戏'里发现了还有这么一关."
+        m 6eua "稍等我一段时间,好吗?"
+        return
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
 
 
 

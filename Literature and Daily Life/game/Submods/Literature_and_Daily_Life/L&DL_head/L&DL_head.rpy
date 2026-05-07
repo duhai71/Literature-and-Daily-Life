@@ -1,21 +1,12 @@
 init -990 python:
     store.mas_submod_utils.Submod(
         author="LADL团队",
-        name="Literature And Daily Life V2",
-        description="包含了大量话题、数首歌曲等内容的Submod.",
-        version='2.3.1',
+        name="Literature And Daily Life V3",
+        description="包含了大量话题的Submod,涵盖了文学、科学、心理学、生活、情感、闲聊、逻辑、音乐、哲学、约会、游戏等方面,以及人声曲目、钢琴曲目、约会内容.",
+        version='3.0.0',
         settings_pane="LADL_setting_pane"
     )
 
-init -989 python:
-    if store.mas_submod_utils.isSubmodInstalled("Submod Updater Plugin"):
-        store.sup_utils.SubmodUpdater(
-            submod="Literature and Daily Life-V2",
-            user_name="duhai71",
-            repository_name="Literature-and-Daily-Life",
-            update_dir="",
-            attachment_id=None
-        )
 
 init -951 python:
     import os
@@ -121,7 +112,7 @@ init -951 python:
         store.mas_submod_utils.submod_log.error("删除旧版本遗留文件出错：{}".format(l))
 
 define LADL_authors = """\
-度海、moon、456、Kxiangtang、哞尼卡、君翌、俩fish、龟酱、Lasagna.
+度海、moon、456、Kxiangtang、哞尼卡、君翌、俩fish、龟酱、Lasagna、华猫.
 """
 
 define LADL_thanks = """\

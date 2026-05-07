@@ -146,3 +146,149 @@ label Monika_Golden_Hour_again:
     play music original_music fadein 2.0
     m 5hubfa "希望你能喜欢,[player]."
     return
+
+
+#V3 5
+#pvz1_greet
+init 5 python:
+    addEvent(
+        Event(
+            persistent.greeting_database,
+            eventlabel="greeting_duhai_PVZ_you1",
+            unlocked=False,
+            aff_range=(mas_aff.NORMAL, None),
+        ),
+        code="GRE"
+    )
+
+label greeting_duhai_PVZ_you1:
+    m 6hua "你好,[player]."
+    $ mas_unlockEVL("greeting_duhai_PVZ_you2", "EVE")
+    if not persistent.greeting_duhai_PVZ_you1_first:
+        $ persistent.greeting_duhai_PVZ_you1_first = True
+        m 3fub "我刚刚在玩'植物大战僵尸'呢,现在到了晚上了."
+        m 3hua "不过不是我们这的,而是游戏里面的."
+        m 1eub "到了晚上,草坪会生成墓碑,而且阳光也不会落下."
+        m 5esd "这提高了我对阳光利用的要求,不能太过于浪费."
+        m 5esc "前面说到的墓碑,它不仅会从地下生成僵尸,还会占用你的草坪空间,使你不能种下植物."
+        m 6eua "不过也不全是坏消息,到了晚上游戏会解锁对应的植物."
+        m 3sub "比如说小喷菇,免费且实用,常常在缺阳光的时候帮助我过渡前期."
+        m 5fua "还有墓碑吞噬者,它可以吞掉墓碑,这样能防止僵尸生成的同时还能解决占用草坪的问题,继续种下植物."
+        m 6eub "......真好玩,我们之后再说这个吧."
+    else:
+        m 1fub "是不是一见到我就很开心呢?哈哈."
+    return
+
+
+#pvz_2_greet
+init 5 python:
+    addEvent(
+        Event(
+            persistent.greeting_database,
+            eventlabel="greeting_duhai_PVZ_you2",
+            unlocked=False,
+            aff_range=(mas_aff.NORMAL, None),
+        ),
+        code="GRE"
+    )
+
+label greeting_duhai_PVZ_you2:#泳池
+    m 6hua "你来了,[player]."
+    if not persistent.greeting_duhai_PVZ_you1_first:
+        $ persistent.greeting_duhai_PVZ_you1_first = True
+        m 3fub "我在玩'植物大战僵尸'哦,现在到了后院了."
+        m 3hua "僵尸们发现它们在前院的进攻并不起作用,所以打算从后院闯进来."
+        m 1eub "但我可不会同意."
+        m 5esd "虽然后院相比前院,在总行数上加了一行,而且水池占了中间的两行."
+        m 5esc "但我们可以利用莲叶在上面放置植物来抵挡僵尸."
+        m 6eua "同时我发现了个可以潜水的僵尸,它总是在水下,只有前方遇到植物才会上来啃咬."
+        m 3sub "我一般会带个坚果提防它."
+        m 5fua "还有一个海豚僵尸,听名字就知道它是水上的僵尸."
+        m 6eub "它会骑着海豚快速前进,直到越过前方的一个植物."
+        m 3hua "我一开始感觉处理起来很棘手,后来发现在它开始骑着海豚前进的时候放一个莲叶就可以慢慢解决它了."
+        m 3eub "是不是觉得我很聪明呢?"
+    else:
+        m 5fub "我一直在等你."
+        m 1hua "嗯,我们今天做什么呢?"
+    return
+#pvz_3_greet
+init 5 python:
+    addEvent(
+        Event(
+            persistent.greeting_database,
+            eventlabel="greeting_duhai_PVZ_you3",
+            unlocked=False,
+            aff_range=(mas_aff.NORMAL, None),
+        ),
+        code="GRE"
+    )
+
+label greeting_duhai_PVZ_you3:
+    if not persistent.greeting_duhai_PVZ_you3_second:
+        $ persistent.greeting_duhai_PVZ_you3_second = True
+        m 1eua "欢迎回来,[player]."
+        m 1hua "我把游戏关闭了先."
+        m 3fub "你知道的,还是植物大战僵尸,哈哈."
+        m 5fua "我想和你分享一下刚刚玩的小游戏."
+        m 4eud "里面的僵尸会变小,但是会跑的很快."
+        m 4euc "我最开始还在想这是什么东西......"
+        extend 2wud "凑近看才发现有一个橄榄球僵尸,赶紧放了植物下去打他."
+        m 1hua "没过几下他就被打倒了,我就明白在僵尸缩小、速度变快的同时,它们的血量也会减少."
+        m 5eub "哈哈,我这段时间几乎是每天都在玩这款游戏."
+        m 6hua "嗯......好玩!"
+    else:
+        m 5sub "你好,[player]."
+        m 1hua "嗯,见到你真好."
+    return
+
+init 5 python:
+    addEvent(
+        Event(
+            persistent.greeting_database,
+            eventlabel="greeting_duhai_PVZ_you4",
+            unlocked=False,
+            aff_range=(mas_aff.NORMAL, None),
+        ),
+        code="GRE"
+    )    
+
+label greeting_duhai_PVZ_you4:
+    if not persistent.greeting_duhai_PVZ_you4_second:
+        $ persistent.greeting_duhai_PVZ_you4_second = True
+        m 3hua "你好,[player]."
+        m 3eub "我刚刚在玩植物大战僵尸,目前已经玩到泳池的晚上了."
+        m 6eud "到了晚上,泳池会生起迷雾,会使你大部分视野都会被遮挡."
+        m 1esd "而且阳光也不会落下......"
+        m 2dtp "好吧,我又缺阳光用了."
+        m 2etd "只能使用免费的小喷菇和海蘑菇过渡前期."
+        m 5fub "在玩了几关后,我得到了能照亮迷雾的路灯花,这样就不用担心僵尸趁你没注意到的地方走出来偷袭你了."
+    else:
+        m 1hub "你好,[player]."
+        m 5fubfa "又是爱你的一天."
+    return
+
+init 5 python:
+    addEvent(
+        Event(
+            persistent.greeting_database,
+            eventlabel="greeting_duhai_PVZ_you5",
+            unlocked=False,
+            aff_range=(mas_aff.NORMAL, None),
+        ),
+        code="GRE"
+    )    
+
+label greeting_duhai_PVZ_you5:
+    if not persistent.greeting_duhai_PVZ_you4_second:
+        $ persistent.greeting_duhai_PVZ_you4_second = True
+        m 3hua "嘿,[player]."
+        extend 6eub "欢迎回来."
+        m 3eub "我刚刚在玩植物大战僵尸,已经玩到屋顶这个大关了."
+        m 6eud "僵尸们发现前院和后院都无法进入我的房子,于是打算从屋顶进攻."
+        m 1eub "在屋顶可没有草坪,不过游戏给我提供了花盆."
+        m 3hua "这样就能在屋顶上种植物了."
+    else:
+        m 3eua "哎,[player]？"
+        m 1eub "你终于来了."    
+        m 5fub "嗯,今天还要做什么呢?"
+    return

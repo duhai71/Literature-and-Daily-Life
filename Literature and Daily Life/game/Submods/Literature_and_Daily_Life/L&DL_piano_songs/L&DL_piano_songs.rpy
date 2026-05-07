@@ -648,6 +648,7 @@ label Monika_random_songs72:
         $ mas_unlockEVL("Monika_Monster_LADL_again", "EVE")#测试通过
         return    
     elif random_choice == 20:
+        m 6hua "好的"
         show monika at Transform(xpos=-800) with move
         m 2hua "我去弹一下unity这首歌."
         window hide
@@ -784,8 +785,8 @@ label Monika_random_songs72:
         $ mas_unlockEVL("Monika_Love_Yourself_LADL_again", "EVE")#测试通过
         return    
     elif random_choice == 24:   
+        m 6eub "好的,[player]."
         show monika at Transform(xpos=-800) with move
-        m 2hua "我去弹一下monsters这首歌."
         window hide
         $ store.mas_sprites.zoom_out()
         $HKBHideButtons()
@@ -819,10 +820,10 @@ label Monika_random_songs72:
         $ mas_unlockEVL("Monika_monsters_piano_LADL_again", "EVE")#测试通过
         return    
     elif random_choice == 25:
-        m 1hua  "好的"
+        m 1hua  "好的."
         if not persistent.monika_Payphone_v3_end:
             m 5ruc "不过我得想想,弹的有点多了,下一首我还是边拿谱子边弹吧."
-            m 6rst "希望你不要嫌弃......"
+            m 6esa "希望你不要嫌弃......"#改表情
             $ persistent.monika__Payphone_v3_end = True
         show monika at Transform(xpos=-800) with move
         window hide
@@ -885,9 +886,9 @@ label Monika_random_songs72:
         $ mas_unlockEVL("Monika_Peaches_piano_LADL_again", "EVE")#测试通过
         return    
     elif random_choice == 27: 
-        m 5fub "好的."
+        m 5fub "我知道了."
         show monika at Transform(xpos=-800) with move
-        m 2hua "我弹一下seven这首歌."
+        m 2fua "希望你喜欢."
         window hide
         $ store.mas_sprites.zoom_out()
         $HKBHideButtons()
@@ -1083,7 +1084,7 @@ init 5 python:
     addEvent(
         Event(
             persistent.event_database,
-            eventlabel="Monika_That_the well_being_of_this_good_LADL_again",
+            eventlabel="Monika_That_the_well_being_of_this_good_LADL_again",
             category=['音乐'],
             prompt="我想听你弹'说好的幸福呢?'",
             pool=True,
@@ -1091,7 +1092,7 @@ init 5 python:
             rules={"no_unlock": None}
         )
     )
-label Monika_That_the well_being_of_this_good_LADL_again(skip_leadin=False):
+label Monika_That_the_well_being_of_this_good_LADL_again(skip_leadin=False):
     m 1eua "嗯好."
     m 2hub "我现在准备一下."
     show monika at Transform(xpos=-800) with move
@@ -2153,3 +2154,5 @@ label Monika_Shelter_again(skip_leadin=False):
     play music original_music fadein 2.0
     m 6hubla "希望你喜欢,[player]."
     return
+
+#30 改普通事件
