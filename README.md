@@ -1,6 +1,7 @@
 关于Literature And Daily Life V3
 =
 ![image](https://github.com/duhai71/Literature-and-Daily-Life-2.1.0/blob/main/Literature%20and%20Daily%20Life/game/Submods/Literature_and_Daily_Life/L%26DL_Assets/images/L%26DL_logo.png)
+![image](https://github.com/duhai71/Literature-and-Daily-Life-2.1.0/blob/main/Literature%20and%20Daily%20Life/game/Submods/Literature_and_Daily_Life/L%26DL_Assets/images/V3_logo.png)
 
 这是一个多人创作的项目,旨在为mas提供全新原创内容,从歌曲、新问题、到轻松有趣的主题讨论（中文）
 

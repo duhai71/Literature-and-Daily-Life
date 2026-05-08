@@ -13,16 +13,16 @@ init python:
 
 
 style monika_lad_ctext:
-    font "mod_assets/font/shangshouyurenti.ttf"
+    font "mod_assets/font/SIMYOU.TTF"
     color "#fff"
-    size 60
+    size 38
     text_align 0.5
     outlines []
 
 style monika_lad_etext:
-    font "gui/font/m1.ttf"
+    font "mod_assets/font/SIMYOU.TTF"
     color "#fff"
-    size 50
+    size 38
     text_align 0.5
     outlines []
 
