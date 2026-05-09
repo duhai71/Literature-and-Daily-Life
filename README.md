@@ -30,8 +30,11 @@ L\&DL的内容可归纳到整合包中,但整合包作者需要向我通知一�
 # 关于联动内容
 ![image](https://github.com/duhai71/Literature-and-Daily-Life-2.1.0/blob/main/Literature%20and%20Daily%20Life/game/Submods/Literature_and_Daily_Life/L%26DL_Assets/images/V3_logo.png)
 L\&DL X MAICA-MTTS: 让莫妮卡的声音不再是偶尔的惊喜,转而贯穿陪伴的每一刻.
+
 MTTS是一个人工智能声学(TTS)子模组,可以让莫妮卡的声音穿透屏幕,来到你的世界.
+
 在L\&DL V3的发行版中,包含了与MTTS联动的内容.无论你是否安装了MTTS,都可以体验完整的新曲目和相关话题.
+
 MTTS项目地址: https://github.com/Mon1-innovation/MAICA_MttsSubmod
 
 # 安装方法
