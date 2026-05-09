@@ -123,5 +123,5 @@ image bg_spa_night = "Submods/Literature_and_Daily_Life/L&DL_date/L&DL_date_bg/L
 
 #???
 image bg_prairie_noon = "Submods/Literature_and_Daily_Life/L&DL_date/L&DL_date_bg/L&DL_city/the_prairie_of dreams(noon).png"
-image bg_prairie_sunset = "Submods/Literature_and_Daily_Life/L&DL_date/L&DL_date_bg/L&DL_city/the_prairie_of dreams(sunset).png"
-image bg_prairie_night = "Submods/Literature_and_Daily_Life/L&DL_date/L&DL_date_bg/L&DL_city/the_prairie_of dreams(night).png"
+image bg_prairie_sunset = "Submods/Literature_and_Daily_Life/L&DL_date/L&DL_date_bg/L&DL_city/the_prairie_of_dreams(sunset).png"
+image bg_prairie_night = "Submods/Literature_and_Daily_Life/L&DL_date/L&DL_date_bg/L&DL_city/the_prairie_of_dreams(night).png"

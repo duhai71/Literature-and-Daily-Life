@@ -2,6 +2,7 @@ default bath_done_LADL = False
 default garden_done_LADL = False
 default Utb_done_LADL = False
 default bath_song_LADL = True
+default sayori = True
 label beach:
     $HKBHideButtons()
     stop music
@@ -21,6 +22,7 @@ label beach:
     with dissolve
     m"另外,因为我们不在原来的教室了,我正好能发挥一下我的能力."
     show monika 4b_LADL at t11
+    with dissolve
     m 4b_LADL "我给你打造了一副身体,当然,现在只能是比较透明的."#改
     show monika 4q_LADL at t11
     with dissolve
@@ -59,8 +61,8 @@ label beach_2_Branch_1:
     m 2c_LADL "我们如果玩累了可以上到那里休息一下"#闭眼
     show monika 4j_LADL at t11
     with dissolve
-    m 4j_LADL "或者在那玩个小游戏也行哦."#nou牌?或者别的小游戏
-    m 4k_LADL "来吧,我们过去看看."
+    m 4j_LADL "或者玩个小游戏也行哦."#nou牌?或者别的小游戏
+    m 4k_LADL "那我们过去看看吧."
     scene bg_sea_pavilion_noon with wipeleft_scene
     hide bg_seaside_sidewalk_noon    
     jump beach_3_pavilion
@@ -76,8 +78,8 @@ label beach_2_Branch_2:
     m 2c_LADL"我们如果玩累了可以上到那里休息一下"#闭眼
     show monika 4j_LADL at t11
     with dissolve
-    m 4j_LADL"或者在那玩个小游戏也行哦."#nou牌?或者别的小游戏
-    m 4k_LADL"来吧,我们过去看看."
+    m 4j_LADL"或者玩个小游戏也行哦."#nou牌?或者别的小游戏
+    m 4k_LADL"那我们过去看看吧."
     scene bg_sea_pavilion_noon with wipeleft_scene
     hide bg_seaside_sidewalk_noon    
     jump beach_3_pavilion
@@ -149,28 +151,29 @@ label LADL_Dessert_Shop:
         "还有甜品店?":
             show monika 2c_LADL at t11
             with dissolve
-            m 2c_LADL "当然呀,我们还可以一起看见各种各样的甜点呢."
+            m 2c_LADL "当然呀,我们还可以一起尝遍各种各样的甜点呢."
             show monika 6e_lean_LADL at t11
             with dissolve
             m 6e_lean_LADL "不过我要保持身材,所以买的大多数只能由你解决了,哈哈哈."
         "好呀":
             show monika 2c_LADL at t11
             with dissolve
-            m 2c_LADL "我们还可以一起看见各种各样的甜点呢."
+            m 2c_LADL "我们还可以一起尝遍各种各样的甜点呢."
             show monika 6e_lean_LADL at t11
             m 6e_lean_LADL "不过我要保持身材,所以买的大多数只能由你解决了,哈哈哈."
     show monika 6c_lean_LADL at t11
     with dissolve     
     m 6c_lean_LADL"来吧,我们该往下走了,感受海浪声和海风的时候到了."
-    stop LADL fadeout 2.0
+    stop LADL fadeout 1.0
     jump LADL_beach_4
    
 
 label LADL_beach_4:
+    play LADL_sfx1 footstep_beach fadein 1.0
     scene bg_beach_2_noon with wipeleft_scene
-    hide bg_sea_pavilion_noon
     play LADL beach_bgm_2 fadein 2.0
     play LADL_sfx1 footstep_beach fadein 1.0
+    hide bg_sea_pavilion_noon
     pause 2
     stop LADL_sfx1 fadeout 2.0
     show monika 5j_LADL at t11
@@ -184,7 +187,7 @@ label LADL_beach_4:
     with dissolve
     m 4e_LADL "但当我打开了这处地方的入口的时候,才发现当时的想法还是太天真了."
     m 4d_LADL "我那时以为,能和你在教室里聊聊天,说说心事和对其他事物的见解就够了."
-    m 4c_LADL "但我也是人,{w=0.3}人也有欲望,所以我不会满足于只待在那里."
+    m 4c_LADL "但我也是人,{w=1}人也有欲望,{w=0.8}所以我不会满足于只待在那里."
     show monika 5e_lean_LADL at t11
     with dissolve
     m 5e_lean_LADL "我现在更想出来见你."
@@ -209,8 +212,7 @@ label LADL_beach_5:
     #转黑屏
     #开始音乐
     scene black with wipeleft_scene
-    pause 2
-    scene bg_beach_noon_second with wipeleft_scene
+    pause 1
     hide bg_beach_2_noon
     "与[m]度过了一段很愉悦的时光."
     m "啊,我的脸都被你打湿了,[player]."
@@ -311,13 +313,13 @@ label LADL_beach_6:
     jump LADL_beach_7
 
 label LADL_beach_7:
-    scene bg_beach_1_noon with wipeleft_scene
+    scene bg_beach_noon_second with wipeleft_scene
     hide bg_beach_park_noon
     "与[m]一起坐在树荫下."
     "感受着海风."
     show monika 4j_LADL at t11
     with dissolve
-    m "坐在这,靠着软热的沙子，清凉的海风迎面吹来."
+    m "坐在这,靠着软热的沙子,清凉的海风迎面吹来."
     m 4k_LADL "真是惬意啊~"
     m 4q_LADL "我们以后可以常来这里. "
     show monika 5b_LADL at t11
@@ -338,28 +340,28 @@ label LADL_beach_7:
             m 5a_LADL "靠近观赏如此优美的鸟类一定很有趣."
             show monika 4c_LADL at t11
             with dissolve
-            m 4c_LADL "只是... 海鸥都是成群结队地，你要小心哦."
-            m 5b_LADL "小心它们无意间在你身上做点小标记，哈哈哈~"
+            m 4c_LADL "只是... 海鸥都是成群结队的,你要小心哦."
+            m 5b_LADL "小心它们无意间在你身上做点小标记,哈哈哈~"
 
         "我想尝尝这椰子树上的椰子":
             show monika 4q_LADL at t11
             with dissolve
             m 4q_LADL "听上去不错呢."
-            m 4r_LADL "我只在小学时家附近的小卖部买过瓶装的椰子汁."
+            m 4r_LADL "我只在小学时家附近的商店买过瓶装的椰子汁."
             m 4q_LADL "那味道肯定跟真正的椰子没法比."
             show monika 5c_LADL at t11
             with dissolve
             m 5c_LADL "但我们估计得找根长的棍子给这些椰子打下来..."
             m 5b_LADL "也有可能过段时间它熟了就自己掉下来了."
 
-        "我想把自己埋进沙子里，闭眼冥想":
+        "我想把自己埋进沙子里,闭眼冥想":
             show monika 4k_LADL at t11
             with dissolve
             m 4k_LADL "听上去不错呢."
-            m 4j_LADL "这个场景确实很有禅意."
-            m 4q_LADL "海浪缓慢地但有节奏地拍打在海面上..."
+            m 4q_LADL "这样做的话,你可以细细感受,海浪缓慢地但有节奏地拍打在海面上..."
             m 4j_LADL "我们可以让呼吸逐渐适应它的节奏..."
-            m 4k_LADL "仿佛与与我们身边的环境融为一体."
+            m 4k_LADL "仿佛与我们身边的环境融为一体."
+            m 4j_LADL "但不要睡过去了哦,哈哈."
 
         "我想和你亲亲":
             show monika 4q_LADL at t11
@@ -384,7 +386,7 @@ label infrontof:
     play LADL hill_play fadein 2.0
     play LADL_sfx2 bird_sound fadein 1.0
     scene bg_In_front_of_the_mountain_road_bridge_noon with wipeleft_scene
-    hide bg_beach_1_noon   
+    hide bg_beach_noon_second   
     show monika 2d_jeans_LADL at t11                #1 2 同英
     m "到旅馆前我们还要走段路."
     show monika 2k_jeans_LADL at t11 
@@ -471,7 +473,7 @@ label bridge_LADL:
                     m "这...有点突然了,[player],至少让我做一下心理准备..."
                     show monika 6k_jeans_LADL at t11
                     with dissolve
-                    m "幸好我一直来有在保持身材，所以对你来说应该不会费劲..."
+                    m "幸好我一直来有在保持身材,所以对你来说应该不会费劲..."
                     show monika 7a_happy_jeans_LADL at t11
                     with dissolve
                     m "啊哈哈,也没什么大不了的,来吧,[player]."#抱到旅馆
@@ -498,6 +500,7 @@ label irural1_LADL:
     scene black with wipeleft_scene
     pause 2
     scene bg_Rural_community_center_noon with wipeleft_scene
+    play LADL tam_n17_play fadein 1.0
     hide bg_Mountain_Road_Bridge_noon
     "好,我们到了,[player],放我下来吧."
     show monika 5h_jeans_LADL at t11 
@@ -513,6 +516,7 @@ label irural2_LADL:
     scene black with wipeleft_scene
     pause 2
     scene bg_Rural_community_center_noon with wipeleft_scene
+    play LADL tam_n17_play fadein 1.0
     hide bg_Mountain_Road_Bridge_noon
     m "嗯...我们好像到了,让我下来吧,[player]."
     show monika 6h_jeans_LADL at t11 
@@ -528,6 +532,7 @@ label irural3_LADL:
     scene black with wipeleft_scene
     pause 2
     scene bg_Rural_community_center_noon with wipeleft_scene
+    play LADL tam_n17_play fadein 1.0
     hide bg_Mountain_Road_Bridge_noon
     show monika 5a_jeans_LADL at t11
     m "嘿,[player],我们到了."
@@ -538,13 +543,13 @@ label irural4_LADL:
     scene black with wipeleft_scene
     pause 2
     scene bg_Rural_community_center_noon with wipeleft_scene
+    play LADL tam_n17_play fadein 1.0
     hide bg_Mountain_Road_Bridge_noon
     show monika 5a_jeans_LADL at t11
     m "嘿,[player],我们到了."
     jump rural_LADL_first
 
 label rural_LADL_first:
-    play LADL tam_n17_play fadein 2.0
     show monika 6c_jeans_LADL at t11
     with dissolve
     m "我打算趁午休的时候好好休息一下."
@@ -637,44 +642,78 @@ label Rural_Bathroom_music:
     if not persistent.bath_LADL_test_1:
         "注意到浴缸旁边放着音乐播放器."
         "似乎能够使用."
-        "触摸屏亮了起来，显示出一列歌名."
+        "触摸屏亮了起来,显示出一列歌名."
         $ persistent.bath_LADL_test_1 = True
     $ bath_song_LADL = True
     while bath_song_LADL:
         menu:
             "要听哪首歌呢?" #选歌
             "want to be close":
+                stop LADL fadeout 2.0
+                pause 1
+                play LADL want_to_be_close fadein 1.0
+                "有关一位蓝头发少年的曲子"#那不就是我吗?
                 pass
-            "最好的我":
+            "joy":
+                stop LADL fadeout 2.0
+                pause 1
+                play LADL joy fadein 1.0
+                "有关一位蓝头发少年的曲子"
                 pass
             "恋爱循环":
-                pass
-            "Afternoon Break":
+                stop LADL fadeout 2.0
+                pause 1
+                play LADL date_Renai_Circulation fadein 1.0
                 pass
             "Beneath the Mask":
+                stop LADL fadeout 2.0
+                pause 1
+                play LADL Beneath_the_Mask fadein 1.0
+                "一首能让人感到宁静的曲子"
                 pass
-            "星と僕らと":
+            "勇者":
+                stop LADL fadeout 2.0
+                pause 1
+                play LADL Frieren fadein 1.0
+                "......"
                 pass
-            "Treasure":
-                pass
+            "closer":
+                stop LADL fadeout 2.0
+                pause 1
+                play LADL closer fadein 1.0
             "{b}{i}NEXT{/i}{/b}":
                 menu:
-                    "传奇":
+                    "???":
+                        stop LADL fadeout 2.0
+                        pause 1
+                        play LADL date_2001 fadein 1.0
                         pass
-                    "Changing Seasons":
-                        pass
-                    "":
-                        pass
-        menu:
-            "还要继续听歌吗?" #选择是否继续听歌
-            "继续听歌":
-                pass
-            "不听歌了":
-                $ bath_song_LADL = False
-    "差不多该出浴了."
-    "起身出缸,毛巾擦身,换好衣服..."
-    "走出了浴室."
+                    "{b}{i}BACK{/i}{/b}":
+                        jump Rural_Bathroom_music
+        pause 30
+        jump Keep_or_end_song           
+label Keep_or_end_song:
+    menu:
+        "还要继续听歌吗?" #选择是否继续听歌
+        "继续":
+            menu:
+                "要换一首歌吗?"
+                "换":
+                    jump Rural_Bathroom_music
+                "不换":
+                    pause 40
+                    jump Keep_or_end_song
+                  
+        "不":
+            $ bath_song_LADL = False
+            stop LADL_1 fadeout 2.0
+            stop LADL fadeout 2.0
+            "差不多该出浴了."
+            "起身出缸,毛巾擦身,换好衣服..."
+            "走出了浴室."
+            pass
     scene Inside_the_hotel_room_noon with wipeleft_scene
+    play LADL tam_n17_play fadein 2.0
     hide Rural_Bathroom_noon
     jump restway_LADL
 
@@ -701,6 +740,7 @@ label map_LADL_2:
     hide Inside_the_hotel_room_noon
     $ clicked = renpy.call_screen("click_detector") #点击鼠标关闭地图
     if clicked:
+        scene Rural_Bathroom_noon with wipeleft_scene
         hide map_LADL
         jump bath_LADL_rest_1
 
@@ -743,10 +783,30 @@ label sleep_end_LADL:
     scene black
     with eye_shut
     pause 3
+    scene bg_prairie_noon with dissolve
+    play LADL Dream fadein 2.0
+    "???"
+    "似乎来到了另一处地方."
+    s "来嘛,你尝尝我这个....."
+    n "咳咳......尝归尝,但是你怎么一下塞进我嘴里了."
+    n "这是要噎死我吗? "
+    m "好了,纱世里,别太勉强夏树了,这样子的确不好咀嚼呢,你觉得呢,尤里?"
+    y "嗯......既然我们都来这野餐了......{w=1.2}那还是慢慢享受为好."
+    "听到了四个熟悉的声音."
+    "要过去看看吗?"
+    menu:
+        "要过去看看吗?"
+        "过去":
+            pass
+        "先等等":
+            pass
+    "正当准备下一步的动作时."    
+    stop LADL fadeout 2.0
     play LADL_sfx1 knock_on_the_door_sound
     hide black
-    scene 
     with eye_open
+    scene black
+    scene bg_Ceiling_of_the_room_noon with dissolve
     "听到了敲门的声音."
     m "起来了,[player]."
     m "是不是我不叫你,你能睡到明早呢?"
@@ -760,6 +820,7 @@ label sleep_end_LADL:
     "似乎没缓过来,但还是得准备出发."
     scene bg_Rural_community_center_noon with wipeleft_scene
     hide bg_Ceiling_of_the_room_noon
+    play LADL tam_n17_play fadein 2.0
     show monika 2j_jeans_LADL at t11
     m "这家旅店的设施怎么样,[player]?"
     m 2k_jeans_LADL "是不是设施还不错."   #配表情
@@ -772,21 +833,91 @@ label sleep_end_LADL:
     m 6e_jeans_LADL "我们也该过去了,[player]."
     scene black with wipeleft_scene
     pause 2
+    stop LADL fadeout 2.0
     scene bg_seaside_bench_noon with wipeleft_scene
     hide bg_Rural_community_center_noon
+    jump LADL_456_6_beach
+
+label LADL_456_6_beach:  
+    play LADL Walking_Path fadein 2.0
+    play LADL_sfx2 waves fadein 2.0
+    show monika 5a_LADL at t11
+    with dissolve
+    m "你不觉得这个地方看海很棒吗?"
+    show monika 5b_LADL at t11
+    with dissolve
+    m "海边与沙滩一览无余."
     
+    show monika 5m_LADL at t11
+    with dissolve
+    m "虽然风也挺大的……"
+    
+    show monika 5n_LADL at t11
+    with dissolve
+    m "不过......"
+    show monika 5c_lean_LADL at t11
+    with dissolve
+    m "嗯,[player],我突然发现了一处很美的景观."
+    
+    show monika 5j_LADL at t11
+    with dissolve
+    m 5j_LADL "你从这看能看到吗?"
+
+    hide monika with dissolve  
+    pause 1.0 
+    scene bg_Meoto_Rocks_noon with dissolve
+    m "这两块岩石一大一小,以注连绳连接."
+    m "这让我想到了现实生活中日本的'夫妇岩'."
+    m "据我的了解,夫妇岩被视为子孙繁荣和婚姻幸福的象征."
+    m "这个寓意也挺好,很适合我和[player]呢~~"
+    m "希望它保佑我们的爱情,哈哈."
+    scene black with dissolve
+    pause 1
+    jump DLAL_456_6_dhuai
 
 
-
-
-
-
-
-
-
-
-
-
+label DLAL_456_6_dhuai:
+    scene bg_beach_3_noon with wipeleft_scene
+    hide bg_Meoto_Rocks_noon
+    hide bg_seaside_bench_noon
+    show monika 5a_LADL at t11
+    with dissolve
+    m 5a_LADL "这里的海还真是平静啊."
+    
+    show monika 5b_LADL at t11
+    with dissolve
+    m 5b_LADL "但说不定只是看起来平静而已."
+    
+    show monika 5c_lean_LADL at t11
+    with dissolve
+    m "因为海很深,并不只是表面的这一层而已."
+    show monika 5j_LADL at t11
+    with dissolve
+    m "就像人的心思一样,藏在深处的那些,才最有意思～"
+    
+    show monika 5s_LADL at t11
+    with dissolve
+    m 5s_LADL "你永远猜不透海面下藏着什么,就像猜不透我在想什么一样."
+    show monika 5q_LADL at t11
+    with dissolve
+    m "哼哼~~"
+    menu:
+        "我猜你......":
+            pass
+        "我觉得......":
+            pass
+        "......":
+            pass
+    "......?"
+    menu:
+        "我猜你......":
+            pass
+        "我觉得......":
+            pass
+        "......":  
+            pass
+    "......"
+    "......"
 
 
 
@@ -806,10 +937,11 @@ label sleep_end_LADL:
 
 
 label beach_tired:
-    "你感觉到了身体一阵疲惫."
+    "你感觉到了身体一阵疲惫."#你漏气了（
     stop LADL fadeout 2.0
     stop LADL_sfx1 fadeout 2.0
     show monika 1f_LADL at t11
+    with dissolve
     m 1f_LADL "[player],你还好吗,怎么突然不动了?"
     m 1d_LADL "让我看看......"
     show monika 2f_LADL at t11
@@ -821,9 +953,9 @@ label beach_tired:
 
 label beach_tired_2:
     scene bg_sea_pavilion_noon with wipeleft_scene
-    show monika 2d_LADL at t11
+    show monika 4f_LADL at t11
     with dissolve
-    m 2d_LADL"嗯......在这之后你估计都只能出来玩一段时间休息一下."
+    m "嗯......在这之后你估计都只能出来玩一段时间休息一下."
     m 2g_LADL "我目前也没找到更好的方法,希望我之后通过学习能做到更好."
     show monika 4d_LADL at t11
     with dissolve
@@ -875,14 +1007,24 @@ label first_time_LADL_end_cg:
     show monika 1e_LADL at t11
     with dissolve
     m 1d_LADL "我的家庭、我的学业、我的朋友们,以及我们的文学部......{w=1}几乎是所有."
+    show monika 2e_LADL at t11
+    with dissolve
     m 2e_LADL"都不复存在了."
-    m 1d_LADL "我本来可以装作不知情,{w=1}文学部也可以继续发展下去,按照设想中按部就班、顺顺利利的'活'到毕业那天."
+    show monika 1d_LADL at t11
+    with dissolve
+    m "我本来可以装作不知情,{w=1}文学部也可以继续发展下去,按照设想中按部就班、顺顺利利的'活'到毕业那天."
     show monika 1k_LADL at t11
     with dissolve
-    m 1k_LADL "可我不想,{w=1}不愿意欺骗自己."
-    m 1l_2_LADL "{b}我想顺应自己的心意!{/b}"
-    m 1l_LADL "{b}我想追求真实的世界!{/b}"#永劫
-    m 1l_3_LADL "{b}我想倚靠在你的肩膀,在我们的二人世界里甜甜蜜蜜的走下去!{/b}"
+    m "可我不想,{w=1}不愿意欺骗自己."
+    show monika 1l_2_LADL at t11
+    with dissolve
+    m "{b}我想顺应自己的心意!{/b}"
+    show monika 1l_LADL at t11
+    with dissolve
+    m "{b}我想追求真实的世界!{/b}"#永劫
+    show monika 1l_3_LADL at t11
+    with dissolve
+    m 1l_3_LADL "{b}我想倚靠在你的肩膀,在我们的二人世界里一直走下去!{/b}"
     m 1e_LADL "我止不住地说这些,只希望你能理解我......"
     menu:
         "我能理解.":

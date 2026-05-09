@@ -2471,7 +2471,8 @@ default available_events = [
     "duhai_question_7",
     "duhai_question_8",
     "duhai_question_9",
-    "duhai_quesetion_10"
+    "duhai_quesetion_10",
+    "duhai_quesetion_11"
 ]
 #57-66
 default used_events = []
@@ -2766,17 +2767,17 @@ label duhai_question_10:
     menu:
         "在植物大战僵尸一中,第三大关是什么场景呢?"
         "前院":
-            m "不对呢,[player]."
-            m "前院是在第一和第二大关了......"
-            m "正确答案应该是泳池哦."
+            m 5hua "不对呢,[player]."
+            m 5rud "前院是在第一和第二大关了......"
+            m 3tua "正确答案应该是泳池哦."
         "泳池":
-            m "答对了哦,[player]."
-            m "这也是我在所有大关中最喜欢的一个."
-            m "嗯,你真聪明."
+            m 5hua "答对了哦,[player]."
+            m 5eub"这也是我在所有大关中最喜欢的一个."
+            m 2hua "嗯,你真聪明."
         "屋顶":
-            m "不对呢,[player]."
-            m "正确答案应该是泳池哦."
-            m "屋顶的场景是在第五大关."
+            m 5hua "不对呢,[player]."
+            m 5rub "正确答案应该是泳池."
+            m 3tua "屋顶的场景是在第五大关呢."
         
     return    
 

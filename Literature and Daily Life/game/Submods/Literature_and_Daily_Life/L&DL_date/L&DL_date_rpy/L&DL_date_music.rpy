@@ -11,7 +11,19 @@ init -10 python:
     audio.hill_play = "Submods/Literature_and_Daily_Life/L&DL_date/L&DL_date_music/walk_hill.mp3"
     audio.tamsu03_play = "Submods/Literature_and_Daily_Life/L&DL_date/L&DL_date_music/tamsu03.mp3"#旅馆后院用
     audio.tam_n17_play = "Submods/Literature_and_Daily_Life/L&DL_date/L&DL_date_music/tam_n17.mp3"
-    renpy.music.register_channel("LADL", "music", loop=True, tight=True)
+    audio.Dream = "Submods/Literature_and_Daily_Life/L&DL_date/L&DL_date_music/dream.mp3"#未响度统一
+    audio.dream_after = "Submods/Literature_and_Daily_Life/L&DL_date/L&DL_date_music/dream_after.mp3"
+    audio.Walking_Path = "Submods/Literature_and_Daily_Life/L&DL_date/L&DL_date_music/Walking_Path.mp3"
+    audio.Frieren = "Submods/Literature_and_Daily_Life/L&DL_date/L&DL_date_music/勇者.mp3"#浴室用
+    audio.want_to_be_close = "Submods/Literature_and_Daily_Life/L&DL_date/L&DL_date_music/want_to_be_close.mp3"
+    audio.joy = "Submods/Literature_and_Daily_Life/L&DL_date/L&DL_date_music/joy.mp3"
+    audio.date_Renai_Circulation = "Submods/Literature_and_Daily_Life/L&DL_date/L&DL_date_music/恋爱循环.mp3"
+    audio.date_2001 = "Submods/Literature_and_Daily_Life/L&DL_date/L&DL_date_music/2001.mp3"
+    audio.Beneath_the_Mask = "Submods/Literature_and_Daily_Life/L&DL_date/L&DL_date_music/Beneath_the_Mask.mp3"
+    audio.closer = "Submods/Literature_and_Daily_Life/L&DL_date/L&DL_date_music/closer.mp3"
+    #后续加p3r 小曲进入v4约会内容
+    renpy.music.register_channel("LADL", "music", loop=True, tight=True)#循环
+    renpy.music.register_channel("LADL_1", "sfx", loop=False, tight=True)
     # 音效
     audio.waves = "Submods/Literature_and_Daily_Life/L&DL_date/L&DL_date_sound/waves.mp3"      # 海浪声
     audio.wihh = "Submods/Literature_and_Daily_Life/L&DL_date/L&DL_date_sound/walking_in_high_heels.mp3"        # 高跟鞋走路声

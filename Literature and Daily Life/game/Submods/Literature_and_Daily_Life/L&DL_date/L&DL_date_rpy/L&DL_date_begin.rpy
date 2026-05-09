@@ -20,6 +20,7 @@ init 6 python:
             category=['......'],
             prompt="[m]发现了一处地方",
             conditional="mas_canShowRisque(aff_thresh=600)",
+            pool=False,
             random=True
         )
     )
@@ -50,10 +51,18 @@ init 5 python:
     )
 
 label Monika_LADL_date:
-    m 1hub "好的."
-    m 5fua "等我准备一下衣服~"
-    window hide
-    show black zorder 100 with Dissolve(5.0, alpha=True)
-    $HKBHideButtons()
-    call beach
+    if not persistent.LADL_date_first:
+        $ persistent.LADL_date_first = True
+        m 1hub "好的."
+        $ mas_unlockEVL("Monika_random_songs72", "EVE")
+        m 5fua "等我准备一下衣服~"
+        window hide
+        show black zorder 100 with Dissolve(5.0, alpha=True)
+        $HKBHideButtons()
+        call beach
+    else:
+        m 2rtsdld "嗯......我很乐意,[player]."
+        m 2essdla "但我这段时间实在需要休息一下了."
+        m 5fub "等我休息好之后,我第一时间叫你一起去玩."
+        return  
     

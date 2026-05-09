@@ -120,7 +120,7 @@ image monika 1l_3_LADL = im.Composite((960, 960),
 (0, 0), "Submods/Literature_and_Daily_Life/L&DL_date/L&DL_date_monika/L&DL_Beach_Monika/beachmonir1.png", 
 (0, 0), "Submods/Literature_and_Daily_Life/L&DL_date/L&DL_date_monika/L&DL_Beach_Monika/monika_forward_eyebrows_b1b.png", 
 (0, 0), "Submods/Literature_and_Daily_Life/L&DL_date/L&DL_date_monika/L&DL_Beach_Monika/monika_forward_eyes_e4e.png", 
-(0, 0), "Submods/Literature_and_Daily_Life/L&DL_date/L&DL_date_monika/L&DL_Beach_Monika/monika_forward_mouth_mg.png")
+(0, 0), "Submods/Literature_and_Daily_Life/L&DL_date/L&DL_date_monika/L&DL_Beach_Monika/monika_forward_mouth_md.png")
 
 
 #2
