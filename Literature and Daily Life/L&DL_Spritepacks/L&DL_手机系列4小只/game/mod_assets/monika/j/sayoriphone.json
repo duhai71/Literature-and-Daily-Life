@@ -1,0 +1,27 @@
+{
+    "__author": "君翌",
+    "version": 3,
+    "type": 0,
+    "name": "sayoriphone",
+    "img_sit": "sayoriphone",
+    "pose_map": {
+        "default": "0",
+        "l_default": "0"
+    },
+    "rec_layer": 2,
+    "priority": 9,
+    "acs_type": "table_acs",
+    "stay_on_start": true,
+    "keep_on_desk": true,
+    "select_info": {
+        "display_name": "可爱的chibi",
+        "thumb": "sayoriphone",
+        "group": "table_acs",
+        "select_dlg": [
+            "好可爱啊！"
+        ]
+    },
+    "dlg_desc": "桌宠",
+    "dlg_plural": false,
+    "giftname": "手机纱世理"
+}

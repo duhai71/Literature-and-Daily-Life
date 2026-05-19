@@ -71,7 +71,8 @@ image Rural_Bathroom_sunset = "Submods/Literature_and_Daily_Life/L&DL_date/L&DL_
 
 #map
 image map_LADL = "Submods/Literature_and_Daily_Life/L&DL_date/L&DL_date_bg/L&DL_map/map.jpg"
-
+#？？？
+image surprise_LADL = "Submods/Literature_and_Daily_Life/L&DL_date/L&DL_date_best_content/surprise.png"
 
 #city
 image bg_city_sky_noon = "Submods/Literature_and_Daily_Life/L&DL_date/L&DL_date_bg/L&DL_city/sky(noon).png"#过场用

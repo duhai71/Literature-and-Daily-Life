@@ -816,7 +816,7 @@ label Monika_random_songs72:
             m 3fubfb "{b}I'll be your lighthouse~~{/b}"
             m 1eublb "{b}I'll make it okay~~{/b}"
             $ persistent.monika__monsters_v3_end = True
-            m 1hua "......希望我在你身边会让你一直好好的."
+            m 1hua "......希望我在你身边能让你一直好好的."
         $ mas_unlockEVL("Monika_monsters_piano_LADL_again", "EVE")#测试通过
         return    
     elif random_choice == 25:
@@ -852,8 +852,9 @@ label Monika_random_songs72:
         $ mas_unlockEVL("Monika_Payphone_piano_LADL_again", "EVE")#测试通过
         return    
     elif random_choice == 26: 
+        m 5hua "我知道了."
         show monika at Transform(xpos=-800) with move
-        m 2hua "我去弹一下Peaches_piano这首歌."
+        m 2fub "这首是justin bieber的peaches."
         window hide
         $ store.mas_sprites.zoom_out()
         $HKBHideButtons()
@@ -998,46 +999,7 @@ label Monika_warm_LADL_again(skip_leadin=False):
     window show
     play music original_music fadein 1.0
     return
-init 5 python:
-    addEvent(
-        Event(
-            persistent.event_database,
-            eventlabel="Monika_Tornado_LADL_again",
-            category=['音乐'],
-            prompt="龙卷风",
-            pool=True,
-            unlocked=False,
-            rules={"no_unlock": None}
-        )
-    )
-label Monika_Tornado_LADL_again(skip_leadin=False):
-    show monika at Transform(xpos=-800) with move
-    m 2hua "我去弹一下龙卷风这首歌."
-    window hide
-    $ store.mas_sprites.zoom_out()
-    $HKBHideButtons()
-    $ original_music = renpy.music.get_playing(channel='music')
-    show mas_piano at Transform(xpos=-1800, ypos=-195) zorder 13
-    show mas_piano at Transform(xpos=-5, ypos=-195) with MoveTransition(4.0)
-    pause 4.0
-    show monika at Transform(xpos=640) with move
-    play music "Submods/Literature_and_Daily_Life/L&DL_Assets/music/龙卷风_piano.mp3" loop fadein 2.0
-    show monika 2hua zorder MAS_MONIKA_Z at t11 with dissolve_monika
-    pause 2.0
-    show monika 2fua zorder MAS_MONIKA_Z at t11 with dissolve_monika
-    pause 247
-    stop music fadeout 1.0
-    show monika at Transform(xpos=-800) with move
-    pause 1.0
-    show mas_piano at Transform(xpos=-1800, ypos=-195) with MoveTransition(4.0)
-    pause 5.0
-    show monika 2hua zorder MAS_MONIKA_Z at t11 with dissolve_monika  
-    show monika at Transform(xpos=640) with move
-    $HKBShowButtons()
-    window show
-    play music original_music fadein 1.0
-    $ mas_unlockEVL("Monika_Tornado_LADL_again", "EVE")#测试通过
-    return
+
 #3 V3
 init 5 python:
     addEvent(
@@ -2156,3 +2118,19 @@ label Monika_Shelter_again(skip_leadin=False):
     return
 
 #30 改普通事件
+init 6 python:
+    addEvent(
+        Event(
+            persistent.event_database,
+            eventlabel="ladl_piano_talk",
+            category=['音乐'],
+            prompt="练琴时的心流状态",
+            conditional="mas_canShowRisque(aff_thresh=400)",
+            random=True,
+            pool=False
+        )
+    )
+    
+label ladl_piano_talk:
+    m 1eua "嘿,[player]."
+    m 3rub "我想和你谈谈我练琴时"

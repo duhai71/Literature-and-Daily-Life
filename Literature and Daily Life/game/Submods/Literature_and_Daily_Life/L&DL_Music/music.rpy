@@ -30,7 +30,7 @@ transform lad_chinese:
     xpos 0.5 xanchor 0.5 ypos 0.6 yanchor 0.6
 
 transform lad_english:
-    xpos 0.5 xanchor 0.5 ypos 0.7 yanchor 0.7
+    xpos 0.5 xanchor 0.5 ypos 0.75 yanchor 0.75
 
 transform lad_back:
     xpos 0.5 xanchor 0.5 ypos 0.66 yanchor 0.66

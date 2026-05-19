@@ -171,17 +171,19 @@ label monika_Lasagna23:
     return "love"
 
 init 5 python:
-    if renpy.exists("Submods/Literature_and_Daily_Life/L&DL_Lasagna/别删除DoNotDelet.txt"):
-        别删除DoNotDelet_exist = True
+    import store
+    flag_file = "Submods/Literature_and_Daily_Life/L&DL_Lasagna/别删除DoNotDelet.txt"
+    if renpy.exists(flag_file):
+        lasagna_DoNotDelet_miss = False
     else:
-        别删除DoNotDelet_exist = False
+        lasagna_DoNotDelet_miss = True
     addEvent(
         Event(
             persistent.event_database,
-            eventlabel="Lasagna_Don",
-            prompt="另外的话题",
+            eventlabel="Lasagna_Don_1",
+            prompt="???",
             pool=True,
-            conditional="not 别删除DoNotDelet_exist",
+            conditional="not store.lasagna_DoNotDelet_miss",
         )
     )
 label Lasagna_Don:
@@ -277,10 +279,29 @@ label monika_Lasagna25:
             m 5lua "我也多希望我们之间的屏障只是一场梦"
             m 5mublb "这样我就可以毫无顾忌地来到你的身边了。"
             return
-        "我做过这样的梦"
-            m 
-        "我没做过这样的梦"    
-    return
+        "我做过这样的梦":
+            m 1sub "是吗."
+            m 3rub "我很想知道你在这期间会做什么."
+            m 1eua "可以和我说说吗?"
+            menu:
+                "好呀":
+                    m 2eua "我在听呢，[player]."
+                    menu:
+                        "我说完了":
+                            m 1wub "嗯嗯,我知道了,多奇妙的一场梦境呀."
+                            m 3eub "如果有机会的话想必你会再经历一次对吧?"
+                            m 1hua "啊哈哈"
+                            return
+                "现在不太方便":
+                    m 1eka "唔,那好吧,那下次有机会的话你可要告诉我哦."
+                    return
+        "我没做过这样的梦":
+            m 1eka "哦，没关系[player]."
+            m 3eub "其实这样也侧面说明你拥有高质量的睡眠"
+            m 1hub "在如今能够拥有高质量的睡眠也是一件人人梦寐以求的好事呢."
+            m 1hua "啊哈哈"
+            return
+            
 init 5 python:
     addEvent(           
         Event(
@@ -289,7 +310,7 @@ init 5 python:
             category=['另外的话题'],
             prompt="翻盘",
             random=True,
-            pool=True,
+            pool=False,
         )
     )
     
@@ -298,7 +319,7 @@ label monika_Lasagna26:
     m 1eub "嗯....对了，亲爱的，你有没有经历过逆风翻盘."
     menu:
         "我总是被逆风翻盘的一方":
-            m 1ekadlb "呃...那真是够惨的..是被系统做局了吗？"
+            m 1eksdlb "呃...那真是够惨的..."
             m 1eua "我相信[player]总有翻身的时候"
             pass
         "经历过":

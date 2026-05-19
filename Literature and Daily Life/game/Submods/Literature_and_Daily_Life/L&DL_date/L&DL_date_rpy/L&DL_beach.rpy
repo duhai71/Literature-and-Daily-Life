@@ -3,6 +3,7 @@ default garden_done_LADL = False
 default Utb_done_LADL = False
 default bath_song_LADL = True
 default sayori = True
+
 label beach:
     $HKBHideButtons()
     stop music
@@ -381,7 +382,7 @@ label infrontof:
     stop LADL fadeout 2.0
     stop LADL_sfx2 fadeout 1.0
     scene black with wipeleft_scene
-    "稍等一下,[player],我换个衣服."
+    "稍等一下,[player],我换一下衣服."
     pause 2
     play LADL hill_play fadein 2.0
     play LADL_sfx2 bird_sound fadein 1.0
@@ -411,7 +412,7 @@ label infrontof:
             m "正是在登山中,我们不惧困难和劳累,才能体会到了山顶别具一格的风景."
             show monika 2k_jeans_LADL at t11 
             with dissolve
-            "等我出来的那一天,[player],记得带着我一起去登山哦......"
+            m "等我出来的那一天,[player],记得带着我一起去登山哦......"
         "还没有":
             show monika 6a_jeans_LADL at t11#改
             with dissolve
@@ -599,17 +600,17 @@ label restway_LADL:
     "接下来要干什么?"
     menu:
         "接下来要干什么?"
-        "去浴室泡澡.": #if not bath_done_LADL:
-            #$ bath_done_LADL = True
+        "去浴室泡澡.": if not bath_done_LADL:
+            $ bath_done_LADL = True
             jump bath_LADL_rest
-        "去旅馆后院看看": #if not garden_done_LADL:
-            #$ garden_done_LADL = True
+        "去旅馆后院看看": if not garden_done_LADL:
+            $ garden_done_LADL = True
             stop LADL fadeout 2.0
             jump garden_LADL_rest
         "去睡觉":
             jump sleep_end_LADL
-        "检查床底": #if not Utb_done_LADL:
-            #$ Utb_done_LADL = True
+        "检查床底": if not Utb_done_LADL:
+            $ Utb_done_LADL = True
             jump utb_LADL
         "查看地图":
             jump map_LADL_1
@@ -769,6 +770,14 @@ label utb_LADL:
     hide Inside_the_hotel_room_noon
     "来到卧室后,俯下身看向床底."
     "发现了一张纸条,上面似乎记录着什么."
+    scene black
+    with eye_shut
+    pause 2
+    scene surprise_LADL with dissolve
+    $ clicked = renpy.call_screen("click_detector") #点击鼠标关闭地图
+    if clicked:
+        scene Inside_the_hotel_room_noon with wipeleft_scene
+        hide surprise_LADL
     jump restway_LADL
 
 
@@ -790,7 +799,7 @@ label sleep_end_LADL:
     s "来嘛,你尝尝我这个....."
     n "咳咳......尝归尝,但是你怎么一下塞进我嘴里了."
     n "这是要噎死我吗? "
-    m "好了,纱世里,别太勉强夏树了,这样子的确不好咀嚼呢,你觉得呢,尤里?"
+    m "\"好了,纱世里,别太勉强夏树了,这样子的确不好咀嚼呢,你觉得呢,尤里?\""
     y "嗯......既然我们都来这野餐了......{w=1.2}那还是慢慢享受为好."
     "听到了四个熟悉的声音."
     "要过去看看吗?"
@@ -1063,7 +1072,7 @@ label first_time_LADL_end_cg:
         "我好感动.....":
             pass
     jump date_end
-
+#end?
 label date_end:
     show black zorder 100 with Dissolve(5.0, alpha=True)
     stop LADL fadeout 2.0

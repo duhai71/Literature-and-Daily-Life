@@ -1,0 +1,27 @@
+{
+    "__author": "PVZ",
+    "version": 3,
+    "type": 0,
+    "name": "poteto",
+    "img_sit": "poteto",
+    "pose_map": {
+        "default": "0",
+        "l_default": "0"
+    },
+    "rec_layer": 2,
+    "priority": 9,
+    "acs_type": "ltable_acs",
+    "stay_on_start": true,
+    "keep_on_desk": true,
+    "select_info": {
+        "display_name": "爆！",
+        "thumb": "poteto",
+        "group": "ltable_acs",
+        "select_dlg": [
+            "嘭！"
+        ]
+    },
+    "dlg_desc": "植物",
+    "dlg_plural": false,
+    "giftname": "破teto"
+}

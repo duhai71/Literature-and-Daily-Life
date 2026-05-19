@@ -148,7 +148,7 @@ label Monika_Golden_Hour_again:
     return
 
 
-#V3 5
+#V3 6
 #pvz1_greet
 init 5 python:
     addEvent(
@@ -180,7 +180,7 @@ label greeting_duhai_PVZ_you1:
     return
 
 
-#pvz_2_greet
+#pvz_2_greet v3 8
 init 5 python:
     addEvent(
         Event(
@@ -211,7 +211,7 @@ label greeting_duhai_PVZ_you2:#泳池
         m 5fub "我一直在等你."
         m 1hua "嗯,我们今天做什么呢?"
     return
-#pvz_3_greet
+#pvz_3_greet v3 10
 init 5 python:
     addEvent(
         Event(
@@ -240,7 +240,7 @@ label greeting_duhai_PVZ_you3:
         m 5sub "你好,[player]."
         m 1hua "嗯,见到你真好."
     return
-
+#v3 12
 init 5 python:
     addEvent(
         Event(
@@ -266,7 +266,7 @@ label greeting_duhai_PVZ_you4:
         m 1hub "你好,[player]."
         m 5fubfa "又是爱你的一天."
     return
-
+#v3 13
 init 5 python:
     addEvent(
         Event(
