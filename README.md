@@ -94,7 +94,10 @@ MTTS项目地址: https://github.com/Mon1-innovation/MAICA_MttsSubmod
 
 # 支持我们
 
-理论上说我们是为爱发电，所以说此Submod禁止以售卖的形式出现在任何地方，如有看到相关售卖内容请帮助我们抵制
+理论上说我们是为爱发电，所以说此Submod禁止以售卖的形式出现在任何地方
+
+
+如有看到相关售卖内容请帮助我们抵制
 
 你可以通过下面这个爱发电链接支持制作组内两位成员（群阿巴阿巴、龟酱）: https://afdian.com/a/guiandmiao
 
