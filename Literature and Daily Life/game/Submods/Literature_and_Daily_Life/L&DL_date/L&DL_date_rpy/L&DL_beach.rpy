@@ -774,7 +774,7 @@ label utb_LADL:
     with eye_shut
     pause 2
     scene surprise_LADL with dissolve
-    $ clicked = renpy.call_screen("click_detector") #点击鼠标关闭地图
+    $ clicked = renpy.call_screen("click_detector") 
     if clicked:
         scene Inside_the_hotel_room_noon with wipeleft_scene
         hide surprise_LADL
