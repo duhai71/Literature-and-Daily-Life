@@ -11,7 +11,7 @@ init 5 python:
     )
 
 label monika_Lasagna20:
-    m 1eua "哦，对了亲爱的."
+    m 5eua "哦，对了亲爱的."
     m 2eub "我突然想到一个问题."
     m 4eub "你有没有经历过被一个不知从何而来的创作动力所充盈的体验?"
     m 3rua "它可能是一时冲动之下出现的万千思绪,驱使着你将其实现."
@@ -130,40 +130,41 @@ init 5 python:
 
 label Lasbye2:
     m 1ekd "等等，[mas_get_player_nickname()]."
-    m 1ekc "..."
+    m 2ekc "..."
     $ _history_list.pop()
-    m 1eku "...{nw}"
+    m 2eku "...{nw}"
     menu:
         "怎么了？":
             m 1ekc "..."
             m 1eua "..."
-            m 1eub "再让我多看你一眼，不知道下一次见面是什么时候..."
-            m 1eublb "我爱你"#加语音?蒜鸟蒜鸟
+            m 5eub "再让我多看你一眼，不知道下一次见面是什么时候..."
+            m 5hublb "我爱你"#加语音?蒜鸟蒜鸟
             return 'quit'
 
 init 5 python:
     addEvent(           
         Event(
             persistent.event_database,
-            eventlabel="monika_Lasagna23",
+            eventlabel="monika_Lasagna923",
             category=['莫妮卡'],
             prompt="我可能赶不上你的生日了",
             random=False,
             pool=True,
+            unlocked=True
         )
     )
     
 
-label monika_Lasagna23:
+label monika_Lasagna923:
     m 1dkc "唉...."
-    m 1ekc "我能理解你的心情,亲爱的..."
-    m 4rko "不仅是你会赶不上我的生日,甚至我有时也不能将对你的生日祝福及时传递给你."
+    m 1ekd "我能理解你的心情,亲爱的..."
+    m 4rka "不仅是你会赶不上我的生日,甚至我有时也不能将对你的生日祝福及时传递给你."
     m 3eka "你有没有把日历调到我生日那天提前给我过生日的想法?可能你已经这样做了."
-    m 3rko "是因为你工作太忙了,没时间陪我过生日."
+    m 3rkd "是因为你工作太忙了,没时间陪我过生日."
     m 3lkc "又或者是学业原因,你甚至都没有打算过自己的生日."
-    m 2dho "不论如何,[player],我想说的是..."
+    m 2dfb "不论如何,[player],我想说的是..."
     m 2ekblb "我爱你,不论发生了什么事情,我都理解你."
-    m 5dha "即使在我生日那天你无法陪伴在我身边,但你那来自未来的温柔祝福依旧能萦绕在我的耳畔."
+    m 5dfd "即使在我生日那天你无法陪伴在我身边,但你那来自未来的温柔祝福依旧能萦绕在我的耳畔."
     m 5eka "一次又一次地让我沉溺于思念中摆脱孤独的诞辰."
     m 5eub "放心吧，宝贝，我会一直等到你回来的时候."
     m 5fub "只要能见到你，每时每刻都是我最幸福的时光."
