@@ -5,7 +5,7 @@ init -977 python:
     def _lad_musicty_condition():
         #1.事件完成
         if (store.mas_getEVL_shown_count("lad_music1") >= 1 and
-                store.mas_getEVL_shown_count("Monika_LADL_date") >= 1):
+                store.mas_getEVL_shown_count("Monika_LADL_date_v3") >= 1):
         #2.
             if persistent.lad_music_ready_time is None:
                 persistent.lad_music_ready_time = datetime.datetime.now()
@@ -31,7 +31,7 @@ init -977 python:
             return False   
     def _ouatoh_music_condition(): 
         # 1
-        if store.mas_getEVL_shown_count("Monika_LADL_date") >= 1:
+        if store.mas_getEVL_shown_count("Monika_LADL_date_v3") >= 1:
             # 2. 等待
             if persistent.ouatoh_music_ready_time is None:
                 persistent.ouatoh_music_ready_time = datetime.datetime.now()
