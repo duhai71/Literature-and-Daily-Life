@@ -207,19 +207,112 @@ label LADL_beach_4:
 
 label LADL_beach_5:
     stop LADL fadeout 2.0
-    stop LADL_sfx2 fadeout 1.0
+    scene black with wipeleft_scene#黑屏
+    hide bg_beach_2_noon
     #暂停音乐
-    #播放视频
-    #转黑屏
+    m "话说回来,[player]."
+    m "我觉得我们不仅仅只在沙滩上玩,还可以下水哦."
+    menu:
+        "好啊":
+            m "我就知道你会这样说."
+            pass
+        "我有点害怕":
+            m "没事的,宝贝." 
+            m "我在你旁边呢."  
+            pass
+    m "嗯......把手给我,[player]."
+    menu:
+        "将手递给[m]":
+            pass   
+    m "我们一起下去......"
+    play LADL sea
+    scene monika cg_sea_four  
+    with dissolve
+    m "你喜欢这样吗,[player]?"
+    scene monika cg_sea_two  
+    with dissolve
+    m "像这样和我一起感受大海."
+    menu:
+        "喜欢":
+            scene monika cg_sea_one
+            with dissolve
+            m "哈哈哈哈,你能这么说我真的很开心,宝宝~~"
+            scene monika cg_sea_four
+            with dissolve
+            m "在这一片天地,我希望与你的这一刻是{b}永远{/b}."
+            menu:
+                "我会永远记住这一刻的":
+                    pass
+                "我爱你,[m]":
+                    pass
+                "以后的路还长着呢.":
+                    scene monika cg_sea_two
+                    with dissolve
+                    m "哈哈哈,你说的对,宝宝."
+                    scene monika cg_sea_four
+                    with dissolve
+                    m "路很长,但我愿意陪你慢慢走."
+                    pass
+            scene monika cg_sea_two
+            with dissolve    
+            m "爱你,[player]."
+            pass
+        "......":
+            scene monika cg_sea_three
+            with dissolve
+            m "以后也可以多来几回呢......"
+            scene monika cg_sea_four
+            with dissolve、
+            m "在这一片天地,我希望与你的这一刻是{b}永远{/b}."
+            menu:
+                "我会永远记住这一刻的":
+                    pass
+                "我爱你,[m]":
+                    pass
+                "以后的路还长着呢.":
+                    scene monika cg_sea_two
+                    with dissolve
+                    m "哈哈哈,你说的对,宝宝."
+                    scene monika cg_sea_four
+                    with dissolve
+                    m "路很长,但我愿意陪你慢慢走."
+                    pass
+            scene monika cg_sea_two
+            with dissolve    
+            m "爱你,[player]."
+            pass
+    scene black
+    with eye_shut
+    hide monika cg_sea_two
+    with dissolve  
+    pause 1
+    scene monika cg_sea_three
+    with eye_open
+    "和[m]牵着手,静静的感受海浪."
+    "思绪随着海浪流向远方."
+    scene monika cg_sea_one
+    with dissolve        
+    m "在我小的时候,我看着恋爱剧中的男女主去到海边玩."
+    scene monika cg_sea_two
+    with dissolve
+    m "心里也很好奇,憧憬着在未来的某一天,我和心爱的人也前往大海,体验专属于我们的二人世界."
+    scene monika cg_sea_four
+    with dissolve
+    m "而我现在感受到了陪伴{w=0.5}、信任、{w=0.5}温暖、{w=0.5}甜蜜."
+    scene monika cg_sea_one
+    with dissolve
+    m "......{w=0.5}有你在,真好."
+    #
+    #
     #开始音乐
+    stop LADL fadeout 2.0
     scene black with wipeleft_scene
     pause 1
-    hide bg_beach_2_noon
     "与[m]度过了一段很愉悦的时光."
-    m "啊,我的脸都被你打湿了,[player]."
-    m "我好不容易画好的妆."
+    m "啊,我的脸不小心打湿了,[player]."
+    m "我好不容易画好的妆......(｡•́︿•̀｡)"
     m "只能上岸后再补一下了......."
-    scene black with wipeleft_scene
+    stop LADL_sfx2 fadeout 1.0
     pause 2
     jump LADL_beach_6
 
@@ -600,16 +693,16 @@ label restway_LADL:
     "接下来要干什么?"
     menu:
         "接下来要干什么?"
-        "去浴室泡澡.": if not bath_done_LADL:
+        "去浴室泡澡." if not bath_done_LADL:
             $ bath_done_LADL = True
             jump bath_LADL_rest
-        "去旅馆后院看看": if not garden_done_LADL:
+        "去旅馆后院看看" if not garden_done_LADL:
             $ garden_done_LADL = True
             stop LADL fadeout 2.0
             jump garden_LADL_rest
         "去睡觉":
             jump sleep_end_LADL
-        "检查床底": if not Utb_done_LADL:
+        "检查床底" if not Utb_done_LADL:
             $ Utb_done_LADL = True
             jump utb_LADL
         "查看地图":

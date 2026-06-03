@@ -530,6 +530,13 @@ image monika 6h_lean_LADL = im.Composite((960, 960),
 #Monika beach cg
 image monika cg_beach_one = "Submods/Literature_and_Daily_Life/L&DL_date/L&DL_date_monika/L&DL_Beach_cg/beach_cg_1.png"
 image monika cg_beach_two = "Submods/Literature_and_Daily_Life/L&DL_date/L&DL_date_monika/L&DL_Beach_cg/beach_cg_2.png"
+
+image monika cg_sea_four = "Submods/Literature_and_Daily_Life/L&DL_date/L&DL_date_monika/L&DL_Beach_cg/sea_four.png"#Open eyes upon mouth
+image monika cg_sea_three = "Submods/Literature_and_Daily_Life/L&DL_date/L&DL_date_monika/L&DL_Beach_cg/sea_three.png"#upon eyes smile
+image monika cg_sea_two = "Submods/Literature_and_Daily_Life/L&DL_date/L&DL_date_monika/L&DL_Beach_cg/sea_two.png"#upon eyes Open mouth
+image monika cg_sea_one = "Submods/Literature_and_Daily_Life/L&DL_date/L&DL_date_monika/L&DL_Beach_cg/sea_one.png"#open eyes Open mouth
+
+
 #Monika jeans Sprites
 image monika 7a_happy_jeans_LADL = im.Composite((960, 960), 
 (0, 0), "Submods/Literature_and_Daily_Life/L&DL_date/L&DL_date_monika/L&DL_Monika_Jeans/happy.png")#两手比着剪刀手 闭眼微笑

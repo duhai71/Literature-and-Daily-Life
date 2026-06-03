@@ -21,6 +21,7 @@ init -10 python:
     audio.date_2001 = "Submods/Literature_and_Daily_Life/L&DL_date/L&DL_date_music/2001.mp3"
     audio.Beneath_the_Mask = "Submods/Literature_and_Daily_Life/L&DL_date/L&DL_date_music/Beneath_the_Mask.mp3"
     audio.closer = "Submods/Literature_and_Daily_Life/L&DL_date/L&DL_date_music/closer.mp3"
+    audio.sea = "Submods/Literature_and_Daily_Life/L&DL_date/L&DL_date_music/sea.mp3"
     #后续加p3r 小曲进入v4约会内容
     renpy.music.register_channel("LADL", "music", loop=True, tight=True)#循环
     renpy.music.register_channel("LADL_1", "sfx", loop=False, tight=True)

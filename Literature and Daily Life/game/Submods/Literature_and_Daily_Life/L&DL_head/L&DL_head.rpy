@@ -2,7 +2,7 @@ init -990 python:
     store.mas_submod_utils.Submod(
         author="LADL团队",
         name="Literature And Daily Life V3",
-        description="包含了大量话题的Submod,涵盖了文学、科学、心理学、生活、情感、闲聊、逻辑、音乐、哲学、约会、游戏等方面,以及人声曲目、钢琴曲目、约会、联动内容.",
+        description="包含了大量话题的Submod,涵盖了文学、科学、心理学、生活、情感、闲聊、逻辑、音乐、哲学、约会、游戏等方面,以及人声曲目、钢琴曲目、约会、与MTTS的联动内容.",
         version='3.0.0',
         settings_pane="LADL_setting_pane"
     )

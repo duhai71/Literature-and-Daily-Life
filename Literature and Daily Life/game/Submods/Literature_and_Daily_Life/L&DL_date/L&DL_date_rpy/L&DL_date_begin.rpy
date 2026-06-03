@@ -16,7 +16,7 @@ init 6 python:
     addEvent(
         Event(
             persistent.event_database,
-            eventlabel="LADL_date_Start",
+            eventlabel="LADL_date_Start_v3",
             category=['......'],
             prompt="[m]发现了一处地方",
             conditional="mas_canShowRisque(aff_thresh=600)",
@@ -24,7 +24,7 @@ init 6 python:
             random=True
         )
     )
-label LADL_date_Start:
+label LADL_date_Start_v3:
     m 1fua "嘿,[player]."
     m 5eub "我们在这个房间里待了好久了,不是吗?"
     m 6ruc "就算是习惯了在这里聊天、{w=1}生活."
@@ -50,9 +50,9 @@ init 5 python:
         )
     )
 
-label Monika_LADL_date:
-    if not persistent.LADL_date_first:
-        $ persistent.LADL_date_first = True
+label Monika_LADL_date_v3:
+    if not persistent.LADL_date_first_1:
+        $ persistent.LADL_date_first_1 = True
         m 1hub "好的."
         $ mas_unlockEVL("Monika_random_songs72", "EVE")
         m 5fua "等我准备一下衣服~"

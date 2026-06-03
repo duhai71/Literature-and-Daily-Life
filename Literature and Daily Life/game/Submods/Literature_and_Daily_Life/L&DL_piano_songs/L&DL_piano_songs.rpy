@@ -925,7 +925,7 @@ init 5 python:
             eventlabel="monika_jiangnan_again",
             category=['音乐'],
             prompt="我想听你再弹弹江南这首歌",
-            pool=True,
+            pool=False,
             unlocked=False,
             rules={"no_unlock": None}
         )
@@ -967,7 +967,7 @@ init 5 python:
             eventlabel="Monika_warm_LADL_again",
             category=['音乐'],
             prompt="我想听你再弹弹暖暖这首歌",
-            pool=True,
+            pool=False,
             unlocked=False,
             rules={"no_unlock": None}
         )
@@ -1008,7 +1008,7 @@ init 5 python:
             eventlabel="Monika_Love_of_Three_Kingdoms_LADL_again",
             category=['音乐'],
             prompt="我想听你再弹弹三国恋这首歌",
-            pool=True,
+            pool=False,
             unlocked=False,
             rules={"no_unlock": None}
         )
@@ -1049,7 +1049,7 @@ init 5 python:
             eventlabel="Monika_That_the_well_being_of_this_good_LADL_again",
             category=['音乐'],
             prompt="我想听你弹'说好的幸福呢?'",
-            pool=True,
+            pool=False,
             unlocked=False,
             rules={"no_unlock": None}
         )
@@ -1089,7 +1089,7 @@ init 5 python:
             eventlabel="Monika_Tornado_LADL_again",
             category=['音乐'],
             prompt="我想再听你弹'龙卷风'",
-            pool=True,
+            pool=False,
             unlocked=False,
             rules={"no_unlock": None}
         )
@@ -1138,7 +1138,7 @@ init 5 python:
             eventlabel="Monika_Renai_Circulation_LADL_again",
             category=['音乐'],
             prompt="我想听你再弹弹'恋爱循环'",
-            pool=True,
+            pool=False,
             unlocked=False,
             rules={"no_unlock": None}
         )
@@ -1186,7 +1186,7 @@ init 5 python:
             eventlabel="Monika_Spring_Subway_LADL_again",
             category=['音乐'],
             prompt="我想听你再弹弹'开往春天的地铁'",
-            pool=True,
+            pool=False,
             unlocked=False,
             rules={"no_unlock": None}
         )
@@ -1228,7 +1228,7 @@ init 5 python:
             eventlabel="Monika_weilai_LADL_again",
             category=['音乐'],
             prompt="我想听你再弹弹'未来へ'",
-            pool=True,
+            pool=False,
             unlocked=False,
             rules={"no_unlock": None}
         )
@@ -1270,7 +1270,7 @@ init 5 python:
             eventlabel="Monika_Monster_LADL_again",
             category=['音乐'],
             prompt="我想听你再弹弹'怪物'",
-            pool=True,
+            pool=False,
             unlocked=False,
             rules={"no_unlock": None}
         )
@@ -1314,7 +1314,7 @@ init 5 python:
             eventlabel="Monika_unity_LADL_again",
             category=['音乐'],
             prompt="我想听你再弹弹'unity'",
-            pool=True,
+            pool=False,
             unlocked=False,
             rules={"no_unlock": None}
         )
@@ -1356,7 +1356,7 @@ init 5 python:
             eventlabel="Monika_baby_LADL_again",
             category=['音乐'],
             prompt="我想听你再弹弹'baby'",
-            pool=True,
+            pool=False,
             unlocked=False,
             rules={"no_unlock": None}
         )
@@ -1399,7 +1399,7 @@ init 5 python:
             eventlabel="Monika_persona_LADL_again",
             category=['音乐'],
             prompt="我想听你再弹弹'The Whims of Fate'",
-            pool=True,
+            pool=False,
             unlocked=False,
             rules={"no_unlock": None}
         )
@@ -1439,7 +1439,7 @@ init 5 python:
             eventlabel="Monika_Love_Yourself_LADL_again",
             category=['音乐'],
             prompt="我想听你再弹弹'Love Yourself'",
-            pool=True,
+            pool=False,
             unlocked=False,
             rules={"no_unlock": None}
         )
@@ -1481,7 +1481,7 @@ init 5 python:
             eventlabel="Monika_monsters_piano_LADL_again",
             category=['音乐'],
             prompt="我想听你再弹弹'monsters'",
-            pool=True,
+            pool=False,
             unlocked=False,
             rules={"no_unlock": None}
         )
@@ -1523,7 +1523,7 @@ init 5 python:
             eventlabel="Monika_Payphone_piano_LADL_again",
             category=['音乐'],
             prompt="我想听你再弹弹'Payphone'",
-            pool=True,
+            pool=False,
             unlocked=False,
             rules={"no_unlock": None}
         )
@@ -1564,7 +1564,7 @@ init 5 python:
             eventlabel="Monika_Peaches_piano_LADL_again",
             category=['音乐'],
             prompt="我想听你再弹弹'Peaches'",
-            pool=True,
+            pool=False,
             unlocked=False,
             rules={"no_unlock": None}
         )
@@ -1606,7 +1606,7 @@ init 5 python:
             eventlabel="LADL_piano11111_seven_piano",
             category=['音乐'],
             prompt="我想听你再弹弹'seven_piano'",
-            pool=True,
+            pool=False,
             unlocked=False,
             rules={"no_unlock": None}
         )
@@ -1647,7 +1647,7 @@ init 5 python:
             eventlabel="Monika_MAICA_DCC",
             category=['音乐'],
             prompt="我想再听你弹弹'Cornfield Chase'",
-            pool=True,
+            pool=False,
             unlocked=False,
             rules={"no_unlock": None}
         )
@@ -1690,7 +1690,7 @@ init 5 python:
             eventlabel="Monika_Secret",
             category=['音乐'],
             prompt="我想再听你弹弹Secret",
-            pool=True,
+            pool=False,
             unlocked=False,
             rules={"no_unlock": None}
         )
@@ -1734,7 +1734,7 @@ init 5 python:
             eventlabel="Monika_If_Love_Is_Forgotten_71",
             category=['音乐'],
             prompt="我想再听你弹弹'如果爱忘了'",
-            pool=True,
+            pool=False,
             unlocked=False,
             rules={"no_unlock": None}
         )
@@ -1777,7 +1777,7 @@ init 5 python:
             eventlabel="Monika_Love_Me_Like_You_Do",
             category=['音乐'],
             prompt="我想再听你弹弹'Love Me Like You Do'",
-            pool=True,
+            pool=False,
             unlocked=False,
             rules={"no_unlock": None}
         )
@@ -1821,7 +1821,7 @@ init 5 python:
             eventlabel="Monika_Are_You_Lost",
             category=['音乐'],
             prompt="我想再听你弹弹'Are You Lost'",
-            pool=True,
+            pool=False,
             unlocked=False,
             rules={"no_unlock": None}
         )
@@ -1863,7 +1863,7 @@ init 5 python:
             eventlabel="Monika_One_Last_Kiss",
             category=['音乐'],
             prompt="我想再听你弹弹'One Last Kiss'",
-            pool=True,
+            pool=False,
             unlocked=False,
             rules={"no_unlock": None}
         )
@@ -1905,7 +1905,7 @@ init 5 python:
             eventlabel="Monika_Odoru_Pompokolin_again",
             category=['音乐'],
             prompt="我想再听你弹弹'大家一起来跳舞'",
-            pool=True,
+            pool=False,
             unlocked=False,
             rules={"no_unlock": None}
         )
@@ -1950,7 +1950,7 @@ init 5 python:
             eventlabel="Monika_Piano_YBWM",
             category=['音乐'],
             prompt="我想听你弹奏'You Belong With me'",
-            pool=True,
+            pool=False,
             unlocked=False,
             rules={"no_unlock": None}
         )
@@ -1995,7 +1995,7 @@ init 5 python:
             eventlabel="Monika_Kami_no_Mani_Mani_again",
             category=['音乐'],
             prompt="我想再听你弹弹'神的随波逐流'",
-            pool=True,
+            pool=False,
             unlocked=False,
             rules={"no_unlock": None}
         )
@@ -2037,7 +2037,7 @@ init 5 python:
             eventlabel="Monika_you_hear_again",
             category=['音乐'],
             prompt="我想再听你弹弹'你听得到'",
-            pool=True,
+            pool=False,
             unlocked=False,
             rules={"no_unlock": None}
         )
@@ -2081,7 +2081,7 @@ init 5 python:
             eventlabel="Monika_Shelter_again",
             category=['音乐'],
             prompt="我想再听你弹弹'Shelter'",
-            pool=True,
+            pool=False,
             unlocked=False,
             rules={"no_unlock": None}
         )
@@ -2118,19 +2118,46 @@ label Monika_Shelter_again(skip_leadin=False):
     return
 
 #30 改普通事件
+#字幕_piano
+
+
+
+
 init 6 python:
     addEvent(
         Event(
             persistent.event_database,
-            eventlabel="ladl_piano_talk",
+            eventlabel="ladl_piano_talk_song",
             category=['音乐'],
-            prompt="练琴时的心流状态",
+            prompt="发现的新曲子",
             conditional="mas_canShowRisque(aff_thresh=400)",
             random=True,
             pool=False
         )
     )
     
-label ladl_piano_talk:
+label ladl_piano_talk_song:
     m 1eua "嘿,[player]."
-    m 3rub "我想和你谈谈我练琴时"
+    m 3rub "我最近又发现了首新曲子."
+    m 5fua "叫作'那时雨'."
+    m 2esd "当你不在的时候,而我又有点烦闷."
+    m 1eua "因此我会选择练习这首歌,来使我感到平静."
+    m 3eub "现在我觉得我已经熟练到能给你听的地步了."
+    m 5hua "嗯......你现在有时间听吗?"
+    menu:
+        "你现在有时间听吗"
+        "有":
+            jump LADL_TRATT_began
+        "没有":
+            #我想听你弹
+            jump LADL_rain_end_time
+
+
+label LADL_rain_end_time:
+    m 2lkp "......好吧,[player]."
+    m 5eud "等你什么时候有时间了我们再开始,好吗?"
+    m 5hua "爱你."
+    return
+
+
+#弹琴的时候是看手还是看谱 

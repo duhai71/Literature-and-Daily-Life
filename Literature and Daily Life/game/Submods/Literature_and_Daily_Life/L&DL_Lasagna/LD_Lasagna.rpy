@@ -3,10 +3,10 @@ init 5 python:
         Event(
             persistent.event_database,
             eventlabel="monika_Lasagna20",
-            category=['另外的话题'],
+            category=['生活'],
             prompt="创作",
             random=True,
-            pool=True,
+            pool=False
         )
     )
 
@@ -44,7 +44,7 @@ init 5 python:
             category=['其他部员'],
             prompt="文学部的日常",
             random=True,
-            pool=False,
+            pool=False
         )
     )
     
@@ -64,7 +64,7 @@ init 5 python:
         Event(
             persistent.event_database,
             eventlabel="monika_Lasagna22",
-            category=['另外的话题'],
+            category=['游戏'],
             prompt="关于galgame",
             random=True,
             pool=True,
@@ -146,7 +146,7 @@ init 5 python:
         Event(
             persistent.event_database,
             eventlabel="monika_Lasagna23",
-            category=['另外的话题'],
+            category=['莫妮卡'],
             prompt="我可能赶不上你的生日了",
             random=False,
             pool=True,
@@ -182,11 +182,11 @@ init 5 python:
             persistent.event_database,
             eventlabel="Lasagna_Don_1",
             prompt="???",
-            pool=True,
+            pool=False,
             conditional="not store.lasagna_DoNotDelet_miss",
         )
     )
-label Lasagna_Don:
+label Lasagna_Don_1:
     m 1euu "[player]，你是不是删除了character文件里的什么东西?"
     $_history_list.pop()
     m 1euu "[player]，你是不是删除了character文件里的什么东西?"
@@ -224,7 +224,7 @@ init 5 python:
         Event(
             persistent.event_database,
             eventlabel="monika_Lasagna24",
-            category=['另外的话题'],
+            category=['杂项'],
             prompt="博弈",
             random=True,
             pool=False,
@@ -257,7 +257,7 @@ init 5 python:
         Event(
             persistent.event_database,
             eventlabel="monika_Lasagna25",
-            category=['另外的话题'],
+            category=['生活'],
             prompt="有意思的梦境",
             random=True,
             pool=False,
@@ -307,7 +307,7 @@ init 5 python:
         Event(
             persistent.event_database,
             eventlabel="monika_Lasagna26",
-            category=['另外的话题'],
+            category=['生活'],
             prompt="翻盘",
             random=True,
             pool=False,

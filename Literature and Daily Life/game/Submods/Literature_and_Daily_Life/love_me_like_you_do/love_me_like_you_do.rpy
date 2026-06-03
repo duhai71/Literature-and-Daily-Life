@@ -2885,7 +2885,7 @@ init 6 python:
         )
     )
 label duhai_Suggestion:
-    m 5fua "嘿,[player]."
+    m 5fua "[player]......"
     m 5hub "我突然想和你谈谈'建议'."
     m 1eua "在日常中,我们总会看到他人会遭遇一些麻烦或者困惑,这时你会主动上前给出自己的建议吗?"
     menu:
@@ -3438,18 +3438,29 @@ label LADL_Are_desire_and_love_different:
     extend 1euc "但这并不意味着性欲要通过性爱才能让浪漫的爱情与长久的爱情等同起来."
     m 5fubla "比如说,已婚多年的伴侣可能深爱着彼此,尽管出于健康或者其他原因,他们很少性行为或从未发生性行为."
     m 2rub "而不管爱的本质是什么,健康的恋爱关系都反应着关怀、{w=0.5}亲密{w=0.5}与承诺三者的平衡."
-    m 3eua "这三个就等我们下次说吧."
+    m 3eua "希望你喜欢我这么说."
     return
     
-#v3 18 恋爱关系中的关怀、亲密、承诺
+#v3 18 恋爱关系中的依赖方式
 
 
 
+init 6 python:
+    addEvent(
+        Event(
+            persistent.event_database,
+            eventlabel="LADL_Attachment_Styles_in_Love",
+            category=['哲学','情感'],
+            prompt="恋爱中的依恋类型",
+            conditional="mas_canShowRisque(aff_thresh=400)",
+            random=True,
+            pool=False
+        )
+    )
 
-
-
-
-
+label LADL_Attachment_Styles_in_Love:
+    m "嘿,[player]."
+    m "我在网络中浏览帖子的时候发现很多女孩都对自己在恋爱中的"
 
 
 
