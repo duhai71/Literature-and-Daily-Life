@@ -58,7 +58,7 @@ init 5 python:
         eventlabel="Monika_ouatoh_again",
         category=["音乐"],
         prompt="你可以再弹一次<手写的从前>吗?",
-        pool=True,
+        pool=False,
         unlocked=False
         )
     )

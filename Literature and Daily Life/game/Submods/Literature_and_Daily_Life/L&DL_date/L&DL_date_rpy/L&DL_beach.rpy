@@ -14,7 +14,7 @@ label beach:
     play LADL beach_bgm fadein 2.0
     "正午."
     play LADL_sfx2 waves fadein 2.0
-    scene bg_seaside_sidewalk_noon with wipeleft_scene
+    scene bg_seaside_sidewalk_noon with wipeleft
     hide bg_sea_noon
     show monika 5a_LADL at t11
     m 5a_LADL "我们到了,这地方你觉得怎么样."
@@ -32,7 +32,7 @@ label beach:
     with dissolve
     m 2c_LADL "来吧,我们继续往前走."
     stop LADL_sfx1
-    scene bg_sea_seawalk_noon with wipeleft_scene
+    scene bg_sea_seawalk_noon with wipeleft
     hide bg_seaside_sidewalk_noon
     jump beach_2
 
@@ -64,7 +64,7 @@ label beach_2_Branch_1:
     with dissolve
     m 4j_LADL "或者玩个小游戏也行哦."#nou牌?或者别的小游戏
     m 4k_LADL "那我们过去看看吧."
-    scene bg_sea_pavilion_noon with wipeleft_scene
+    scene bg_sea_pavilion_noon with wipeleft
     hide bg_seaside_sidewalk_noon    
     jump beach_3_pavilion
 
@@ -81,7 +81,7 @@ label beach_2_Branch_2:
     with dissolve
     m 4j_LADL"或者玩个小游戏也行哦."#nou牌?或者别的小游戏
     m 4k_LADL"那我们过去看看吧."
-    scene bg_sea_pavilion_noon with wipeleft_scene
+    scene bg_sea_pavilion_noon with wipeleft
     hide bg_seaside_sidewalk_noon    
     jump beach_3_pavilion
 
@@ -171,7 +171,7 @@ label LADL_Dessert_Shop:
 
 label LADL_beach_4:
     play LADL_sfx1 footstep_beach fadein 1.0
-    scene bg_beach_2_noon with wipeleft_scene
+    scene bg_beach_2_noon with wipeleft
     play LADL beach_bgm_2 fadein 2.0
     play LADL_sfx1 footstep_beach fadein 1.0
     hide bg_sea_pavilion_noon
@@ -207,7 +207,7 @@ label LADL_beach_4:
 
 label LADL_beach_5:
     stop LADL fadeout 2.0
-    scene black with wipeleft_scene#黑屏
+    scene black with wipeleft#黑屏
     hide bg_beach_2_noon
     #暂停音乐
     m "话说回来,[player]."
@@ -306,7 +306,7 @@ label LADL_beach_5:
     #
     #开始音乐
     stop LADL fadeout 2.0
-    scene black with wipeleft_scene
+    scene black with wipeleft
     pause 1
     "与[m]度过了一段很愉悦的时光."
     m "啊,我的脸不小心打湿了,[player]."
@@ -319,7 +319,7 @@ label LADL_beach_5:
 label LADL_beach_6:
     play LADL beach_music fadein 2.0
     play LADL_sfx2 waves fadein 1.0
-    scene bg_beach_park_noon with wipeleft_scene
+    scene bg_beach_park_noon with wipeleft
     hide bg_beach_2_noon
     show monika 4a_LADL at t11
     m 4a_LADL "哈哈!是海边的一片小公园~"
@@ -407,7 +407,7 @@ label LADL_beach_6:
     jump LADL_beach_7
 
 label LADL_beach_7:
-    scene bg_beach_noon_second with wipeleft_scene
+    scene bg_beach_noon_second with wipeleft
     hide bg_beach_park_noon
     "与[m]一起坐在树荫下."
     "感受着海风."
@@ -474,12 +474,12 @@ label LADL_beach_7:
 label infrontof:
     stop LADL fadeout 2.0
     stop LADL_sfx2 fadeout 1.0
-    scene black with wipeleft_scene
+    scene black with wipeleft
     "稍等一下,[player],我换一下衣服."
     pause 2
     play LADL hill_play fadein 2.0
     play LADL_sfx2 bird_sound fadein 1.0
-    scene bg_In_front_of_the_mountain_road_bridge_noon with wipeleft_scene
+    scene bg_In_front_of_the_mountain_road_bridge_noon with wipeleft
     hide bg_beach_noon_second   
     show monika 2d_jeans_LADL at t11                #1 2 同英
     m "到旅馆前我们还要走段路."
@@ -524,10 +524,10 @@ label infrontof:
             m "但对于欣赏沿途的风光以及登顶后的感受来说,一切都是值得的."
             m 1e_jeans_LADL "就像我们的人生,充满了酸甜苦辣,总归还是要活着,要对未来充满希望."
             m 1j_jeans_LADL "而且我也期待能与你一同登山的一天......"
-    scene black with wipeleft_scene
+    scene black with wipeleft
     pause 2
     "又走了一段路." 
-    scene bg_Mountain_Road_Bridge_noon wipeleft_scene
+    scene bg_Mountain_Road_Bridge_noon with wipeleft
     hide bg_In_front_of_the_mountain_road_bridge_noon
     jump bridge_LADL
 
@@ -591,9 +591,9 @@ label bridge_LADL:
 
 label irural1_LADL:
     stop LADL fadeout 2.0
-    scene black with wipeleft_scene
+    scene black with wipeleft
     pause 2
-    scene bg_Rural_community_center_noon with wipeleft_scene
+    scene bg_Rural_community_center_noon with wipeleft
     play LADL tam_n17_play fadein 1.0
     hide bg_Mountain_Road_Bridge_noon
     "好,我们到了,[player],放我下来吧."
@@ -607,9 +607,9 @@ label irural1_LADL:
     
 label irural2_LADL:
     stop LADL fadeout 2.0
-    scene black with wipeleft_scene
+    scene black with wipeleft
     pause 2
-    scene bg_Rural_community_center_noon with wipeleft_scene
+    scene bg_Rural_community_center_noon with wipeleft
     play LADL tam_n17_play fadein 1.0
     hide bg_Mountain_Road_Bridge_noon
     m "嗯...我们好像到了,让我下来吧,[player]."
@@ -623,9 +623,9 @@ label irural2_LADL:
     
 label irural3_LADL:
     stop LADL fadeout 2.0
-    scene black with wipeleft_scene
+    scene black with wipeleft
     pause 2
-    scene bg_Rural_community_center_noon with wipeleft_scene
+    scene bg_Rural_community_center_noon with wipeleft
     play LADL tam_n17_play fadein 1.0
     hide bg_Mountain_Road_Bridge_noon
     show monika 5a_jeans_LADL at t11
@@ -634,9 +634,9 @@ label irural3_LADL:
 
 label irural4_LADL:
     stop LADL fadeout 2.0
-    scene black with wipeleft_scene
+    scene black with wipeleft
     pause 2
-    scene bg_Rural_community_center_noon with wipeleft_scene
+    scene bg_Rural_community_center_noon with wipeleft
     play LADL tam_n17_play fadein 1.0
     hide bg_Mountain_Road_Bridge_noon
     show monika 5a_jeans_LADL at t11
@@ -681,8 +681,8 @@ label rural_LADL_first:
     with dissolve
     m "走吧,我带你到房间去."
     stop LADL_sfx2 fadeout 1.0
-    scene black with wipeleft_scene
-    scene Inside_the_hotel_room_noon with wipeleft_scene            
+    scene black with wipeleft
+    scene Inside_the_hotel_room_noon with wipeleft            
     hide bg_Rural_community_center_noon
     "根据[m]的指引来到了十一号房"
     "[m]在隔壁"
@@ -709,7 +709,7 @@ label restway_LADL:
             jump map_LADL_1
 label bath_LADL_rest:
     #music
-    scene Rural_Bathroom_noon with wipeleft_scene
+    scene Rural_Bathroom_noon with wipeleft
     hide Inside_the_hotel_room_noon
     "感受着温暖的、有些发烫的热水."
     "包裹住[player]疲惫的身体."
@@ -727,7 +727,7 @@ label bath_LADL_rest_1:
             "..."
             "该出浴了."
             "起身出缸,毛巾擦身,换好衣服..."
-            scene Inside_the_hotel_room_noon with wipeleft_scene
+            scene Inside_the_hotel_room_noon with wipeleft
             hide Rural_Bathroom_noon
             "走出了浴室."
             jump restway_LADL
@@ -806,7 +806,7 @@ label Keep_or_end_song:
             "起身出缸,毛巾擦身,换好衣服..."
             "走出了浴室."
             pass
-    scene Inside_the_hotel_room_noon with wipeleft_scene
+    scene Inside_the_hotel_room_noon with wipeleft
     play LADL tam_n17_play fadein 2.0
     hide Rural_Bathroom_noon
     jump restway_LADL
@@ -821,37 +821,37 @@ screen click_detector():
         hover_background None
 
 label map_LADL_1:
-    scene map_LADL with wipeleft_scene
+    scene map_LADL with wipeleft
     hide Inside_the_hotel_room_noon
     $ clicked = renpy.call_screen("click_detector") #点击鼠标关闭地图
     if clicked:
-        scene Inside_the_hotel_room_noon with wipeleft_scene
+        scene Inside_the_hotel_room_noon with wipeleft
         hide map_LADL
         jump restway_LADL
 
 label map_LADL_2:
-    scene map_LADL with wipeleft_scene
+    scene map_LADL with wipeleft
     hide Inside_the_hotel_room_noon
     $ clicked = renpy.call_screen("click_detector") #点击鼠标关闭地图
     if clicked:
-        scene Rural_Bathroom_noon with wipeleft_scene
+        scene Rural_Bathroom_noon with wipeleft
         hide map_LADL
         jump bath_LADL_rest_1
 
 label garden_LADL_rest:
     play LADL tamsu03_play fadein 2.0
-    scene bg_The_hotel_ping_pong_table_light_on with wipeleft_scene            
+    scene bg_The_hotel_ping_pong_table_light_on with wipeleft            
     hide Inside_the_hotel_room_noon
     "看到了兵乓球桌."
     "或许之后能跟[m]一起玩."
     "继续走吧."
-    scene Rural_Backyard_noon with wipeleft_scene
+    scene Rural_Backyard_noon with wipeleft
     hide bg_The_hotel_ping_pong_table_light_on
     "来到了旅馆后院"
     "看着远处的山峰和云朵."
     "或许之后能去更高处探索一下."
     "回去之后问问[m]的意见吧."
-    scene Inside_the_hotel_room_noon with wipeleft_scene            
+    scene Inside_the_hotel_room_noon with wipeleft            
     hide Rural_Backyard_noon
     stop LADL fadeout 2.0
     play LADL tam_n17_play fadein 2.0
@@ -859,7 +859,7 @@ label garden_LADL_rest:
 
 
 label utb_LADL:
-    scene bg_Under_the_bed_in_the_room_noon with wipeleft_scene
+    scene bg_Under_the_bed_in_the_room_noon with wipeleft
     hide Inside_the_hotel_room_noon
     "来到卧室后,俯下身看向床底."
     "发现了一张纸条,上面似乎记录着什么."
@@ -869,14 +869,13 @@ label utb_LADL:
     scene surprise_LADL with dissolve
     $ clicked = renpy.call_screen("click_detector") 
     if clicked:
-        scene Inside_the_hotel_room_noon with wipeleft_scene
-        hide surprise_LADL
+        scene Inside_the_hotel_room_noon with wipeleft
     jump restway_LADL
 
 
 label sleep_end_LADL:
     stop LADL_sfx1
-    scene bg_Ceiling_of_the_room_noon with wipeleft_scene
+    scene bg_Ceiling_of_the_room_noon with wipeleft
     hide Inside_the_hotel_room_noon
     "来到卧室后直接躺在了床上."
     "你感觉你的眼皮变得愈发沉重."
@@ -920,7 +919,7 @@ label sleep_end_LADL:
             pass
     m "那我在外面等你."
     "似乎没缓过来,但还是得准备出发."
-    scene bg_Rural_community_center_noon with wipeleft_scene
+    scene bg_Rural_community_center_noon with wipeleft
     hide bg_Ceiling_of_the_room_noon
     play LADL tam_n17_play fadein 2.0
     show monika 2j_jeans_LADL at t11
@@ -933,10 +932,10 @@ label sleep_end_LADL:
     with dissolve
     m "一天中最闷热的时候已经过去了,接下来又是沙滩时间."
     m 6e_jeans_LADL "我们也该过去了,[player]."
-    scene black with wipeleft_scene
+    scene black with wipeleft
     pause 2
     stop LADL fadeout 2.0
-    scene bg_seaside_bench_noon with wipeleft_scene
+    scene bg_seaside_bench_noon with wipeleft
     hide bg_Rural_community_center_noon
     jump LADL_456_6_beach
 
@@ -979,7 +978,7 @@ label LADL_456_6_beach:
 
 
 label DLAL_456_6_dhuai:
-    scene bg_beach_3_noon with wipeleft_scene
+    scene bg_beach_3_noon with wipeleft
     hide bg_Meoto_Rocks_noon
     hide bg_seaside_bench_noon
     show monika 5a_LADL at t11
@@ -1054,7 +1053,7 @@ label beach_tired:
     jump beach_tired_2
 
 label beach_tired_2:
-    scene bg_sea_pavilion_noon with wipeleft_scene
+    scene bg_sea_pavilion_noon with wipeleft
     show monika 4f_LADL at t11
     with dissolve
     m "嗯......在这之后你估计都只能出来玩一段时间休息一下."
@@ -1095,9 +1094,9 @@ label LADL_wake_up:
 
 
 label first_time_LADL_end_cg:
-    scene black with wipeleft_scene
+    scene black with wipeleft
     m "[player],看这里.我一直在等你~"
-    scene bg_beach_2_sunset with wipeleft_scene
+    scene bg_beach_2_sunset with wipeleft
     play LADL beach_event fadein 2.0
     show monika 4m_LADL at t11
     m 4m_LADL "你终于醒了,在这期间我觉得有些无聊,便下去吹了吹风."
@@ -1170,7 +1169,7 @@ label date_end:
     show black zorder 100 with Dissolve(5.0, alpha=True)
     stop LADL fadeout 2.0
     pause 1
-    scene bg_sea_night with wipeleft_scene
+    scene bg_sea_night with wipeleft
     hide monika cg_beach_two
     hide monika cg_beach_one
     hide bg_beach_2_sunset

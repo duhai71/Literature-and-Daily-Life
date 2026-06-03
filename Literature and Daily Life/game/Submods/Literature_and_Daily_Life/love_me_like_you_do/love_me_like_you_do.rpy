@@ -3343,7 +3343,7 @@ init 6 python:
             eventlabel="zhiwujiangshi_PVZ_began",
             category=['游戏'],
             prompt="我想看你打败僵尸博士",#已取
-            pool=True,
+            pool=False,
             unlocked=False
         )
     )

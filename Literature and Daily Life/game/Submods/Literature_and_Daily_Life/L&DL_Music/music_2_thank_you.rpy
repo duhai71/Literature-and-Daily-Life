@@ -62,7 +62,7 @@ init 5 python:
         eventlabel="Monika_ty_again_v3",
         category=["音乐"],
         prompt="你可以为我再唱一次<thank you>吗?",
-        pool=True,
+        pool=False,
         unlocked=False,
         )
     )
