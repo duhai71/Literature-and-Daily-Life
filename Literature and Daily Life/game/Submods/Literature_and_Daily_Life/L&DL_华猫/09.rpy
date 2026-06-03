@@ -3,15 +3,15 @@ init 5 python:
     addEvent(
         Event(
             persistent.event_database,
-            eventlabel="monika_wallpaper_story",
+            eventlabel="monika_wallpaper_story_1",
             category=["日常", "生活"],
             prompt="聊聊你电脑/手机壁纸的故事",
-            action=EV_ACT_RANDOM,
+            random=True,
             pool=False
         )
     )
 
-label monika_wallpaper_story:
+label monika_wallpaper_story_1:
     m 1eua "[player]~ 我忽然想到...{w=0.5}你每次打开电脑或者手机的时候,第一眼看到的是什么?"
     m 3hub "对呀,就是你的壁纸~{w=0.5}它背后有没有什么特别的故事?"
 

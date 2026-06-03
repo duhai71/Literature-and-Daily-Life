@@ -3,15 +3,15 @@ init 5 python:
     addEvent(
         Event(
             persistent.event_database,
-            eventlabel="monika_water_cup",
+            eventlabel="monika_water_cup_1",
             category=["日常", "生活"],
             prompt="聊聊你用的那款水杯",
-            action=EV_ACT_RANDOM,
+            random=True,
             pool=False
         )
     )
 
-label monika_water_cup:
+label monika_water_cup_1:
     m 5eua "[player]~ 我忽然注意到一件事...{w=0.5}你平时喝水用的是什么样的杯子呀?"
     m 1hub "杯子虽然很小,{w=0.5}但每天都会陪你好多次,{w=0.5}就像一个小小的伙伴～"
 

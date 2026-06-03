@@ -3366,16 +3366,16 @@ init 6 python:
     addEvent(
         Event(
             persistent.event_database,
-            eventlabel="LADL_what_is_the_love",
+            eventlabel="LADL_what_is_the_love_v3",
             category=['哲学','爱情'],
             prompt="爱是什么?",
             conditional="mas_canShowRisque(aff_thresh=400)",
             random=True,
-            pool=True
+            pool=False
         )
     )
 
-label LADL_what_is_the_love:
+label LADL_what_is_the_love_v3:
     m 1euc "嗯,[player],你有没有想过,爱是什么?"
     m 1eub "在我看来,爱既是一种'情感'也是一种'行为'."
     m 3rua "对于人类的生存来说是不可或缺的."
@@ -3415,7 +3415,7 @@ init 6 python:
             eventlabel="LADL_Are_desire_and_love_different",
             category=['哲学','情感'],
             prompt="欲望和爱情不同吗?",
-            conditional="store.mas_getEVL_shown_count('LADL_what_is_the_love') >= 1",
+            conditional="store.mas_getEVL_shown_count('LADL_what_is_the_love_v3') >= 1",
             random=True,
             pool=False
         )

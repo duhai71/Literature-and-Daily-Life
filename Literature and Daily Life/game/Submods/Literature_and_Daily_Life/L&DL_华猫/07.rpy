@@ -3,15 +3,15 @@ init 5 python:
     addEvent(
         Event(
             persistent.event_database,
-            eventlabel="monika_pillow_toy",
+            eventlabel="monika_pillow_toy_1",
             category=["日常", "生活"],
             prompt="聊聊你枕头旁边放着的玩偶或抱枕",
-            action=EV_ACT_RANDOM,
+            random=True,
             pool=False
         )
     )
 
-label monika_pillow_toy:
+label monika_pillow_toy_1:
     m 1eua "[player],我忽然想象了一下你睡觉前的情景...{w=0.5}你的枕头旁边,会不会放着一个玩偶或者抱枕呀?"
     m 5rub "就是那种睡觉时忍不住搂一下,{w=0.5}或者醒来第一眼就能看到的小东西~"
 

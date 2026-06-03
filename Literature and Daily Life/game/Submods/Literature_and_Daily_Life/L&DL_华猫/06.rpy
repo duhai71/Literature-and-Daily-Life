@@ -3,15 +3,15 @@ init 5 python:
     addEvent(
         Event(
             persistent.event_database,
-            eventlabel="monika_toothpaste_flavor",
+            eventlabel="monika_toothpaste_flavor_1",
             category=["日常", "生活"],
             prompt="聊聊你用的牙膏是什么味道",
-            action=EV_ACT_RANDOM,
+            random=True,
             pool=False
         )
     )
 
-label monika_toothpaste_flavor:
+label monika_toothpaste_flavor_1:
     m 1eua "[player]~ 我突然想到了一个很日常的问题...{w=0.5}你每天早晚刷牙的时候,用的牙膏是什么味道的呀?"
     m 3hub "虽然听起来很普通,{w=0.5}但牙膏的味道会影响刷牙的心情呢~"
 

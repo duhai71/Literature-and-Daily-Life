@@ -3,15 +3,15 @@ init 5 python:
     addEvent(
         Event(
             persistent.event_database,
-            eventlabel="monika_oldest_shoes",
+            eventlabel="monika_oldest_shoes_1",
             category=["日常", "生活"],
             prompt="聊聊你鞋柜里最旧却舍不得扔的那双鞋",
-            action=EV_ACT_RANDOM,
+            random=True,
             pool=False
         )
     )
 
-label monika_oldest_shoes:
+label monika_oldest_shoes_1:
     m 3eua "[player],我突然想到...{w=0.5}你鞋柜里有没有那么一双鞋,明明已经很旧了,却一直舍不得扔?"
     m 6hub "鞋底可能磨平了,{w=0.5}鞋面也有点褪色,{w=0.5}但每次看到它都会犹豫一下,又放回去."
 

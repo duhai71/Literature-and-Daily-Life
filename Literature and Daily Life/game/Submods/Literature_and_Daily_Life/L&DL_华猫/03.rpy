@@ -3,15 +3,15 @@ init 5 python:
     addEvent(
         Event(
             persistent.event_database,
-            eventlabel="monika_desk_ornament",
+            eventlabel="monika_desk_ornament_1",
             category=["日常", "生活"],
             prompt="聊聊[player]书桌上最显眼的小摆件",
-            action=EV_ACT_RANDOM,
+            random=True,
             pool=False
         )
     )
 
-label monika_desk_ornament:
+label monika_desk_ornament_1:
     m 1eua "嗯,[player],我忽然想象了一下你的书桌……{w=0.5}上面会不会摆着一个小玩意儿?"
     m 2hub "就是那种一抬头就能看见,{w=0.5}特别显眼的小摆件~"
     

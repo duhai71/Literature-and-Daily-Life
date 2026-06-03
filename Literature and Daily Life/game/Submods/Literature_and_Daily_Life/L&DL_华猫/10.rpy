@@ -3,15 +3,15 @@ init 5 python:
     addEvent(
         Event(
             persistent.event_database,
-            eventlabel="monika_fridge_staple",
+            eventlabel="monika_fridge_staple_1",
             category=["日常", "生活"],
             prompt="聊聊你冰箱里永远备着的一样的食物",
-            action=EV_ACT_RANDOM,
+            random=True,
             pool=False
         )
     )
 
-label monika_fridge_staple:
+label monika_fridge_staple_1:
     m 1eua "嘿,[player]."
     m 5fub "我忽然很好奇......{w=0.5}你打开冰箱的时候,有没有哪样东西是永远都会出现的?"
     m 3hub "就是那种吃完了立刻补货,{w=0.5}冰箱里绝对不能少了它的食物~"

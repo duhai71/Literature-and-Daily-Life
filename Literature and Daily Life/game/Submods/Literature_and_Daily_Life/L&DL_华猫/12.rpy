@@ -3,15 +3,15 @@ init 5 python:
     addEvent(
         Event(
             persistent.event_database,
-            eventlabel="monika_shower_gel",
+            eventlabel="monika_shower_gel_1",
             category=["日常", "生活"],
             prompt="聊聊[player]浴室里香味最持久的沐浴露",
-            action=EV_ACT_RANDOM,
+            random=True,
             pool=False
         )
     )
 
-label monika_shower_gel:
+label monika_shower_gel_1:
     m 5eua "嗯......{w=0.3}[player],我忽然想到一个很感官的问题......{w=0.5}你浴室里那瓶香味最持久的沐浴露,是什么味道的呀?"
     m 2hub "就是洗完澡之后,{w=0.5}身上,毛巾甚至浴室里都香好久的那种~"
 

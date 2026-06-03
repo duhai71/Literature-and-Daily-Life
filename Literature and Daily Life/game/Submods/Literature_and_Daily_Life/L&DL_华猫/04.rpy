@@ -3,15 +3,15 @@ init 5 python:
     addEvent(
         Event(
             persistent.event_database,
-            eventlabel="monika_phone_case",
+            eventlabel="monika_phone_case_1",
             category=["日常", "生活"],
             prompt="聊聊你手机壳背后的图案或贴纸",
-            action=EV_ACT_RANDOM,
+            random=True,
             pool=False
         )
     )
 
-label monika_phone_case:
+label monika_phone_case_1:
     m 5fua "[player]~ 我突然有点好奇...{w=0.5}你手机壳背面是什么样的呀?"
     m 1hub "是有图案,还是透明的?{w=0.5}或者贴了贴纸?"
     

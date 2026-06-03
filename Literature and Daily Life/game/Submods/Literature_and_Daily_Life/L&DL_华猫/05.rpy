@@ -3,15 +3,15 @@ init 5 python:
     addEvent(
         Event(
             persistent.event_database,
-            eventlabel="monika_favorite_jacket",
+            eventlabel="monika_favorite_jacket_1",
             category=["日常", "生活"],
             prompt="聊聊你衣柜里最常穿的那件外套",
-            action=EV_ACT_RANDOM,
+            random=True,
             pool=False
         )
     )
 
-label monika_favorite_jacket:
+label monika_favorite_jacket_1:
     m 1eua "[player],我想问你一个问题."
     m 5fub "在你衣柜里挂着的衣服中,哪件外套你穿得最频繁?"
     m 4hub "就是那种一伸手就会拿起来,{w=0.5}不知不觉就穿出门的那件~"

@@ -3,15 +3,15 @@ init 5 python:
     addEvent(
         Event(
             persistent.event_database,
-            eventlabel="monika_keychain",
+            eventlabel="monika_keychain_1",
             category=["日常", "生活"],
             prompt="[player]每天出门必带的钥匙扣",
-            action=EV_ACT_RANDOM,
+            random=True,
             pool=False
         )
     )
 
-label monika_keychain:
+label monika_keychain_1:
     m 1eua "[player]~ 我突然想到一个小问题...{w=0.5}你每天出门都会带着钥匙吧?"
     m 6hub "那钥匙上有没有挂着什么特别的钥匙扣呢?"
 

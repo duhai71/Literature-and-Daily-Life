@@ -3,15 +3,15 @@ init 5 python:
     addEvent(
         Event(
             persistent.event_database,
-            eventlabel="monika_bedside_lamp",
+            eventlabel="monika_bedside_lamp_1",
             category=["日常", "生活"],
             prompt="聊聊你床头那盏台灯的开关习惯",
-            action=EV_ACT_RANDOM,
+            random=True,
             pool=False
         )
     )
 
-label monika_bedside_lamp:
+label monika_bedside_lamp_1:
     m 2eua "[player]~ 我忽然想象了一下你睡觉前的画面...{w=0.5}你床头是不是有一盏台灯?"
     m 5hub "你平时是怎么关它的?{w=0.5}是伸手就能够到,还是得起身去按?"
 
