@@ -3292,7 +3292,6 @@ label test_zhiwujiangshi_111111:
     window hide
     $ original_music = renpy.music.get_playing(channel='music')
     show black zorder 100 with Dissolve(3.0, alpha=True)
-    hide monika
     $HKBHideButtons()
     show Dr_Edgar_George_Zomboss zorder 111 with dissolve
 
@@ -3323,7 +3322,6 @@ label zhiwujiangshi_boss_began:
     window hide
     scene black with Dissolve(3.0, alpha=True)
     show black zorder 100 with Dissolve(3.0, alpha=True)
-    hide monika
     $ renpy.movie_cutscene("Submods/Literature_and_Daily_Life/L&DL_Assets/video/pvz.webm")
 
     
