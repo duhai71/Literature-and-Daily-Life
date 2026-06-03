@@ -3,7 +3,7 @@ init -990 python:
         author="LADL团队",
         name="Literature And Daily Life V3",
         description="包含了大量话题的Submod,涵盖了文学、科学、心理学、生活、情感、闲聊、逻辑、音乐、哲学、约会、游戏等方面,以及人声曲目、钢琴曲目、约会、与MTTS的联动内容.",
-        version='3.0.0',
+        version='3.0.2',
         settings_pane="LADL_setting_pane"
     )
 
@@ -112,7 +112,7 @@ init -951 python:
         store.mas_submod_utils.submod_log.error("删除旧版本遗留文件出错：{}".format(l))
 
 define LADL_authors = """\
-度海、moon、456、Kxiangtang、哞尼卡、君翌、俩fish、龟酱、Lasagna、华猫.
+度海、moon、456、Kxiangtang、哞尼卡、君翌、俩fish、龟酱、Lasagna、华猫、stary.
 """
 
 define LADL_thanks = """\

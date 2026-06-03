@@ -487,7 +487,7 @@ label Monika_AIWFCIY_again2(skip_leadin=False):
     show mas_piano at Transform(xpos=-5, ypos=-195) with MoveTransition(4.0)
     pause 4.0
     show monika at Transform(xpos=640) with move
-    play music "Submods/Literature_and_Daily_Life/L&DL_Assets/music/All_I_want_for_Christmas_is_You.ogg" loop fadein 2.0
+    play music "Submods/Literature_and_Daily_Life/L&DL_Assets/music/All_I_want_for_Christmas_is_You.mp3" loop fadein 2.0
     show monika 2hua zorder MAS_MONIKA_Z at t11 with dissolve_monika
     pause 4.0
     show monika 2fua zorder MAS_MONIKA_Z at t11 with dissolve_monika
