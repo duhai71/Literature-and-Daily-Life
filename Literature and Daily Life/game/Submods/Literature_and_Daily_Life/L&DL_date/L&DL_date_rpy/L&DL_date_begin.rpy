@@ -58,7 +58,10 @@ label Monika_LADL_date_v3:
         m 5fua "等我准备一下衣服~"
         window hide
         show black zorder 100 with Dissolve(5.0, alpha=True)
+        $ renpy.music.stop(channel="background", fadeout=1.0)
         $HKBHideButtons()
+        $ renpy.music.stop(channel="music", fadeout=1.0)
+        $ original_music = renpy.music.get_playing(channel='music')
         call beach
     else:
         m 2rtsdld "嗯......我很乐意,[player]."

@@ -7,6 +7,8 @@ default sayori = True
 label beach:
     $HKBHideButtons()
     stop music
+    $ renpy.music.stop(channel="background", fadeout=1.0)
+    $ renpy.music.stop(channel="music", fadeout=1.0)
     hide monika
     hide black
     scene bg_sea_noon
