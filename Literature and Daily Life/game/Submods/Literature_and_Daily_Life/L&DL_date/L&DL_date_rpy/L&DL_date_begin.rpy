@@ -34,14 +34,14 @@ label LADL_date_Start_v3:
     m 6hua "毕竟我的能力也在和你相处的时候逐步提高,从这里去到那并不是什么难事."
     m 5fubla "这样也可以让我们尽情享受我们的二人世界."
     m 3hubfb "嗯......如果你想去的话和我说一声就好了,也就是去到\"外出\"那里."
-    $ mas_unlockEVL("Monika_LADL_date", "EVE")
+    $ mas_unlockEVL("Monika_LADL_date_v3", "EVE")
     return
 
 init 5 python:
     addEvent(
         Event(
             persistent.event_database,
-            eventlabel="Monika_LADL_date",
+            eventlabel="Monika_LADL_date_v3",
             category=['外出'],
             prompt="我想和你出去玩",
             pool=True,

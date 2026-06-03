@@ -3120,9 +3120,8 @@ label duhai_zombies_Letter_pvz3:
     m 3hua "我突然想起来我还没给你展示僵尸给我写的信"
     window hide
     show black zorder 100 with Dissolve(3.0, alpha=True)
-    hide monika
     $HKBHideButtons()
-    show zombies_Letter zorder 13 with dissolve:
+    show zombies_Letter zorder 113 with dissolve
 
     pause 3.0
 
@@ -3184,14 +3183,14 @@ label duhai_I_am_a_zombie:
     m 3sub "就像这样......"
     window hide
     show black zorder 100 with Dissolve(3.0, alpha=True)
-    hide monika
     $HKBHideButtons()
-    show IAAZ zorder 13 with dissolve:
+    show IAAZ zorder 113 with dissolve
 
     pause 3.0
 
     hide IAAZ
     hide black
+
     $HKBShowButtons()
     m 6eua "只要达到第一格那吃完五个脑子就能通过了."
     m 3eud "但召唤僵尸也是需要消耗阳光的."
@@ -3220,11 +3219,10 @@ label duhai_Vasebreaker:
     m 1eub "你看看这个......"
     window hide
     show black zorder 100 with Dissolve(3.0, alpha=True)
-    hide monika
     $HKBHideButtons()
-    show Vasebreaker zorder 13 with dissolve:
+    show Vasebreaker zorder 113 with dissolve
 
-    pause 10.0
+    pause 5.0
 
     hide Vasebreaker
     hide black
@@ -3296,7 +3294,7 @@ label test_zhiwujiangshi_111111:
     show black zorder 100 with Dissolve(3.0, alpha=True)
     hide monika
     $HKBHideButtons()
-    show Dr_Edgar_George_Zomboss zorder 111 with dissolve:
+    show Dr_Edgar_George_Zomboss zorder 111 with dissolve
 
     pause 10.0
 
