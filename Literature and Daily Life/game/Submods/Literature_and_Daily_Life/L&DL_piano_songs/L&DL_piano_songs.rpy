@@ -192,6 +192,7 @@ label Monika_random_songs72:
         m 3ruc "很多人觉得自己一听这曲子就觉得陷入了什么温馨而恐怖的东西中."
         m 3eud "你在聆听的时候又想到什么了呢?"
         $ mas_unlockEVL("Monika_Are_You_Lost", "EVE")
+        return
     elif random_choice == 6:
         m 5fua "好啊."
         m 3hua "等我把钢琴拿出来."
