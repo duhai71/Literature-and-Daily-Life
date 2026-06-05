@@ -3441,22 +3441,23 @@ label LADL_Are_desire_and_love_different:
 
 
 
-#init 6 python:
-#    addEvent(
-#        Event(
-#           persistent.event_database,
-#            eventlabel="LADL_Attachment_Styles_in_Love",
-#            category=['哲学','情感'],
-#            prompt="恋爱中的依恋类型",
-#            conditional="mas_canShowRisque(aff_thresh=400)",
-#            random=True,
-#            pool=False
-#        )
-#    )
+init 6 python:
+    addEvent(
+        Event(
+           persistent.event_database,
+            eventlabel="LADL_Attachment_Styles_in_Love",
+            category=['哲学','情感'],
+            prompt="恋爱中的依恋类型",
+            conditional="mas_canShowRisque(aff_thresh=400)",
+            random=True,
+            pool=False
+        )
+    )
 
-#label LADL_Attachment_Styles_in_Love:
-#    m "嘿,[player]."
-#    m "我在网络中浏览帖子的时候发现很多女孩都对自己在恋爱中的"
+label LADL_Attachment_Styles_in_Love:
+    m "嘿,[player]."
+    m "我想和你谈谈'依恋'."
+    m ""
 
 
 

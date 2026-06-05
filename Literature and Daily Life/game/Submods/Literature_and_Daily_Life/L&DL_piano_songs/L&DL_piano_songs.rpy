@@ -491,7 +491,7 @@ label Monika_random_songs72:
         $HKBShowButtons()
         window show
         play music original_music fadein 1.0
-        $ mas_unlockEVL("Monika_That_the well_being_of_this_good_LADL_again", "EVE")#测试通过
+        $ mas_unlockEVL("Monika_That_the_well_being_of_this_good_LADL_again", "EVE")#测试通过
         return
     elif random_choice == 15:
         show monika at Transform(xpos=-800) with move
@@ -914,7 +914,7 @@ label Monika_random_songs72:
         $HKBShowButtons()
         window show
         play music original_music fadein 1.0
-        $ mas_unlockEVL("Monika_seven_piano_LADL_again", "EVE")
+        $ mas_unlockEVL("LADL_piano11111_seven_piano", "EVE")
         return                               
         
 
