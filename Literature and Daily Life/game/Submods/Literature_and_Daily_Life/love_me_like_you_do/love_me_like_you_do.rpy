@@ -3309,6 +3309,7 @@ label test_zhiwujiangshi_111111:
         "你愿意现在看吗?"
         "愿意":
             m 5fub "好的,那我们开始吧！"
+            $ renpy.music.stop(channel="background", fadeout=1.0)
             jump zhiwujiangshi_boss_began
         "现在不方便":
             m 2etc "好吧,[player]."
@@ -3353,6 +3354,7 @@ label zhiwujiangshi_PVZ_began:
         $ persistent.zhiwujiangshi_duhai_PVZ_you1_first = True
         m 5fua "好的,[player]."
         m 3hub "我已经等不及了."
+        $ renpy.music.stop(channel="background", fadeout=1.0)
         jump zhiwujiangshi_boss_began
     else:
         m 3rtsdlc "我记得我之前已经这么做过了."
