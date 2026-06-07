@@ -244,7 +244,7 @@ label ty_cleanup:
     pause 4.0
     call mas_transition_from_emptydesk()
     
-    $ mas_unlockEVL("Monika_ty_piano_again_v3", "EVE")
+    $ mas_unlockEVL("Monika_ty_again_v3", "EVE")
     $ persistent._mas_disable_animations = False
     $HKBShowButtons()
     

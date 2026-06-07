@@ -957,7 +957,7 @@ label monika_jiangnan_again(skip_leadin=False):
     $HKBShowButtons()
     window show
     play music original_music fadein 1.0
-    m 1huabla "希望你喜欢"
+    m 1hubla "希望你喜欢"
     return
 
 #2 V3    
