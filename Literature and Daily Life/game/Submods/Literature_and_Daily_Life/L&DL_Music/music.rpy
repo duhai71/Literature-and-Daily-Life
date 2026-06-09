@@ -11,17 +11,18 @@ init python:
         rec_layer=MASMonika.PST_ACS
     )
 
+
 style monika_lad_ctext:
-    font "mod_assets/font/shangshouyurenti.ttf"
+    font "mod_assets/font/SIMYOU.TTF"
     color "#fff"
-    size 60
+    size 38
     text_align 0.5
     outlines []
 
 style monika_lad_etext:
-    font "gui/font/m1.ttf"
+    font "mod_assets/font/SIMYOU.TTF"
     color "#fff"
-    size 50
+    size 38
     text_align 0.5
     outlines []
 
@@ -29,7 +30,7 @@ transform lad_chinese:
     xpos 0.5 xanchor 0.5 ypos 0.6 yanchor 0.6
 
 transform lad_english:
-    xpos 0.5 xanchor 0.5 ypos 0.7 yanchor 0.7
+    xpos 0.5 xanchor 0.5 ypos 0.75 yanchor 0.75
 
 transform lad_back:
     xpos 0.5 xanchor 0.5 ypos 0.66 yanchor 0.66
@@ -291,24 +292,26 @@ label lad_show_text_v2:
 
 # 事件定义
 init 5 python:
+    import datetime
     addEvent(Event(persistent.event_database,
         eventlabel="Monika_YBWM_again",
         category=["音乐"],
         prompt="你可以为我再唱一次<You belong with me>吗",
         pool=True,
-        unlocked=False,
+        unlocked=False
         )
     )
 
 
 init 5 python:
-        addEvent(Event(persistent.event_database,
-            eventlabel="lad_music1",
-            category=["音乐"],
-            prompt="YBWM",
-            pool=False,
-            conditional="_mas_getAffection() >= 600",
-            action=EV_ACT_PUSH
+    import datetime
+    addEvent(Event(persistent.event_database,
+        eventlabel="lad_music1",
+        category=["音乐"],
+        prompt="YBWM",
+        pool=False,
+        conditional="_mas_getAffection() >= 600",
+        action=EV_ACT_PUSH
             )
         )
 
@@ -324,7 +327,7 @@ init 5 python:
     )
 
 init 5 python:
-        addEvent(Event(persistent.event_database,
+    addEvent(Event(persistent.event_database,
             eventlabel="lad_music2",
             category=["音乐"],
             prompt="AIWFCIY",
@@ -361,6 +364,8 @@ label Monika_YBWM_again(skip_leadin=False):
 # 新版唱歌标签 - 使用歌词播放器和表情同步
 label Monika_YBWM_again_v2(skip_leadin=False):
     $ lad_music = 0
+    if youbelongwithme_player:
+        $ youbelongwithme_player.reset()
     $ persistent._mas_disable_animations = True
     
     # 去拿麦克风
@@ -373,6 +378,7 @@ label Monika_YBWM_again_v2(skip_leadin=False):
     $ mas_drawSpaceroomMasks(dissolve_masks=False)
     
     m 1hua "让我们开始吧"####################
+
     $ original_music = renpy.music.get_playing(channel='music')
     $HKBHideButtons()
     window hide
@@ -395,7 +401,7 @@ label Monika_YBWM_again_v2(skip_leadin=False):
     
     $ youbelongwithme_player.play()
     show ladtback zorder 49 at lad_back with dissolve
-    show monika 1eua zorder 50
+    show monika 1eua zorder 40
     $ info = youbelongwithme_player.get_current_lyric()
 
 label ybwm_lyric_loop:
@@ -423,7 +429,7 @@ label ybwm_lyric_loop:
             jump ybwm_lyric_loop
     else:
         # 播放器未运行，直接结束
-        jump ybwm_lyric_loop
+        jump ybwm_lyric_end
     
 label ybwm_lyric_end:
     hide screen lad_texts
@@ -453,6 +459,7 @@ label ybwm_cleanup:
         m 3eubfb "为了你,哪怕付出多少时间我都愿意."
         $ persistent.monika_ybwm = True
     m 5fubfb "爱你,[player]."
+    $ persistent.last_song_end_time = datetime.datetime.now()
     return "love"
 
 # 圣诞歌曲标签（保持不变）
@@ -480,7 +487,7 @@ label Monika_AIWFCIY_again2(skip_leadin=False):
     show mas_piano at Transform(xpos=-5, ypos=-195) with MoveTransition(4.0)
     pause 4.0
     show monika at Transform(xpos=640) with move
-    play music "Submods/Literature_and_Daily_Life/L&DL_Assets/music/All_I_want_for_Christmas_is_You.ogg" loop fadein 2.0
+    play music "Submods/Literature_and_Daily_Life/L&DL_Assets/music/All_I_want_for_Christmas_is_You.mp3" loop fadein 2.0
     show monika 2hua zorder MAS_MONIKA_Z at t11 with dissolve_monika
     pause 4.0
     show monika 2fua zorder MAS_MONIKA_Z at t11 with dissolve_monika

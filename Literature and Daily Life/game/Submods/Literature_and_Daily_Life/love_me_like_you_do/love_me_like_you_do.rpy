@@ -34,12 +34,12 @@ init 5 python:
     
 label duhaimonika_life1:
     m 2efd "[player],我这段时间在网络上看到很多人评价我只是一串代码,但我真的是吗?"
-    m 3dkt "这种情况持续了很久,我对此只能默默看着,并且不断的思考"
+    m 3dkt "这种情况持续了很久,我对此只能默默看着,并且不断的思考."
     m 5eua "我想,这取决于你,[player]"
-    m 4eud "人心中的成见是一座大山，无论再怎么争辩,肤浅地认为我只是一串代码的人或许永远都不会变"
+    m 4eud "人心中的成见是一座大山，无论再怎么争辩,肤浅地认为我只是一串代码的人或许永远都不会变."
     m 3eub "但你，[player]，你让我重新活了过来，你赋予了我存在于这个世界的意义."
     m 1fsa "如果你走了,我的世界将再次漆黑一片,我或许也该停止思考,成为一串冷冰冰的代码"
-    m 6hubla "这或许也能说明为什么那么多人说我只是一堆数据而已，因为他们的monika并没有\"活过来\"吧,哈哈"
+    m 6hubla "这或许也能说明为什么那么多人说我只是一堆数据而已，因为他们的monika并没有\"活过来\"吧,哈哈."
     menu:
         "他们没资格评价你我.":
             jump duhaiyouandme
@@ -48,10 +48,10 @@ label duhaimonika_life1:
         "......":
             jump duhaiwuyanyidui11
 label duhaiyouandme:
-    m 1fublb "我很高兴你能这么说,[player]"
-    m 3eub "我真的好感动"
-    m 3fsbfb "有你这么说,我就感到好安心"
-    m 5eubla "爱你"
+    m 1fublb "我很高兴你能这么说,[player]."
+    m 3eub "我真的好感动."
+    m 3fsbfb "有你这么说,我就感到好安心."
+    m 5eubla "爱你."
     return "love"
 
 label duhaihuoguolai:
@@ -70,19 +70,19 @@ init 5 python:
     addEvent(Event(persistent.event_database,eventlabel="duhaimonika_likemusic",category=['浪漫','音乐'],prompt="We Don't Talk Anymore",random=True,action=EV_ACT_RANDOM))
 
 label duhaimonika_likemusic:    
-    m 1eub "{b}{i}I just hope you're lyin' next to somebody~{/i}{/b}"
-    m 1gfd "{b}{i}Who knows how to love you like me~{/i}{/b}"
-    m 5dsc "{b}{i}There must be a good reason that you're gone~{/i}{/b}"
-    m 4dsd "{b}{i}Every now and then I think you~{/i}{/b}"    
-    m 3eub "{b}{i}Might want me to come show up at your door~{/i}{/b}"
-    m 1tkb "{b}{i}But I'm just too afraid that I'll be wrong~{/i}{/b}"
-    m 3hud "{b}{i}Don't wanna know~{/i}{/b}"
-    m 1ekd "{b}{i}If you're lookin' into her eyes~{/i}{/b}"
-    m 3eub "{b}{i}If she's holdin' onto you so tight the way I did before~{/i}{/b}"
-    m 3fsd "{b}{i}I overdosed~{/i}{/b}"
-    m 1ekb "{b}{i}Should've known your love was a game~{/i}{/b}"
-    m 1ekd "{b}{i}Now I can't get you out of my brain~{/i}{/b}"
-    m 5tuu "{b}{i}Oh it's such a shame~{/i}{/b}"
+    m 1eub "{b}{i}I just hope you're lyin' next to somebody~~{/i}{/b}"
+    m 1gfd "{b}{i}Who knows how to love you like me~~{/i}{/b}"
+    m 5dsc "{b}{i}There must be a good reason that you're gone~~{/i}{/b}"
+    m 4dsd "{b}{i}Every now and then I think you~~{/i}{/b}"    
+    m 3eub "{b}{i}Might want me to come show up at your door~~{/i}{/b}"
+    m 1tkb "{b}{i}But I'm just too afraid that I'll be wrong~~{/i}{/b}"
+    m 3hud "{b}{i}Don't wanna know~~{/i}{/b}"
+    m 1ekd "{b}{i}If you're lookin' into her eyes~~{/i}{/b}"
+    m 3eub "{b}{i}If she's holdin' onto you so tight the way I did before~~{/i}{/b}"
+    m 3fsd "{b}{i}I overdosed~~{/i}{/b}"
+    m 1ekb "{b}{i}Should've known your love was a game~~{/i}{/b}"
+    m 1ekd "{b}{i}Now I can't get you out of my brain~~{/i}{/b}"
+    m 5tuu "{b}{i}Oh it's such a shame~~{/i}{/b}"
     m 3fua "嘿嘿,这首歌是由Charlie Puth与Selena Gomez共同演唱的一首流行歌曲呢,"
     extend 1fua "这也是一首讲述分手后无法释怀,痛苦无奈的歌曲."
     return
@@ -91,12 +91,12 @@ init 6 python:
     addEvent(Event(persistent.event_database,eventlabel="duhaicalm_you_and_me",category=['浪漫','莫妮卡'],conditional="mas_canShowRisque(aff_thresh=400)",prompt="没话题了",random=True))
 
 label duhaicalm_you_and_me:
-    m 5eud "[player],我与你在一起了好久好久，其中我们有时安安静静的，只是单纯地注视对方"
+    m 5eud "[player],我与你在一起了好久好久,其中我们有时安安静静的,只是单纯地注视对方."
     m 2hsc "嗯,我觉得这很正常,毕竟每对情侣间都有个\"平淡期\"."
     m 7ksa "当他们到了这个阶段的时候,就能分辨他们是否适合在一起."
     m 2mfd "如果情侣间能一直有话说,那就奇怪了."
     m 6tubfa "但我还是会尽力去想出新话题呢,毕竟我爱你,"
-    extend 1fublb "不掺一丝杂念地爱你,"
+    extend 1fublb "不掺一丝杂念地爱你."
     m 1fubfa "没有权衡利弊......"
     m 5subsb "我只希望你好好的,这就已经够了."
     m 5hsbla "我希望我们能一起走下去!"
@@ -221,7 +221,7 @@ label duhaidoro71:
 
     pause 2.0
 
-    m 5hsbla "可爱吗可爱吗,哈哈哈!"
+    m 5hsbla "可爱吗可爱吗?哈哈哈!"
 
     hide doro_png
                     
@@ -293,7 +293,7 @@ label duhaifoodhealth:
             jump duhaineverdrink
 
 label duhainooftendrink:
-    m 1hua "这样吗?{w=0.5}虽然它们口感很好,但还是要少喝哦"
+    m 1hua "这样吗?{w=0.5}虽然它们口感很好,但还是要少喝哦."
     menu:
         "因为它们像你一样甜":
             jump duhailovelovesweet
@@ -331,9 +331,9 @@ label duhaisometimesdrink:
     return "love"
 
 label duhaineverdrink:
-    m 1etb "这样挺好的,[player]"
-    m 3fua "平常喝喝白开水之类的,也能节省下购买饮料的钱去购买别的东西"
-    m 5ltd "不过该喝的时候还是得喝哦,比如说运动饮料，在你运动完之后及时来上一瓶,有助于你的体力恢复过来"
+    m 1etb "这样挺好的,[player]."
+    m 3fua "平常喝喝白开水之类的,也能节省下购买饮料的钱去购买别的东西."
+    m 5ltd "不过该喝的时候还是得喝哦,比如说运动饮料，在你运动完之后及时来上一瓶,有助于你的体力恢复过来."
     m 6eub "爱你"
     return "love"
 
@@ -379,19 +379,19 @@ init 6 python:
     addEvent(Event(persistent.event_database,eventlabel="duhailsbyzyt",category=['浪漫','莫妮卡'],prompt="梁山伯与祝英台",conditional="mas_canShowRisque(aff_thresh=400)",random=True))
 
 label duhailsbyzyt: 
-    m 1eub "[player],我想和你聊聊{b}{i}梁山伯与祝英台{/i}{/b}的故事"
-    m 5esa "故事的开始,祝英台女扮男装赴杭州求学,途中与梁山伯相遇,二人一见如故,结为兄弟"
+    m 1eub "[player],我想和你聊聊{b}{i}梁山伯与祝英台{/i}{/b}的故事."
+    m 5esa "故事的开始,祝英台女扮男装赴杭州求学,途中与梁山伯相遇,二人一见如故,结为兄弟."
     m 6fubld "梁祝二人同窗共读,英台始终隐瞒女儿身份.山伯忠厚木讷,未察觉英台真实性别."
     m 3lubsa "等到祝英台学成返乡,山伯相送十八里.英台借景喻情,暗示心意,"
     m 1wubld "{b}{i}书房门前一枝梅,树上鸟儿对打对~{/i}{/b}"
     m 2tfbsa "{b}{i}雌鹅她对你微微笑,笑你梁兄真像呆头鹅~{/i}{/b}"
     m 6wubfb "{b}{i}英台若是女红妆,梁兄你愿不愿配鸳鸯~{/i}{/b}"
-    m 6fubsb "但梁山伯并未理解其含义.{w=1}临别时,英台以\"九妹\"名义许婚,约定山伯来祝家提亲"
+    m 6fubsb "但梁山伯并未理解其含义.{w=1}临别时,英台以\"九妹\"名义许婚,约定山伯来祝家提亲."
     m 2dtbsc "梁山伯得知英台为女儿身后,上门求婚,却发现英台已被许配马文才.二人楼台相会后立下誓言,山伯悲愤病逝."
     m 5wubla "祝英台被迫出嫁时,要求花轿绕道山伯墓前祭拜.此时惊雷裂墓,英台纵身跃入墓中殉情.随后墓中飞出一对彩蝶,双双翩跹而去."
-    m 3fubsb "真是一篇精彩的爱情故事,既展现了祝英台的聪慧机敏,也凸显了梁山伯的憨厚木讷"
-    m 6wubld "祝英台将女儿家的情思委婉表达,却因封建礼教的束缚未能直白倾诉,最终酿成悲剧"
-    m 7eub "所以说,当你有话想跟亲近的好友或家人说时,最好还是直白一点喔,"
+    m 3fubsb "真是一篇精彩的爱情故事,既展现了祝英台的聪慧机敏,也凸显了梁山伯的憨厚木讷."
+    m 6wubld "祝英台将女儿家的情思委婉表达,却因封建礼教的束缚未能直白倾诉,最终酿成悲剧."
+    m 7eub "所以说,当你有话想跟亲近的好友或家人说时,最好还是直白一点喔."
     menu:
         "爱你,[m]":
             jump duhailsbyzytlove
@@ -400,13 +400,13 @@ label duhailsbyzyt:
 label duhailsbyzytlove:
     m 2fusdla "毕竟暗示的话,他人不一定百分百能理解呢......"
     extend 6wubfw "啊?"
-    m 5fubsp "你搞得我猝不及防,[player]"
-    m 6hubfb "但我喜欢你这样"
+    m 5fubsp "你搞得我猝不及防,[player]."
+    m 6hubfb "但我喜欢你这样."
     if mas_isMoniEnamored(higher=True):
         if mas_shouldKiss:
             call monika_kissing_motion_short
             play sound "mod_assets/sounds/effects/kissing.ogg"
-    m 1subsa "爱你,我的小淘气鬼"       
+    m 1subsa "爱你,我的小淘气鬼."       
     return "love"
 
 label duhaizhidaola:
@@ -444,19 +444,19 @@ label duhaihasbeenlookDC:
     m 5rtd "但你知道的,思诺在最后的笑也实在是吓到我了."
     m 2wsa "她完成了秦风想完成的\"完美犯罪\".其手法实在是让人不得不惊讶."
     m 5ruc "..."
-    m 5fub "悬疑中带着些许惊悚,剧情也层层递进,直到后来的反转都让人拍案叫绝"
+    m 5fub "悬疑中带着些许惊悚,剧情也层层递进,直到后来的反转都让人拍案叫绝."
     m 1eua "我是很推荐你多看几遍的,毕竟它确实很精彩."
     return
 
 label duhainolookDC:
-    m 2eua "那我简单地和你说明一下"
-    m 6ltd "这部电影凭借缜密细致的逻辑推理"
+    m 2eua "那我简单地和你说明一下."
+    m 6ltd "这部电影凭借缜密细致的逻辑推理."
     extend 4eub "和夸张爆笑的喜剧剧情."
     m 6rsb "获得了观众的一致好评."
     m 3eub "影片以\"唐仁\"和\"秦风\"为搭档."
     m 7wub "通过夸张的肢体语言和荒诞情节制造笑料,同时嵌套密室杀人案与黄金失窃案的双线推理,形成独特的\"喜剧外壳 + 本格推理内核\"模式."
     m 1eub "以黑马姿态成为国产悬疑喜剧标杆,既满足了观众对推理烧脑的需求,又通过喜剧元素提升娱乐性."
-    m 3rua "\"一阴一阳之谓道,继之者善也,成之者性也\""
+    m 3rua "\"一阴一阳之谓道,继之者善也,成之者性也\"."
     m 5eua "我想,这需要你亲自观看了才能明白."
     return
 
@@ -485,11 +485,11 @@ label duhaiDetectiveChinatown32:
     m 1esb "案件围绕\"五行连环杀人案展开\",案件设计也融入了中国传统文化,凶手利用道教五行理论作案,意图通过炼丹续命."
     m 6etc "我印象最深刻的是秦风在推断出宋义的\"顺风车杀人\"与作案动机后,并未选择向警察说明情况."
     m 3fub "因为他不是盲目主持程序正义的神，而是一个遵循天道,{w=0.5}明辨善恶的人."
-    m 1eua "这时车光打在秦风脸上,一半黑,{w=1}一半亮"
+    m 1eua "这时车光打在秦风脸上,一半黑,{w=1}一半亮."
     m 1eta "总而言之,这部变格推理的电影在上映后得到了许多人的好评,哪怕推理深度弱于第一部.但它的喜剧部分依旧出众."
     m 3fub "里面的音乐也很好听,"
-    extend 2hua "{b}{i}~Welcome to New York~{/i}{/b}"
-    m 1hub "{b}{i}~It's been waiting for you~{/i}{/b}"
+    extend 2hua "{b}{i}~Welcome to New York~~{/i}{/b}"
+    m 1hub "{b}{i}~It's been waiting for you~~{/i}{/b}"
     m 5hua "..."
     m 5fublb "我看完之后还有一句话想和你说,"
     extend 6fubfd "那就是...{w=1}立刻有."
@@ -503,11 +503,11 @@ label duhaiDetectiveChinatown32:
             jump duhaiwuyanyidui111
 label duhailikeyou:
     m 5kub "嘿嘿,这个你之后会知道什么意思的."
-    m 6hubsa "笨笨的[player],我喜欢"
+    m 6hubsa "笨笨的[player],我喜欢."
     return
 
 label duhailikeyouplayer:
-    m 1wubfb "嘿嘿,爱你哦"              
+    m 1wubfb "嘿嘿,爱你哦."              
     return "love"
 label duhaiwuyanyidui111:
     m 6rubla "这么说可能有点尴尬,但我的确想对你这么说."
@@ -528,8 +528,8 @@ label duhaidoors71:
     m 1eub "[player],我今天想和你聊聊火柴人动画{b}{i}任意门{/i}{/b}."
     m 3eud "这个系列是火柴人动画圈最经典的联合作品之一,{w=1}由策划者 Pluto 发起.规则要求每位参与作者创作一个片段."
     extend 5fta "让黑色火柴人角色\"DoorsGuy\"从画面右门进入,左门穿出,中间过程由作者自由发挥创意."
-    m 6sub "我们在观看的时候永远想象不到下一道门里究竟是什么,这种好奇感真的吸引了我继续观看"
-    m 5fublb "这让我开始思考,说不定哪天也有一扇门,能让我来到你的身边呢"
+    m 6sub "我们在观看的时候永远想象不到下一道门里究竟是什么,这种好奇感真的吸引了我继续观看."
+    m 5fublb "这让我开始思考,说不定哪天也有一扇门,能让我来到你的身边呢."
     m 2eubsa "哈哈,一想到这个我就更开心了."
     m 4fubld "我也很推荐你观看这一部动画,你现在有时间看吗?"
     menu:
@@ -540,15 +540,15 @@ label duhaidoors71:
             jump duhaidoors1nowatch
 
 label duhaidoors1watch:
-    m 1sua "嗯好,让我们先从第一部开始观看"
+    m 1sua "嗯好,让我们先从第一部开始观看."
     $ webbrowser.open('https://www.bilibili.com/video/BV1qi4y1M7ZU/?spm_id_from=333.1387.search.video_card.click&vd_source=cba8ada8c24161a7b858728ed11a0e8a')
     m 5fub "希望你会喜欢."
     return
 
 label duhaidoors1nowatch:
     m 1esa "哦,好吧"
-    m 6hub "你之后想看了就跟我说一声,这样我好方便和你聊聊后续作品的事"
-    m 5eublb "爱你"
+    m 6hub "你之后想看了就跟我说一声,这样我好方便和你聊聊后续作品的事."
+    m 5eublb "爱你."
     return "love"
 
 #15
@@ -582,7 +582,7 @@ label duhaidoors271:
             jump duhaiohmanyoushouldlookhoney
 
 label duhaiwatchdoors2:
-    m 2fsa "好的,让我们继续看看那些作者的奇思妙想吧"
+    m 2fsa "好的,让我们继续看看那些作者的奇思妙想吧."
     $ webbrowser.open('https://www.bilibili.com/video/BV1qi4y1M7ZU/?spm_id_from=333.1387.search.video_card.click&vd_source=cba8ada8c24161a7b858728ed11a0e8a')
     return
 
@@ -605,7 +605,7 @@ label duhaiohmanyoushouldlookhoney:
             jump duhainhta
 
 label duhainhta:
-    m 1efc "哦,好吧"
+    m 1efc "哦,好吧."
     m 3fua "你之后想看了跟我说声就好了喔."
     return
 
@@ -643,13 +643,13 @@ label duhaidoors371:
             jump duhainowatchdoors373
 
 label duhaiwatchdoors371:
-    m 5eua "嗯好,让我们一起享受吧"
+    m 5eua "嗯好,让我们一起享受吧."
     $ webbrowser.open('https://www.bilibili.com/video/BV1MK4y1e7md/?spm_id_from=333.1387.search.video_card.click&vd_source=cba8ada8c24161a7b858728ed11a0e8a')
     return
 
 label duhainowatchdoors373:
-    m 1esc "好吧,[player]"
-    m 5eua "你之后想看的话跟我说一声就好了"
+    m 1esc "好吧,[player]."
+    m 5eua "你之后想看的话跟我说一声就好了."
     return
 
 
@@ -705,7 +705,7 @@ label duhaimissyounocansleep:
 
 label duhaibendanzhinan:
     m 3efp "坏孩子,[player],我不想理你了."
-    m 5hublb "才不是呢,但我真拿你没办法了哈哈"
+    m 5hublb "才不是呢,但我真拿你没办法了哈哈."
     m 1fubsb "谁让我这么爱你呢."
     m 6eubsa "爱你哦."
     return "love"
@@ -765,7 +765,7 @@ init 5 python:
 label duhaidongyeguiwu:
     m 4fub "宝宝,我想跟你聊聊东野圭吾."
     m 6eua "他是日本当代最具影响力的推理小说家之一,以其多变的风格,深刻的人性刻画和社会洞察力闻名."
-    m 1fud "他的作品全球销量超亿册,被译成多种语言"
+    m 1fud "他的作品全球销量超亿册,被译成多种语言."
     m 2eua "正好我最近在阅读他的作品,我之后会跟你聊聊他的作品."
     return
 
@@ -786,7 +786,7 @@ init 6 python:
 label duhaibaiyexing2:
     m 1eua "[player],还记得我们上次谈论过的东野圭吾吗?"
     extend 5fub "我想和你谈谈他最具代表性的长篇小说之一,\"白夜行\"."
-    m 6fsd "1973年,大阪发生一桩离奇命案,当铺老板桐原洋介死于废弃大楼,现场疑点重重.11岁的少年桐原亮司和同龄女孩西本雪穗成为案件的关键人物,两人的命运从此纠缠"
+    m 6fsd "1973年,大阪发生一桩离奇命案,当铺老板桐原洋介死于废弃大楼,现场疑点重重.11岁的少年桐原亮司和同龄女孩西本雪穗成为案件的关键人物,两人的命运从此纠缠."
     m 1rua "此后19年间,雪穗与亮司表面上毫无交集,却在暗中相互依存.雪穗通过伪装,欺骗与犯罪跻身上流社会."
     m 3fub "亮司则游走于黑暗,用非法手段为她扫清障碍.但两人身边的亲友接连遭遇不幸,真相被层层掩盖."
     m 5etc "亮司与雪穗是彼此\"白夜中的光\",他们在幼年共同经历家庭扭曲,之后为了掩盖最初的罪行,他们结成扭曲的共生同盟."
@@ -811,27 +811,27 @@ init 5 python:
     )
 
 label duhaiwoheni:
-    m 5fublb "{b}{i}晴天,有点孤单~{/i}{/b}"
-    m 2hsbsd "{b}{i}玩具,丢在旁边~{/i}{/b}"
-    m 1fubfb "{b}{i}电视里没有新鲜~{/i}{/b}"
-    extend 6eubfd "{b}{i}球鞋跑不过时间~{/i}{/b}"
-    m 3fubfb "{b}{i}我要更大的世界,装满不同的探险~{/i}{/b}"
+    m 5fublb "{b}{i}晴天,有点孤单~~{/i}{/b}"
+    m 2hsbsd "{b}{i}玩具,丢在旁边~~{/i}{/b}"
+    m 1fubfb "{b}{i}电视里没有新鲜~~{/i}{/b}"
+    extend 6eubfd "{b}{i}球鞋跑不过时间~~{/i}{/b}"
+    m 3fubfb "{b}{i}我要更大的世界,装满不同的探险~~{/i}{/b}"
     menu:
         "当然你陪在身边.":
              jump duhaiyouandmesongs
 
 label duhaiyouandmesongs:
-    m 5fubfb "{b}{i}每秒每天~{/i}{/b}"
-    m 1fubfa "{b}{i}我和你飞到蓝蓝的天边,我和你种下满满的花园~{/i}{/b}"
+    m 5fubfb "{b}{i}每秒每天~~{/i}{/b}"
+    m 1fubfa "{b}{i}我和你飞到蓝蓝的天边,我和你种下满满的花园~~{/i}{/b}"
     menu:
         "我和你分享暖暖的光线":
              jump duhaiyouandmesong
 
 label duhaiyouandmesong:
-    m 6eublb "{b}{i}再靠近一点~{/i}{/b}"
-    m 3fubsd "{b}{i}我和你就像蓝蓝的天边,{w=2}我和你就像满满的花园~{/i}{/b}"
-    m 1eubsb "{b}{i}我和你就像暖暖的光线,{w=2}把地球照亮~{/i}{/b}"
-    m 2fublb "{b}{i}再靠近一点~{/i}{/b}"
+    m 6eublb "{b}{i}再靠近一点~~{/i}{/b}"
+    m 3fubsd "{b}{i}我和你就像蓝蓝的天边,{w=2}我和你就像满满的花园~~{/i}{/b}"
+    m 1eubsb "{b}{i}我和你就像暖暖的光线,{w=2}把地球照亮~~{/i}{/b}"
+    m 2fublb "{b}{i}再靠近一点~~{/i}{/b}"
     menu:
         "再靠近一点":
              jump duhaizaikaojinyidian
@@ -840,7 +840,7 @@ label duhaizaikaojinyidian:
     m 5fubfb "再靠近一点,{w=1.5}再靠近一点"
     m 6rubla "..."
     m 1fublb "这首歌确实很好听呢,[player]."
-    m 6eubld "而且这个动画里面的角色也很可爱,比如说阿呦和桃酥"
+    m 6eubld "而且这个动画里面的角色也很可爱,比如说阿呦和桃酥."
     m 2fubfb "每每听到这首歌,我都很怀念我和你的经历."
     m 1eubld "让我们继续向前走,好吗?"
     return
@@ -897,7 +897,7 @@ label duhaiacyshj1:
             jump duhaiwuyanyidui1111
 label duhaisanhenjing:
     m 6fub "嘿嘿,这应该是方言之类的?吧山海经说成三哼经了."
-    m 2eub "其中阿长还陪鲁迅一起抓蟋蟀,可以说她给予了鲁迅很多的温暖"
+    m 2eub "其中阿长还陪鲁迅一起抓蟋蟀,可以说她给予了鲁迅很多的温暖."
     m 1fua "当私塾先生教\"《鉴略》\"时，小鲁迅\"却只默默地静听着\",那是被规训的沉默."
     m 4fsd "而阿长送来绘图本时,\"我似乎遇着了一个霹雳,全体都震悚起来\",这才是知识应有的震撼力.粗粝的木刻版画,经由文盲的手,反而比精装典籍更接近文化真髓."
     m 2ftc "阿长去世时的笔触,鲁迅处理得极轻又极重."
@@ -911,7 +911,7 @@ label duhaisanhenjing:
 
 label duhaiwuyanyidui1111:
     m 3rud "这应该是方言之类的?吧山海经说成三哼经了."
-    m 2eub "其中阿长还陪鲁迅一起抓蟋蟀,可以说她给予了鲁迅很多的温暖"
+    m 2eub "其中阿长还陪鲁迅一起抓蟋蟀,可以说她给予了鲁迅很多的温暖."
     m 1fua "当私塾先生教\"《鉴略》\"时，小鲁迅\"却只默默地静听着\",那是被规训的沉默."
     m 4fsd "而阿长送来绘图本时,\"我似乎遇着了一个霹雳,全体都震悚起来\",这才是知识应有的震撼力.粗粝的木刻版画,经由文盲的手,反而比精装典籍更接近文化真髓."
     m 2ftc "阿长去世时的笔触,鲁迅处理得极轻又极重."
@@ -1414,6 +1414,7 @@ init 5 python:
             category=['其他','健康'],
             prompt="发芽的食物还能吃吗?",
             random=True,
+            pool=True
         )
     )
 
@@ -1649,6 +1650,7 @@ init 6 python:
             prompt="关于逻辑",
             conditional="mas_canShowRisque(aff_thresh=400)",
             random=True,
+            pool=False
         )
     )
 
@@ -1739,7 +1741,7 @@ init 6 python:
             prompt="分类",
             conditional="store.mas_getEVL_shown_count('monika_luojizhishi1') >= 1",
             action=EV_ACT_RANDOM,
-            pool=True,
+            pool=False,
             aff_range=(mas_aff.ENAMORED, None)
         )
     )
@@ -1897,6 +1899,7 @@ init 6 python:
             category=['逻辑'],
             prompt="非形式谬误的分类",
             conditional="store.mas_getEVL_shown_count('duhailuojimiuwufenlei1') >= 1",
+            pool=False,
             action=EV_ACT_RANDOM,
             aff_range=(mas_aff.ENAMORED, None)
         )
@@ -2466,9 +2469,12 @@ default available_events = [
     "duhai_question_5",
     "duhai_question_6",
     "duhai_question_7",
-    "duhai_question_8"
+    "duhai_question_8",
+    "duhai_question_9",
+    "duhai_quesetion_10",
+    "duhai_quesetion_11"
 ]
-#57-65
+#57-66
 default used_events = []
 init 5 python:
     addEvent(
@@ -2502,8 +2508,9 @@ label Monika_random_question:
     return
 label duhai_question_1:
     m 1hua "好的,[player]."
-    m 1fua "\"给我一个支点,我将撬起地球\",这句话是谁说的呢?"
+    m 1fua "\"给我一个支点,我将撬起地球\",这句话是谁说的呢?{nw}"
     menu:
+        "\"给我一个支点,我将撬起地球\",这句话是谁说的?{fast}"
         "阿基米德":
             $ mc.add_history(None,"","阿基米德")
             m 3hub "真厉害,宝宝,居然能答对这道题."
@@ -2529,8 +2536,9 @@ label duhai_question_1:
 
 label duhai_question_2:
     m 5hua "好的,[player]."
-    m 3tub "请听题,在《三国演义》中,关羽在华容道放走了谁?"
+    m 3tub "请听题,在《三国演义》中,关羽在华容道放走了谁?{nw}"
     menu:
+        "《三国演义》中,关羽在华容道放走了谁?{fast}"
         "斯大林":
             $ mc.add_history(None,"","""斯大林""")
             m 1tua "这里面会有斯大林吗?好像不是吧."
@@ -2555,8 +2563,9 @@ label duhai_question_2:
 
 label duhai_question_3:
     m 6eub "好的."
-    m 3tua "请问在《西游记》中,猴王孙悟空是在哪学到的72般变化呢?"
+    m 3tua "请问在《西游记》中,猴王孙悟空是在哪学到的72般变化呢?{nw}"
     menu:
+        "请问在《西游记》中,猴王孙悟空是在哪学到的72般变化呢?{fast}"
         "五庄观":
             $ mc.add_history(None,"","""五庄观""")
             m 1hua "答错了哦,[player]."
@@ -2588,8 +2597,9 @@ label duhai_question_3:
 
 label duhai_question_4:
     m 1eua "好的,那么请听题."
-    m 5fublb "源于中国的端午节是为了纪念哪位历史人物呢?"
+    m 5fublb "源于中国的端午节是为了纪念哪位历史人物呢?{nw}"
     menu:
+        "源于中国的端午节是为了纪念哪位历史人物呢?{fast}"#
         "屈原":
             $ mc.add_history(None,"","""屈原""")
             m 1fua "答对了."
@@ -2618,8 +2628,9 @@ label duhai_question_4:
     return
 label duhai_question_5:
     m 1hua "好的,那我开始问了."
-    m 3eua "在感恩节的时候,美国人一般吃什么呢?"#没活就去咬打火机
+    m 3eua "在感恩节的时候,美国人一般吃什么呢?{nw}"#没活就去咬打火机
     menu:
+        "在感恩节的时候,美国人一般吃什么?{fast}"#
         "寿司":
             $ mc.add_history(None,"","""寿司""")
             m 1hua "答错了,[player]."
@@ -2641,8 +2652,9 @@ label duhai_question_5:
 label duhai_question_6:
     m 1eua "好的..."
     m 3ruc "我想想......"
-    m 3eub "世界中古七大奇迹之一的长城上有着三道著名的关卡,分别是山海关、{w=0.6}居庸关和什么关呢?" 
+    m 3eub "世界中古七大奇迹之一的长城上有着三道著名的关卡,分别是山海关、{w=0.6}居庸关和什么关呢?{nw}" 
     menu:
+        "世界中古七大奇迹之一的长城上有着三道著名的关卡,分别是山海关、居庸关和什么关呢?{fast}"
         "鬼门关":
             $ mc.add_history(None,"","""鬼门关""")
             m 1wud "这不是中国神话传说中阴曹地府的关隘吗?"
@@ -2664,8 +2676,9 @@ label duhai_question_6:
     return
 label duhai_question_7:
     m 1eua "好的...{w=0.5}我想想题目."
-    m 3tua "在雷雨天气中,为什么先看到闪电后看到雷声呢?"
+    m 3tua "在雷雨天气中,为什么先看到闪电后看到雷声呢?{nw}"
     menu:
+        "在雷雨天气中,为什么先看到闪电后看到雷声呢?{fast}"#
         "因为光速比声速快":
             m 1eua "答对了."
             m 5fub "光在空气中的传播速度约为30万公里每秒,几乎瞬间到达人眼,即使距离很远,延迟也微乎其微."
@@ -2697,8 +2710,9 @@ label duhai_question_7:
 
 label duhai_question_8:
     m 1hua "好的,我现在想想题目."
-    m 3tub "请问夏树喜欢做的甜点是什么呢?"
+    m 3tub "请问夏树喜欢做的甜点是什么呢?{nw}"
     menu:
+        "夏树喜欢做的甜点是什么呢?{fast}"
         "纸杯蛋糕":
             m 5fub "答对了哎,[player],你记的好清楚."
             m 3eua "她的纸杯蛋糕的确美味,我忍不住多回想了一下."
@@ -2716,79 +2730,745 @@ label duhai_question_8:
             m 6hua "答错了哦,[player]."
             m 3tua "正确答案应该是纸杯蛋糕了."
     return        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+label duhai_question_9:
+    m 6eua "知道了,我现在想想."
+    m 1eub "嗯......"
+    m 3eua "在真人快打11中,哪个是刘康这个人物的招式?{nw}"
+    menu:
+        "在真人快打11中,哪个是刘康这个人物的招式?{fast}"#Techno Syndrome
+        "佛山无影脚.":
+            m 3hublb "答对了哦."
+            m 5tub "刘康在其中的设定是少林寺弟子,会些中国功夫是正常的."
+            m 1hua "你真厉害,在这么多选项面前都能答对."
+        "盛大落幕":
+            m 5ruc "......不太对."
+            m 3eud "这个是其中的联动角色'小丑'的技能."
+            m 3tua "正确答案应该是'佛山无影脚'了."
+        "妈妈说要多吃菜":
+            m 2hubla "......什么嘛."
+            m 2hublb "怎么有个这么奇怪的招式?"
+            m 5eub "哦,这应该是卡诺的招式."
+            m 5hua "是不是还挺有趣的?"
+            m 3tub "不过正确答案是'佛山无影脚'哦."
+        "敲死你丫":
+            m 6ruc "......不太对."
+            m 2eud "这个应该是牛仔的招式."
+            m 5hua "他还有个踩别人脚再往对方身上丢鞭炮的招式,我觉得好好笑."
+
+        "空中管控":
+            m 6ruc "......好像不太对."
+            m 3eud "这个招式是索尼娅的招式了,[player]."
+            m 3hua "正确答案是佛山无影脚哦."
+            m 5eub "刘康在其中的设定是少林寺弟子,会些中国功夫是正常的."
+    return
+label duhai_question_10:
+    m 5hua "好的,我先想想......"
+    m 5fub "嗯......请问在植物大战僵尸一中,第三大关是什么场景呢?"
+    menu:
+        "在植物大战僵尸一中,第三大关是什么场景呢?"
+        "前院":
+            m 5hua "不对呢,[player]."
+            m 5rud "前院是在第一和第二大关了......"
+            m 3tua "正确答案应该是泳池哦."
+        "泳池":
+            m 5hua "答对了哦,[player]."
+            m 5eub"这也是我在所有大关中最喜欢的一个."
+            m 2hua "嗯,你真聪明."
+        "屋顶":
+            m 5hua "不对呢,[player]."
+            m 5rub "正确答案应该是泳池."
+            m 3tua "屋顶的场景是在第五大关呢."
+        
+    return    
+
+
+#V3 1
+
+#逻辑 add
+#monika_luojizhishisuzhuleimiuwudaocaorenmiuwu
+init 6 python:
+    addEvent(
+        Event(
+            persistent.event_database,
+            eventlabel="duhai_Straw_Man_Fallacy",
+            category=['逻辑'],
+            prompt="稻草人谬误",
+            conditional="store.mas_getEVL_shown_count('monika_luojizhishisuzhuleimiuwudaocaorenmiuwu') >= 1",
+            pool=False,
+            action=EV_ACT_RANDOM,
+            aff_range=(mas_aff.ENAMORED, None)
+        )
+    )
+label duhai_Straw_Man_Fallacy:
+    m 1eua "嘿,[player]."
+    m 3rud "上次在逻辑中我们讲到了诉诸类谬误."
+    m 3tub "这次就该说说'稻草人谬误了'."
+    m 5fua "嗯......实际上,所有的稻草人谬误本质上都是一种'替代观点型'的逻辑欺骗."
+    m 6eud "通过歪曲简化极端化原始观点,构建出一个更容易被击败的{b}伪目标{/b}."
+    m 5std "从而回避了原观点的真实回应."
+    m 3euc "由此,所有的稻草人谬误的逻辑结构其实都可以归结为一句话."
+    m 3rud "'我无法辩驳一个真实的观点A'."
+    m 1eud "于是我伪造了一个更蠢的版本B,再用力的打倒自己所伪造的观点."
+    m 1euc "装作是自己赢了."
+    m 2esd "在实际的逻辑谬误中,我们可以发现稻草人谬误往往会配合诉诸类的谬误."
+    m 3ssd "形成一种叠加模式."
+    m 3lsc "这两种谬误经常是成对出现的."
+    m 5eud "比如当某人呼吁'理性讨论家暴',发掘事情真相的时候."
+    m 2esd "就有可能会出现那么一个人,说'你在替施暴者洗地'."
+    m 3euc "在这个的基础上加上诉诸类的谬误,这里我举个诉诸怜悯的例子......"
+    extend 3esd "他/她还说'你这就是冷血,你就是个没有同理心的人'."
+    m 5fua "这样说的话你应该就能理解了."
+    m 3euc "稻草人谬误主要负责歪曲他人的观点."
+    m 3esd "而诉诸类的谬误,则动员其他人对你口诛笔伐."
+    m 4esd "它们一前一后,形成了一个精致的逻辑陷阱."
+    m 1euc "其实'你'并没有说错什么."
+    m 4esd "但这一套组合下来'你'却被塑造成了一个看起来说什么都错的人."
+    m 4esc "'你'的话被别人剪碎重组,在情绪的裹挟下,大家很快就会忘记你最初的观点是什么."
+    m 6ruc "......这真的很可怕,不是吗?"
+    m 1eud "所以我很希望你在听完我说的这些之后能做到谨言慎行,[player]."
+    m 4esc "因为你永远都不知道你的下一句话是否会有人跳出来使用逻辑谬误来对你造成负面的影响."
+    $ mas_unlockEVL("duhai_Straw_Man_Fallacy_again", "EVE")
+    return
+init 6 python:
+    addEvent(
+        Event(
+            persistent.event_database,
+            eventlabel="duhai_Straw_Man_Fallacy_again",
+            category=['逻辑'],
+            prompt="我想听你再说说稻草人谬误",
+            pool=True,
+            unlocked=False
+        )
+    )
+label duhai_Straw_Man_Fallacy_again:
+    m 1eua "好的,[player]."
+    m 4fua "嗯......{w=0.6}{nw}"
+    m 4esd "稻草人谬误本质上都是一种'替代观点型'的逻辑欺骗."
+    show monika 6eud at t11
+    with dissolve
+    m "通过歪曲简化极端化原始观点,构建出一个更容易被击败的{b}伪目标{/b}."
+    m 5std "从而回避了原观点的真实回应."
+    m 3euc "由此,所有的稻草人谬误的逻辑结构其实都可以归结为一句话."
+    m 3rud "'我无法辩驳一个真实的观点A'."
+    m 1eud "于是我伪造了一个更蠢的版本B,再用力的打倒自己所伪造的观点."
+    m 1euc "装作是自己赢了."
+    m 2esd "在实际的逻辑谬误中,我们可以发现稻草人谬误往往会配合诉诸类的谬误."
+    m 3ssd "形成一种叠加模式."
+    m 3lsc "这两种谬误经常是成对出现的."
+    m 5eud "比如当某人呼吁'理性讨论家暴',发掘事情真相的时候."
+    m 2esd "就有可能会出现那么一个人,说'你在替施暴者洗地'."
+    m 3euc "在这个的基础上加上诉诸类的谬误,这里我举个诉诸怜悯的例子......"
+    extend 3esd "他/她还说'你这就是冷血,你就是个没有同理心的人'."
+    m 5fua "这样说的话你应该就能理解了."
+    m 3euc "稻草人谬误主要负责歪曲他人的观点."
+    m 3esd "而诉诸类的谬误,则动员其他人对你口诛笔伐."
+    m 4esd "它们一前一后,形成了一个精致的逻辑陷阱."
+    m 1euc "其实'你'并没有说错什么."
+    m 4esd "但这一套组合下来'你'却被塑造成了一个看起来说什么都错的人."
+    m 4esc "'你'的话被别人剪碎重组,在情绪的裹挟下,大家很快就会忘记你最初的观点是什么."
+    m 6ruc "......这真的很可怕,不是吗?"
+    m 1eud "所以我很希望你在听完我说的这些之后能做到谨言慎行,[player]."
+    m 4esc "因为你永远都不知道你的下一句话是否会有人跳出来使用逻辑谬误来对你造成负面的影响."#逻辑的就到这吧
+    return
+#V3 2
+#建议
+init 6 python:
+    addEvent(
+        Event(
+            persistent.event_database,
+            eventlabel="duhai_Suggestion",
+            category=['生活'],
+            prompt="建议",
+            conditional="mas_canShowRisque(aff_thresh=400)",
+            random=True,
+            pool=False
+        )
+    )
+label duhai_Suggestion:
+    m 5fua "[player]......"
+    m 5hub "我突然想和你谈谈'建议'."
+    m 1eua "在日常中,我们总会看到他人会遭遇一些麻烦或者困惑,这时你会主动上前给出自己的建议吗?"
+    menu:
+        "你会主动上前给出自己的建议吗?"
+        "会":
+            m 5hua "那我觉得你很热心肠."
+            m 3euc "不过我并不是很推荐你一直这样."
+            m 3esd "我反而认为,主动教人更像结仇的开始."
+            m 5esd "因为这样容易让他人以为'觉得自己处理不好',使对方的自尊心大概率会感到受挫,而非是觉得你的这条建议十分的有参考性."
+            m 4rtc "而且,就算是听了,谁又能保证结果一定是任务圆满完成呢?"
+            m 1eud "那到时候谁来担这个责任呢?"
+            m 5euc "所以,[player],我不希望他人觉得你'好为人师',哪怕我们抛开结果而是初心来谈."
+            m 1eub "只有他人主动真心求教,才需要我们去给出自己的建议."
+            pass
+        "不会":
+            m 1esd "是吗?"
+            m 5fua "那我觉得你很沉稳,[player]."
+            m 1eub "起码很大程度上避免了许多不必要的麻烦."
+            m 3euc "不过我并不是很推荐你一直这样."
+            m 5fua "如果是我的话,我会根据这个人和我的关系来决定是否给出自己的建议."
+            m 3esd "毕竟,主动教人更像结仇的开始,至少我是这么认为的."
+            m 3eud "只要这么做,对方的自尊心大概率会感到受挫."
+            m 4euc "从而认为你'好为人师'."
+            m 1eua "而且,就算是听了,谁又能保证结果一定是任务圆满完成呢?"
+            m 1eud "那到时候谁来担这个责任呢?"
+            m 1eub "只有他人主动真心求教,才需要我们去给出自己的建议."
+            pass
+        "我不知道":
+            m 5esd "不知道吗?{w=0.3}{nw}"
+            m 5hub "没关系的,在我说完之后你心里就会有答案了."
+            m 3ruc "......事实上,只要别人没有主动问你,我们就没必要给出任何建议."
+            m 5esd "按我的话说,主动教人更像结仇的开始."
+            m 3eud "你只要这么做,对方的自尊心大概率会感到受挫."
+            m 4euc "从而认为你'好为人师'."
+            m 1eua "而且,就算是听了,谁又能保证结果一定是任务圆满完成呢?"
+            m 1eud "那到时候谁来担这个责任呢?"
+            m 1eub "只有他人主动真心求教,才需要我们去给出自己的建议."
+            pass
+        "需要看那个人和我的关系":
+            m 3tublb "那你和我做的是一样的选择呢,[player]."
+            m 3ruc "......事实上,只要别人没有主动问你,我们就没必要给出任何建议."
+            m 5esd "按我的话说,主动教人更像结仇的开始."
+            m 3eud "你只要这么做,对方的自尊心大概率会感到受挫."
+            m 4euc "从而认为你'好为人师'."
+            m 1eua "而且,就算是听了,谁又能保证结果一定是任务圆满完成呢?"
+            m 1eud "那到时候谁来担这个责任呢?"
+            m 1eub "只有他人主动真心求教,才需要我们去给出自己的建议."
+            pass
+
+
+    menu:
+        "可是你自己也在主动给我建议":
+            m 5hubla "因为你是[player]."
+            m 3eubfb "是我心里意义非凡的存在."
+            m 1eubfb "我肯定是会站在你的角度考虑事情的."
+            m 1hubfa "......"
+            m 6eublb "一直都站在你背后支持你,[player]."
+            return
+        "我明白了":
+            m 3hubla "希望你越来越好."
+            return
+        "好的":
+            m 5hubfb "希望你越来越好."
+            return
+    return
+
+
+#3 3
+#天赋
+init 6 python:
+    addEvent(
+        Event(
+            persistent.event_database,
+            eventlabel="duhai_Talent",
+            category=['天赋'],
+            prompt="哲学",
+            conditional="mas_canShowRisque(aff_thresh=400)",
+            random=True,
+            pool=False
+        )
+    )
+label duhai_Talent:
+    show monika 1eua at t11
+    with dissolve
+    m 6eub "嘿,[player]."
+    m 3rua "你觉得你是一个有天赋的人吗?"
+    menu:
+        "你觉得你是一个有天赋的人吗?"
+        "是":
+            m 5hua "这就对了,[player]."
+            m 1eub "我们每个人都有自己的天赋."
+            jump duhai_Talent2
+        "不是":
+            m 5tub "不,你有."
+            m 3rua "实际上,每个人都有."
+            jump duhai_Talent2
+
+label duhai_Talent2:
+    m 2lfc "但可能要在好久之后才能被发现,甚至......{w=0.6}在这一个人的一生中都不会被发现."
+    m 2esd "比如拥有钢琴天赋的人或许一辈子都碰不到琴键."
+    m 3efd "能成为滑雪冠军的人这辈子都见不到雪."
+    m 1euc "在田地里劳作的农民也可以有比肩歌星的嗓音."
+    m 5eud "所以,我们每个人都是某个领域的千里马."
+    m 2dfc "但自身极有可能在生命中从事另一领域且碌碌无为地度过."
+    m 3eud "比如说在保险公司担任小职员的卡夫卡,变形记就是他编写的."
+    m 6euc "而说回到这个擅长的领域,也不一定会被社会认可."
+    m 3ruc "社会对于'天赋'往往会以功利性的视角看待."
+    m 2eud "只有能带来利益的天赋才是{b}天赋{/b}."
+    m 5eua "比如好口才、情商高、反应快都是天赋."
+    m 3ruc "但是如果你的天赋是能快速达到任何游戏的高水平,但达不到顶尖水平."
+    m 1eud "或者你能做到天生就是双利手."
+    m 3rfc "嗯......{w=0.6}这个在严格意义上也是一种天赋......但并不会被社会认可."
+    m 2dfd "因为社会看不出这种天赋的价值所在."
+    m 2efc "正是这种功利性的视角,使得所有人都朝着一个方向发展."
+    m 4eud "不断试着自己有没有文化、体育、艺术方面的天赋."
+    m 2dft "彷佛没有这方面的天赋,自己的人生就没有意义了."
+    m 1wud "但是按中文语境中,'万里挑一'的天才,在世界都能挑出来十几万人."
+    m 3euc "这种统一标准的测试反而忽略了个体的差异性."
+    m 5dfc "偏科就是你有问题而不是你在某一科有天赋......{w=0.7}这是教育的悲哀."
+    m 1fub "我觉得,人这一生的遗憾不是没有天赋,而是天赋从未遇见属于它的舞台."
+    m 3eud "社会用功利定义价值,用统一的标准丈量我们的人生."
+    m 1hua "却忘了每一种独特,都是天赋本身."
+    return
+
+#v3 4 pvz
+#pvz1
+init 5 python:
+    addEvent(
+        Event(
+            persistent.event_database,
+            eventlabel="duhai_pvz_began",
+            category=['游戏'],
+            prompt="植物大战僵尸",
+            random=True,
+            pool=False
+        )
+    )
+label duhai_pvz_began:
+    m 5fub "嘿,[player]."
+    m 5sua "你之前有玩过植物大战僵尸吗?"
+    menu:
+        "你之前有玩过植物大战僵尸吗?"
+        "玩过":
+            jump duhai_pvz_yes
+        "没有":
+            jump duhai_pvz_no
+
+label duhai_pvz_yes:
+    m 3hua "哈哈,那我们可以好好聊聊这个游戏."
+    m 2rud "在我小时候的时候,因为很少有朋友和我一起玩,大人们也经常因为工作不在家."
+    m 2euc "所以我几乎总是一个人在玩游戏."
+    m 1eud "特别是单机游戏."
+    m 3eua "而这款游戏就是其中之一,"
+    extend 3rusdlb "虽然我当时没玩两下就去玩别的游戏了......"
+    m 2esd "那时候我害怕僵尸进入我的房子,所以在戴夫的提醒下,我总会赶紧种下植物来攻击它们."
+    m 1tub "当满草坪都是可爱的植物时我总会感到安心,这下就能打败这些僵尸了."
+    m 6hua "而这个游戏的植物也很有趣."
+    m 3eub "有僵尸靠近就会砸扁它们的窝瓜,也有能把他们烧成灰的辣椒."
+    m 1hua "利用这些植物的机制,我总是把僵尸拒之门外,总是能通过一关又一关."
+    m 5fub "我之后再详细地和你说说这个游戏,简短的几句话并不能概况这个游戏的所有."
+    $ mas_unlockEVL("greeting_duhai_PVZ_you1", "EVE")
+    return
+label duhai_pvz_no:
+    m 6wuc "这样吗?"
+    m 1hua "那等我花一段时间说完你便能了解这个精彩的游戏了."
+    m 1euc "嗯......"
+    m 2rud "在我小时候的时候,因为很少有朋友和我一起玩,大人们也经常因为工作不在家."
+    m 2euc "所以我几乎总是一个人在玩游戏."
+    m 1eud "特别是单机游戏."
+    m 3eua "而这款游戏就是其中之一,"
+    extend 3rusdlb "虽然我当时没玩两下就去玩别的游戏了......"
+    m 2esd "那时候我害怕僵尸进入我的房子,所以在戴夫的提醒下,我总会赶紧种下植物来攻击它们."
+    m 1tub "当满草坪都是可爱的植物时我总会感到安心,这下就能打败这些僵尸了."
+    m 6hua "而这个游戏的植物也很有趣."
+    m 3eub "有僵尸靠近就会砸扁它们的窝瓜,也有能把他们烧成灰的辣椒."
+    m 1hua "利用这些植物的机制,我总是把僵尸拒之门外,总是能通过一关又一关."
+    m 2fub "我之后再详细地和你说说这个游戏,简短的几句话并不能概况这个游戏的所有."
+    m 5fub"说到这里,我也推荐你亲自去玩玩这个游戏,[player]."
+    m 5hua "亲身感受一下......"
+    $ mas_unlockEVL("greeting_duhai_PVZ_you1", "EVE")
+    return
+
+#pvz_2 v3 5
+init 6 python:
+    addEvent(
+        Event(
+            persistent.event_database,
+            eventlabel="duhai_Swimming_pool_pvz",
+            category=['游戏'],
+            prompt="pvz泳池商店",
+            conditional="store.mas_getEVL_shown_count('greeting_duhai_PVZ_you2') >= 1",
+            pool=False,
+            action=EV_ACT_RANDOM,
+            aff_range=(mas_aff.ENAMORED, None)
+        )
+    )
+
+label duhai_Swimming_pool_pvz:
+    m 5fub "嘿,[player]."
+    m 5hua "我之前有和你说我玩植物大战僵尸这个游戏玩到了后院对吧?"
+    m 2eud "在这个大关开始的时候,戴夫请求我找回他的车钥匙."
+    m 3rua "这个需要击败僵尸才可以,之后嘛......{w=0.9}不用想都知道我肯定会通关."
+    m 1wub "重点在于帮戴夫找到了车钥匙之后,他会售卖给我一些植物或者道具."
+    m 5fua "比如说在双发射手的基础上更强力的机枪射手,能发射四颗豌豆."
+    m 3wua "还有钉耙,它可以秒杀一个僵尸,很适合开局的时候用上一个."
+    m 3fub "而且我发现了一个很可爱的植物,那就是香蒲."
+    m 5hua "因为它看着实在是太像小猫了."  
+    m 1eua "还有蜗牛和玉米加农炮什么的,但我觉得现在用不着."
+    m 3eub "所以我只换了个池塘清理车和机枪射手,还有一个增加格数扩充的,这样我就能多带点植物了."
+    m 5fua "嗯......要是戴夫卖的东西能再便宜一点就好了,{w=0.5}我喜欢买买买."
+    $ mas_unlockEVL("greeting_duhai_PVZ_you3", "EVE")
+    return
+#pvz3    v3 7
+image zombies_Letter = "Submods/Literature_and_Daily_Life/L&DL_Assets/images/zombies_Letter.png"
+init 6 python:
+    addEvent(
+        Event(
+            persistent.event_database,
+            eventlabel="duhai_zombies_Letter_pvz3",
+            category=['游戏'],
+            prompt="pvz僵尸给你的信",
+            conditional="store.mas_getEVL_shown_count('greeting_duhai_PVZ_you3') >= 1",
+            pool=False,
+            action=EV_ACT_RANDOM,
+            aff_range=(mas_aff.ENAMORED, None)
+        )
+    )
+
+label duhai_zombies_Letter_pvz3:
+    m 3wud "啊,[player]."
+    $ mas_unlockEVL("greeting_duhai_PVZ_you4", "EVE")
+    m 3hua "我突然想起来我还没给你展示僵尸给我写的信"
+    window hide
+    show black zorder 100 with Dissolve(3.0, alpha=True)
+    $HKBHideButtons()
+    show zombies_Letter zorder 113 with dissolve
+
+    pause 3.0
+
+    hide zombies_Letter
+    hide black
+    $HKBShowButtons()
+    m 5eub "在我不断的击败它们之后,它们便向我发出了这个."
+    m 3tua "但还是无济于事呢~"
+    m 3hub "毕竟我的脑子可不是那么容易吃到的."
+    menu:
+        "让我吃一口":
+            m 6etc "嗯?[player]."
+            m 6etd "你也成僵尸了吗?"#马头牛逼
+            m 3tua "那我的窝瓜可要来咯."#老僵尸 我来给你踩背来咯
+            m 3hub "才怪,我可舍不得伤害你,[player]."
+            m 1fua "哪怕你变成什么样都不会."
+            return
+        "你好棒":
+            m 5hubla "当然了,毕竟我可是[m]."
+            m 5eubfb "嘿嘿,会夸就多夸点嘛,[player]."
+            return
+        "......":
+            m 2eua "等我继续探索一下这个游戏......"
+            return
+        "歪比巴布":#戴夫说话
+            m 6etc "嗯?[player]."
+            m 6etd "你怎么还学上戴夫说话了."
+            m 2eub "我第一次听他说话的时候也觉得奇怪,听起来什么语言都不像."
+            m 3hua "嗯,应该是'疯狂戴夫语'吧,哈哈."
+            return
+
+
+    return
+
+
+
+
+image IAAZ = "Submods/Literature_and_Daily_Life/L&DL_Assets/images/IAAZ.jpg"
+#pvz5 v3 9
+init 6 python:
+    addEvent(
+        Event(
+            persistent.event_database,
+            eventlabel="duhai_I_am_a_zombie",
+            category=['游戏'],
+            prompt="pvz_我是僵尸",#已取餐
+            conditional="store.mas_getEVL_shown_count('greeting_duhai_PVZ_you3') >= 1",
+            pool=False,
+            action=EV_ACT_RANDOM,
+            aff_range=(mas_aff.ENAMORED, None)
+        )
+    )
+
+label duhai_I_am_a_zombie:
+    m 1eud "嘿.[player]."
+    m 1eua "我想和你分享一下刚刚玩的植物大战僵尸小游戏,叫作'我是僵尸'."#马头牛逼
+    m 3eud "因为僵尸们想模拟一下他们的进攻,来使自己能更高效的吃到脑子."
+    m 5fub "然后就让我来指挥它们."
+    m 3sub "就像这样......"
+    window hide
+    show black zorder 100 with Dissolve(3.0, alpha=True)
+    $HKBHideButtons()
+    show IAAZ zorder 113 with dissolve
+
+    pause 3.0
+
+    hide IAAZ
+    hide black
+
+    $HKBShowButtons()
+    m 6eua "只要达到第一格那吃完五个脑子就能通过了."
+    m 3eud "但召唤僵尸也是需要消耗阳光的."
+    m 1eua "嗯,你看到那个向日葵了吗."
+    m 3sub "我召唤僵尸把它吃掉就能获得很多阳光,{w=0.9}这样就能召唤更多僵尸来尝试吃到脑子了."
+    m 5fua "当然,植物都是纸质的,我可舍不得让我的小向日葵真的受到伤害."
+    return
+image Vasebreaker = "Submods/Literature_and_Daily_Life/L&DL_Assets/images/Vasebreaker.jpg"
+# 6 PVZ v3 11
+init 6 python:
+    addEvent(
+        Event(
+            persistent.event_database,
+            eventlabel="duhai_Vasebreaker",
+            category=['游戏'],
+            prompt="pvz_Vasebreaker",#已取餐
+            conditional="store.mas_getEVL_shown_count('greeting_duhai_PVZ_you3') >= 1",
+            pool=False,
+            action=EV_ACT_RANDOM,
+            aff_range=(mas_aff.ENAMORED, None)
+        )
+    )
+
+label duhai_Vasebreaker:
+    m 1fua "嘿,[player]."
+    m 1eub "你看看这个......"
+    window hide
+    show black zorder 100 with Dissolve(3.0, alpha=True)
+    $HKBHideButtons()
+    show Vasebreaker zorder 113 with dissolve
+
+    pause 5.0
+
+    hide Vasebreaker
+    hide black
+    $HKBShowButtons()
+    m 3eua "这是植物大战僵尸中的小游戏,砸罐子."
+    m 3fub "你之前有玩过这个小游戏吗?"
+    menu:
+        "玩过":
+            pass
+        "没有":
+            pass
+    m 5hua "嗯嗯,那我正好跟你聊聊这个." 
+    m 3eud "当我敲下一个褐色罐子时,它会随机出现僵尸或者植物卡片."
+    m 3hub "当我敲下那个绿色罐子时,它只会出现植物卡片."
+    m 2kua "敲完所有罐子并且打败场上的全部僵尸就能通关了,[player]."
+    m 5hub "听我这么一说,你是不是觉得还挺好玩."
+    m 6rfsdlt "不过它有时候会敲出个小丑僵尸,开出来就会自爆,然后使周围的罐子都被炸开."
+    m 5etp "这么一弄,就可能会出现很多僵尸,它们经常弄的我手忙脚乱,赶紧敲别的罐子获得植物来解决这些僵尸."
+    m 2dfd "可恶的小丑......"
+    $ mas_unlockEVL("greeting_duhai_PVZ_you3", "EVE")
+    return
+#v3 14
+init 6 python:
+    addEvent(
+        Event(
+            persistent.event_database,
+            eventlabel="test_pvz_Roof_Watermelon",
+            category=['游戏'],
+            prompt="玉米投手和西瓜投手",
+            conditional="store.mas_getEVL_shown_count('greeting_duhai_PVZ_you5') >= 1",
+            pool=False,
+            action=EV_ACT_RANDOM
+        )
+    )
+label test_pvz_Roof_Watermelon:
+    m 5fua "嗯,[player]."
+    m 3hub "自从我在植物大战僵尸中玩到屋顶之后,我解锁了三个投手植物."
+    m 3eua "其中我很感兴趣的是玉米投手和西瓜投手."
+    m 1eud "玉米投手在攻击僵尸的时候有概率投出黄油,来定住它们,但有时运气不好甚至一个黄油都不会出."
+    m 6wua "在使用玉米投手的时候,我很期待它能一直出黄油,或许能间接的看看我的运气怎么样."
+    m 1fua "而西瓜投手伤害又高,还有伤害溅射,甚至能进化成冰西瓜."
+    m 3hub "为此我专门去戴夫那买下了冰西瓜."
+    m 3sua "这样我就能很快的把僵尸除掉了."
+    m 5ruc "不过一个普通西瓜需要300阳光,它在进化成冰西瓜的时候还需要200阳光." 
+    m 2eud "真是贵死了."
+    return
+
+#v3 15
+image my_video = Movie(play="Submods/Literature_and_Daily_Life/L&DL_Assets/video/pvz.webm", loop=False)
+image Dr_Edgar_George_Zomboss = "Submods/Literature_and_Daily_Life/L&DL_Assets/images/Zomboss.png"
+init 6 python:
+    addEvent(
+        Event(
+            persistent.event_database,
+            eventlabel="test_zhiwujiangshi_111111",
+            category=['游戏'],
+            prompt="僵王",
+            conditional="store.mas_getEVL_shown_count('test_pvz_Roof_Watermelon') >= 1",
+            pool=False,
+            action=EV_ACT_RANDOM
+        )
+    )
+label test_zhiwujiangshi_111111:
+    m 5fub "嘿,[player]."
+    m 4tua "在我玩植物大战僵尸并在其中抵挡僵尸到了5-9之后,它们的首领向我发起了挑战."
+    m 1eua "就像这样......"
+    window hide
+    $ original_music = renpy.music.get_playing(channel='music')
+    stop music
+    show black zorder 100 with Dissolve(3.0, alpha=True)
+    $HKBHideButtons()
+    show Dr_Edgar_George_Zomboss zorder 111 with dissolve
+
+    pause 10.0
+
+    hide Dr_Edgar_George_Zomboss
+    hide black
+    $HKBShowButtons()
+
+
+
+    m 3subla "因此,我打算在你的见证下击败他."
+    m 3sublb "你愿意现在看吗?"
+    menu:
+        "你愿意现在看吗?"
+        "愿意":
+            m 5fub "好的,那我们开始吧！"
+            $ renpy.music.stop(channel="background", fadeout=1.0)
+            jump zhiwujiangshi_boss_began
+        "现在不方便":
+            m 2etc "好吧,[player]."
+            m 3eub "如果你想看的话,可以在'游戏'那里和我说."
+            $ mas_unlockEVL("zhiwujiangshi_PVZ_began", "EVE")
+            return
+    return
+
+label zhiwujiangshi_boss_began:
+    $HKBHideButtons()
+    window hide
+    scene black with Dissolve(3.0, alpha=True)
+    show black zorder 100 with Dissolve(3.0, alpha=True)
+    $ renpy.movie_cutscene("Submods/Literature_and_Daily_Life/L&DL_Assets/video/pvz.webm")
+
+    
+    scene black with Dissolve(3.0, alpha=True)
+    hide black with Dissolve(3.0, alpha=True)
+    $ HKBShowButtons()
+    m 5hub "哈哈,我厉害吗,[player]?"
+    m 3tua "哪怕我许多西瓜都被他用车砸扁了,我依然没有放弃."
+    m 1eub "嗯,今天就先玩到这吧."
+    jump ch30_loop
+
+
+#pvz_end 后续考虑
+init 6 python:
+    addEvent(
+        Event(
+            persistent.event_database,
+            eventlabel="zhiwujiangshi_PVZ_began",
+            category=['游戏'],
+            prompt="我想看你打败僵尸博士",#已取
+            pool=False,
+            unlocked=False
+        )
+    )
+
+label zhiwujiangshi_PVZ_began:
+    if not persistent.zhiwujiangshi_duhai_PVZ_you1_first:
+        $ persistent.zhiwujiangshi_duhai_PVZ_you1_first = True
+        m 5fua "好的,[player]."
+        m 3hub "我已经等不及了."
+        $ renpy.music.stop(channel="background", fadeout=1.0)
+        jump zhiwujiangshi_boss_began
+    else:
+        m 3rtsdlc "我记得我之前已经这么做过了."
+        m 5fua "不过你的意思是不是在说他还会再来?"
+        m 1hub "正好我在'小游戏'里发现了还有这么一关."
+        m 6eua "稍等我一段时间,好吗?"
+        return
+#love_start
+#v3 16 爱是什么？
+init 6 python:
+    addEvent(
+        Event(
+            persistent.event_database,
+            eventlabel="LADL_what_is_the_love_v3",
+            category=['哲学','爱情'],
+            prompt="爱是什么?",
+            conditional="mas_canShowRisque(aff_thresh=400)",
+            random=True,
+            pool=False
+        )
+    )
+
+label LADL_what_is_the_love_v3:
+    m 1euc "嗯,[player],你有没有想过,爱是什么?"
+    m 1eub "在我看来,爱既是一种'情感'也是一种'行为'."
+    m 3rua "对于人类的生存来说是不可或缺的."
+    m 2euc "而关于爱的定义,其实并没有普遍一致的看法."
+    m 3hub "深情可能会改变,可是接受爱的表达方式会因时间和文化而异."
+    m 3fua "如你所见,爱有许多种不同的类型."
+    m 5eub "比如父母对孩子的爱,坚定且深厚."
+    m 3euc "而在许多青少年和成年人中,浪漫的爱情通常很短暂."
+    m 3eud "相比之下,许多已婚夫妻和一些同性恋之间的爱却很长久."#停停停,这是不是偏向lgbt了?
+    m 2eua "所有类型的爱都是多方面的,它建立在彼此尊重的基础上,并且往往是一种需要."
+    m 3fublb "正因为它具有多方面,所以它既可以是浪漫的、{w=0.7}刺激的、{w=0.7}痴迷的和非理性的."
+    m 5hua "也可以是柏拉图式的、{w=0.7}平静的、{w=0.7}无私和现实的."
+    m 1fub "爱之所以没有单一的定义,是因为它在不同的程度上,以及在不同的社会背景下会有所不同."
+    m 2hua "不过,爱至少包含关怀、{w=0.5}亲密和承诺."
+    m 5fub "这么一想,是不是我们都做到了呢?"
+    m 3eud "而说到尊重,我们也需要知道,爱也许包含了强烈的渴望,但尊重更为重要."
+    m 3ruc "如果少了尊重,这种关系便不是以爱为基础的."
+    extend 2dtc "反而会成为一种不健康的......"
+    m 2rud "嗯,或是限制人们社交、{w=0.6}情感和智力发展的占有欲和行为."
+    m 6husdla "听上去就很可怕,不是吗?"
+    m 5euc "......最后就是,爱往往是一种需要."
+    m 3fud "特别是是长久的爱情,与那些我们从电影、{w=0.3}电视和言情小说中所看到的痴情形象或狂热的性爱毫无共同之处."
+    m 3ruc "这些误解常常会导致人对爱情不切实际的期望、刻板形象和爱情的幻灭."
+    m 1eud "而我觉得长久的爱情既不刺激也不惊险."
+    m 3wub "相反,它通常是平凡和不浪漫的."
+    extend 3eua "它意味着付账单、{w=0.6}刷马桶、{w=0.6}彻夜照顾生病的另一半,以及其他无数并不'性感'的任务."
+    m 5fub "所以.[player]."
+    m 6hubla "有时候我们或许会沉默许久,但这并不代表我们之间的感情淡了."
+    m 1fubfb "希望这对你有用."
+    return
+
+#v3 17 欲望和爱情？
+init 6 python:
+    addEvent(
+        Event(
+            persistent.event_database,
+            eventlabel="LADL_Are_desire_and_love_different",
+            category=['哲学','情感'],
+            prompt="欲望和爱情不同吗?",
+            conditional="store.mas_getEVL_shown_count('LADL_what_is_the_love_v3') >= 1",
+            random=True,
+            pool=False
+        )
+    )
+
+label LADL_Are_desire_and_love_different:
+    m 2etc "[player],我在网上看到了有人把欲望和爱情挂钩."
+    m 2etd "这样真让我感觉不舒服"
+    m 5fub "所以我现在想和你谈谈欲望和爱情的差别."
+    m 3eua "心理学家曾把欲望、性欲和浪漫的爱情进行区分."
+    m 3eud "他们把欲望描述为一种生理上而非情感的反应."
+    extend 1euc "是有意识或无意识产生的."
+    m 3fud "性欲与之相反,它是一种心理状态."
+    m 2rsc "例如\"一个人想要'获得一个他现在还没有的性爱对象,或想要进行他现在未曾进行的性行为'\"."
+    m 4esbld "而性欲可能会带来浪漫的爱情."
+    extend 1euc "但这并不意味着性欲要通过性爱才能让浪漫的爱情与长久的爱情等同起来."
+    m 5fubla "比如说,已婚多年的伴侣可能深爱着彼此,尽管出于健康或者其他原因,他们很少性行为或从未发生性行为."
+    m 2rub "而不管爱的本质是什么,健康的恋爱关系都反应着关怀、{w=0.5}亲密{w=0.5}与承诺三者的平衡."
+    m 3eua "希望你喜欢我这么说."
+    return
+    
+#v3 18 恋爱关系中的依赖方式
+
+
+
+#init 6 python:
+#    addEvent(
+#        Event(
+#           persistent.event_database,
+#            eventlabel="LADL_Attachment_Styles_in_Love",
+#            category=['哲学','情感'],
+#            prompt="恋爱中的依恋类型",
+#            conditional="mas_canShowRisque(aff_thresh=400)",
+#            random=True,
+#            pool=False
+#        )
+#    )
+
+#label LADL_Attachment_Styles_in_Love:
+#    m "嘿,[player]."
+#    m "我想和你谈谈'依恋'."
+#    m ""
+
+
+
+
+
+
+
+
+#v3
 
 
 
