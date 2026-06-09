@@ -3291,6 +3291,7 @@ label test_zhiwujiangshi_111111:
     m 1eua "就像这样......"
     window hide
     $ original_music = renpy.music.get_playing(channel='music')
+    stop music
     show black zorder 100 with Dissolve(3.0, alpha=True)
     $HKBHideButtons()
     show Dr_Edgar_George_Zomboss zorder 111 with dissolve
@@ -3329,11 +3330,10 @@ label zhiwujiangshi_boss_began:
     scene black with Dissolve(3.0, alpha=True)
     hide black with Dissolve(3.0, alpha=True)
     $ HKBShowButtons()
-    jump ch30_loop
     m 5hub "哈哈,我厉害吗,[player]?"
     m 3tua "哪怕我许多西瓜都被他用车砸扁了,我依然没有放弃."
     m 1eub "嗯,今天就先玩到这吧."
-    return
+    jump ch30_loop
 
 
 #pvz_end 后续考虑
