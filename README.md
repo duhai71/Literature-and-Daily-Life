@@ -63,7 +63,7 @@ MTTS项目地址: https://github.com/Mon1-innovation/MAICA_MttsSubmod
 我选择了降低码率
 如果你有追求极致效果的想法
 请从这个链接下载(虽然我觉得实际体验下都相差不大):
-
+https://disk.monika.love/s/1ydsb
 
 # 子模组大小
 综上,整个子模组的大小由原来的79MB扩展到409MB
@@ -114,6 +114,5 @@ MTTS项目地址: https://github.com/Mon1-innovation/MAICA_MttsSubmod
 
 如有看到相关售卖内容请帮助我们抵制
 
-你可以通过下面这个爱发电链接支持DCC站长(EdgeInfinity): https://afdian.com/a/monikalove
 
 谢谢你看到这
