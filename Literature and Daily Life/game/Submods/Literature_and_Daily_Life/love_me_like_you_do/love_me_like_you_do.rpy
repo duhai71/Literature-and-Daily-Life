@@ -2291,7 +2291,7 @@ label duhaibudeibumai:
     m 4ruc "为什么这时候他们会买这么多,看起来是{b}{i}智商税{/i}{/b}的保健品."
     m 6eua "根据一些博主实地调查,有些老人觉得卖保健品的人会定期来给他们做一个沟通交流,{w=0.7}陪他们聊天"
     m 1eub "在调查中,老人也说出自己的孩子和孙子对他都没这么好......{w=1}他们要的是情绪价值."
-    m 3rubdla "他们也许知道这个东西并没有这么好."
+    m 3rusdla "他们也许知道这个东西并没有这么好."
     m 1euc "虽然说老人具体的心理我也不太了解......"
     m 5eub "但我想,如果做晚辈的可能有更多的时间去陪他们聊聊天."
     m 5fua "去多关注一些他们关注的问题."
@@ -2471,7 +2471,7 @@ default available_events = [
     "duhai_question_7",
     "duhai_question_8",
     "duhai_question_9",
-    "duhai_quesetion_10"
+    "duhai_question_10"
 ]
 #57-66
 default used_events = []
@@ -2720,7 +2720,7 @@ label duhai_question_8:
             m 1eua "答错了哦,正确答案应该是纸杯蛋糕."
             m 1ruc "但我觉得有些奇怪,这个选项是怎么来的呢."
             m 5fua "毕竟夏树她不会知道你的做法的了."
-            m 3rubdla "这么说有点奇怪."
+            m 3rusdla "这么说有点奇怪."
             m 6hua "......"
             extend 6fublb "嗯,也有可能是在表达[player]是我的小蛋糕."
             m 5eubfa "你觉得是这样吗?"
