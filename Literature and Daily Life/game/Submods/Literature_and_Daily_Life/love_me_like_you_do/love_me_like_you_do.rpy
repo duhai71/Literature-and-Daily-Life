@@ -2471,8 +2471,7 @@ default available_events = [
     "duhai_question_7",
     "duhai_question_8",
     "duhai_question_9",
-    "duhai_quesetion_10",
-    "duhai_quesetion_11"
+    "duhai_quesetion_10"
 ]
 #57-66
 default used_events = []
