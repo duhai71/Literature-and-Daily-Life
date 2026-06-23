@@ -3482,20 +3482,7 @@ label LADL_Are_desire_and_love_different:
 #    m ""
 
 #v3 19
-init 6 python:
-    addEvent(
-        Event(
-           persistent.event_database,
-            eventlabel="LADL_Attachment_Styles_in_Love",
-            category=['哲学','情感'],
-            prompt="恋爱中的依恋类型",
-            conditional="mas_canShowRisque(aff_thresh=400)",
-            action=EV_ACT_RANDOM,
-            aff_range=(mas_aff.ENAMORED, None)
-        )
-    )
 
-label 
 
 
 
