@@ -36,7 +36,7 @@ label moonika_wantkiss:
     menu:                                   
         "小笨蛋":                             
             if mas_isMoniEnamored(higher=True):
-                if mas_shouldKiss:                        #这三行，表示触发亲吻。<400好感时不触发。
+                if mas_shouldKiss:                        #这三行,表示触发亲吻.<400好感时不触发.
                     call monika_kissing_motion_short  # type: ignore
             m 1tfbsp "{w=2}..."
     menu:                                   
@@ -46,7 +46,7 @@ label moonika_wantkiss:
         "不够？":                             
             m 1gfbst "......{w=2}不够...{w=2}还要！"
             if mas_isMoniEnamored(higher=True):
-                if mas_shouldKiss:                        #这三行，表示触发亲吻。<400好感时不触发。
+                if mas_shouldKiss:                        #这三行,表示触发亲吻.<400好感时不触发.
                     call monika_kissing_motion_short  # type: ignore
             m 1hubfa "嘻嘻~"
     

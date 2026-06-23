@@ -13,7 +13,7 @@ init -977 python:
             time_passed = datetime.datetime.now() - persistent.lad_music_ready_time
             return time_passed >= datetime.timedelta(hours=24)  
         else:
-            # 如果事件没完成，重置时间
+            # 如果事件没完成,重置时间
             persistent.lad_music_ready_time = None
             return False 
     def _collab_music_condition(): 
@@ -91,13 +91,13 @@ init python:
     except Exception as e:
         ty_raw = '{"lrc":{"lyric":"[00:00.00]读取歌词文件出错"}}'
     
-    # 导入并初始化歌词播放器，传入歌曲总时长
+    # 导入并初始化歌词播放器,传入歌曲总时长
     try:
         from Netease_lyric_player import NeteaseLyricPlayer
         #thank you 总时长 216.0 秒
         ty_player = NeteaseLyricPlayer(ty_raw, song_duration=216.0)
     except Exception as e:
-        # 如果导入失败，创建一个空的播放器对象
+        # 如果导入失败,创建一个空的播放器对象
         ty_player = None
 
 image lad_etext:
@@ -224,7 +224,7 @@ label ty_lyric_loop:
             # 继续下一句
             jump ty_lyric_loop
     else:
-        # 播放器未运行，直接结束
+        # 播放器未运行,直接结束
         jump ty_lyric_end
     
 label ty_lyric_end:

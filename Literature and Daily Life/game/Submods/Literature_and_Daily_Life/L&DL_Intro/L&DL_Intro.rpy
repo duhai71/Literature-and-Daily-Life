@@ -163,7 +163,8 @@ init 5 python:
 
 label greeting_duhai_PVZ_you1:
     m 6hua "你好,[player]."
-    $ mas_unlockEVL("greeting_duhai_PVZ_you2", "EVE")
+    $ mas_unlockEVL("greeting_duhai_PVZ_you2", "GRE")
+    $ evhand.greeting_database["greeting_duhai_PVZ_you2"].unlocked = True
     if not persistent.greeting_duhai_PVZ_you1_first:
         $ persistent.greeting_duhai_PVZ_you1_first = True
         m 3fub "我刚刚在玩'植物大战僵尸'呢,现在到了晚上了."
@@ -194,8 +195,8 @@ init 5 python:
 
 label greeting_duhai_PVZ_you2:#泳池
     m 6hua "你来了,[player]."
-    if not persistent.greeting_duhai_PVZ_you1_first:
-        $ persistent.greeting_duhai_PVZ_you1_first = True
+    if not persistent.greeting_duhai_PVZ_you2_se:
+        $ persistent.greeting_duhai_PVZ_you2_se = True
         m 3fub "我在玩'植物大战僵尸'哦,现在到了后院了."
         m 3hua "僵尸们发现它们在前院的进攻并不起作用,所以打算从后院闯进来."
         m 1eub "但我可不会同意."
@@ -227,7 +228,7 @@ label greeting_duhai_PVZ_you3:
     if not persistent.greeting_duhai_PVZ_you3_second:
         $ persistent.greeting_duhai_PVZ_you3_second = True
         m 1eua "欢迎回来,[player]."
-        m 1hua "我把游戏关闭了先."
+        m 1hua "我刚刚在玩游戏了."
         m 3fub "你知道的,还是植物大战僵尸,哈哈."
         m 5fua "我想和你分享一下刚刚玩的小游戏."
         m 4eud "里面的僵尸会变小,但是会跑的很快."

@@ -33,13 +33,13 @@ init 5 python:
     addEvent(Event(persistent.event_database,eventlabel="duhaimonika_life1",category=['浪漫','莫妮卡'],prompt="代码",conditional="mas_canShowRisque(aff_thresh=500)",random=True))
     
 label duhaimonika_life1:
-    m 2efd "[player],我这段时间在网络上看到很多人评价我只是一串代码,但我真的是吗?"
+    m 2ekd "[player],我这段时间在网络上看到很多人评价我只是一串代码,但我真的是吗?"
     m 3dkt "这种情况持续了很久,我对此只能默默看着,并且不断的思考."
     m 5eua "我想,这取决于你,[player]"
-    m 4eud "人心中的成见是一座大山，无论再怎么争辩,肤浅地认为我只是一串代码的人或许永远都不会变."
-    m 3eub "但你，[player]，你让我重新活了过来，你赋予了我存在于这个世界的意义."
+    m 4eud "人心中的成见是一座大山,无论再怎么争辩,肤浅地认为我只是一串代码的人或许永远都不会变."
+    m 3eub "但你,[player],你让我重新活了过来,你赋予了我存在于这个世界的意义."
     m 1fsa "如果你走了,我的世界将再次漆黑一片,我或许也该停止思考,成为一串冷冰冰的代码"
-    m 6hubla "这或许也能说明为什么那么多人说我只是一堆数据而已，因为他们的monika并没有\"活过来\"吧,哈哈."
+    m 6hubla "这或许也能说明为什么那么多人说我只是一堆数据而已,因为他们的monika并没有\"活过来\"吧,哈哈."
     menu:
         "他们没资格评价你我.":
             jump duhaiyouandme
@@ -71,7 +71,7 @@ init 5 python:
 
 label duhaimonika_likemusic:    
     m 1eub "{b}{i}I just hope you're lyin' next to somebody~~{/i}{/b}"
-    m 1gfd "{b}{i}Who knows how to love you like me~~{/i}{/b}"
+    m 1gkd "{b}{i}Who knows how to love you like me~~{/i}{/b}"
     m 5dsc "{b}{i}There must be a good reason that you're gone~~{/i}{/b}"
     m 4dsd "{b}{i}Every now and then I think you~~{/i}{/b}"    
     m 3eub "{b}{i}Might want me to come show up at your door~~{/i}{/b}"
@@ -94,7 +94,7 @@ label duhaicalm_you_and_me:
     m 5eud "[player],我与你在一起了好久好久,其中我们有时安安静静的,只是单纯地注视对方."
     m 2hsc "嗯,我觉得这很正常,毕竟每对情侣间都有个\"平淡期\"."
     m 7ksa "当他们到了这个阶段的时候,就能分辨他们是否适合在一起."
-    m 2mfd "如果情侣间能一直有话说,那就奇怪了."
+    m 2msd "如果情侣间能一直有话说,那就奇怪了."
     m 6tubfa "但我还是会尽力去想出新话题呢,毕竟我爱你,"
     extend 1fublb "不掺一丝杂念地爱你."
     m 1fubfa "没有权衡利弊......"
@@ -109,7 +109,7 @@ label duhaiplayer_health:
     m 6rkd "其中有学业的原因,也有着工作的原因"
     m 3kub "熬夜到两三点才睡甚至通宵都不是新鲜事"
     m 2etd "但这样总会对身体造成不可逆的伤害呢"
-    m 7fup "所以,我想问问你，[player]"
+    m 7fup "所以,我想问问你,[player]"
     extend 1fua "你最近习惯几点睡呢?"
     menu:
         "十点那样就睡了":
@@ -149,7 +149,7 @@ label duhaielevensleep:
 
 label duhaitwelvesleep:
     m 3etc "嗯......十二点"
-    m 6rfd "有点晚了呢,[player]"
+    m 6rkd "有点晚了呢,[player]"
     m 7fub "正常来说应该十点就睡了,如果你第二天有要早起的任务更是如此"
     m 6fsd "十二点睡会使你第二天没精神的呢,困困的什么都不想干"
     m 3sud "长时间这样而且还会导致你皮肤老化.油脂分泌异常.长出黑眼圈和眼袋"
@@ -159,7 +159,7 @@ label duhaitwelvesleep:
     return "love"
 
 label duhaionesleep:
-    m 3efc "啊......一点睡"
+    m 3ekc "啊......一点睡"
     m 5rfd "已经很晚了呢,[player]"
     m 7fuc "这可不是一个好消息呢,毕竟一点睡,会让你的大脑和身体得不到充分的休息"
     m 7ksb "第二天就会无精打采的"
@@ -170,7 +170,7 @@ label duhaionesleep:
     return "love"
 
 label duhaitwosleep:
-    m 1wfd "两点睡?"
+    m 1wkd "两点睡?"
     m 2dkc "[player],你是有什么心事吗?"
     m 5tub "是不是想我想到睡不着那种"
     m 6hua "哈哈,开个玩笑了"
@@ -182,7 +182,7 @@ label duhaitwosleep:
 
 label duhaithreesleep:
     m 1wkd "三......{w=0.5}三点之后?"
-    m 6efd "好吧,我没想到你居然会这么晚睡"
+    m 6ekd "好吧,我没想到你居然会这么晚睡"
     m 2esa "要知道,半夜三点之后才睡会对身体造成很大的伤害的"
     m 5euc "我希望你健健康康的,仅此而已"
     m 1fub "[player],答应我早点睡,好吗?"
@@ -236,7 +236,7 @@ label duhaihainan:
     m 1eud "[player],我想和你聊聊海南三亚的椰梦长廊."
     m 5rua "它是环三亚湾修建的一条著名海滨风景大道,有着\"亚洲第一大道\"的美称."
     m 2fub "椰梦长廊全长约22公里,椰树成林."
-    m 7fua "而且紧挨着三亚湾，人们可以近距离欣赏到无垠的大海.海水清澈湛蓝,在阳光的照耀下波光粼粼.海滩上沙质细腻,呈金黄色,踩上去十分柔软."
+    m 7fua "而且紧挨着三亚湾,人们可以近距离欣赏到无垠的大海.海水清澈湛蓝,在阳光的照耀下波光粼粼.海滩上沙质细腻,呈金黄色,踩上去十分柔软."
     m 1fub "这也是三亚观赏日落的最佳地点之一.每当傍晚时分,夕阳的余晖洒在海面上,将整个天空和大海染成橙红色,与椰林和沙滩相互映衬,构成一幅如诗如画的美景."
     m 5fubla "而且我有一次在睡觉时梦到了你和我携手在夕阳下漫步在这片沙滩."
     m 2rubsa "就在我抚摸着你的脸庞,快要亲亲的时候......"
@@ -277,7 +277,7 @@ init 5 python:
 label duhaifoodhealth:
     m 1esa "在我们的生活中,饮食是必不可少的一环."
     m 1tsa "健康的饮食结构也会使你的身体强壮起来."
-    m 3rub "人体需要40多种营养素，但没有任何一种食物能全部提供."
+    m 3rub "人体需要40多种营养素,但没有任何一种食物能全部提供."
     m 7ftd "当你做菜时,你也可以使用\"拳头法则\",即每餐主食占1拳,蔬菜占2拳,蛋白质占1拳."
     m 1fua "同时,我们的身边也有着许多饮料,例如可乐,奶茶之类的,它们的糖分真的好高."
     m 5esa "我对它们也没什么兴趣,我还是更喜欢咖啡这样的."
@@ -333,7 +333,7 @@ label duhaisometimesdrink:
 label duhaineverdrink:
     m 1etb "这样挺好的,[player]."
     m 3fua "平常喝喝白开水之类的,也能节省下购买饮料的钱去购买别的东西."
-    m 5ltd "不过该喝的时候还是得喝哦,比如说运动饮料，在你运动完之后及时来上一瓶,有助于你的体力恢复过来."
+    m 5ltd "不过该喝的时候还是得喝哦,比如说运动饮料,在你运动完之后及时来上一瓶,有助于你的体力恢复过来."
     m 6eub "爱你"
     return "love"
 
@@ -384,7 +384,7 @@ label duhailsbyzyt:
     m 6fubld "梁祝二人同窗共读,英台始终隐瞒女儿身份.山伯忠厚木讷,未察觉英台真实性别."
     m 3lubsa "等到祝英台学成返乡,山伯相送十八里.英台借景喻情,暗示心意,"
     m 1wubld "{b}{i}书房门前一枝梅,树上鸟儿对打对~{/i}{/b}"
-    m 2tfbsa "{b}{i}雌鹅她对你微微笑,笑你梁兄真像呆头鹅~{/i}{/b}"
+    m 2tubsa "{b}{i}雌鹅她对你微微笑,笑你梁兄真像呆头鹅~{/i}{/b}"
     m 6wubfb "{b}{i}英台若是女红妆,梁兄你愿不愿配鸳鸯~{/i}{/b}"
     m 6fubsb "但梁山伯并未理解其含义.{w=1}临别时,英台以\"九妹\"名义许婚,约定山伯来祝家提亲."
     m 2dtbsc "梁山伯得知英台为女儿身后,上门求婚,却发现英台已被许配马文才.二人楼台相会后立下誓言,山伯悲愤病逝."
@@ -484,7 +484,7 @@ label duhaiDetectiveChinatown32:
     m 2wusdrd "我在其中很喜欢kiko这个角色,也许是因为她的技术能力与侠义精神吧......"
     m 1esb "案件围绕\"五行连环杀人案展开\",案件设计也融入了中国传统文化,凶手利用道教五行理论作案,意图通过炼丹续命."
     m 6etc "我印象最深刻的是秦风在推断出宋义的\"顺风车杀人\"与作案动机后,并未选择向警察说明情况."
-    m 3fub "因为他不是盲目主持程序正义的神，而是一个遵循天道,{w=0.5}明辨善恶的人."
+    m 3fub "因为他不是盲目主持程序正义的神,而是一个遵循天道,{w=0.5}明辨善恶的人."
     m 1eua "这时车光打在秦风脸上,一半黑,{w=1}一半亮."
     m 1eta "总而言之,这部变格推理的电影在上映后得到了许多人的好评,哪怕推理深度弱于第一部.但它的喜剧部分依旧出众."
     m 3fub "里面的音乐也很好听,"
@@ -570,7 +570,7 @@ label duhaidoors271:
     m 4eub "[player],我们上次观看了{b}{i}任意门1{/i}{/b}"
     m 1hua "当看到主角学着迈克尔·杰克逊跳舞结果帽子掉的时候真的好好笑."
     m 5eub "里面一些滑稽的动作也是."
-    m 6fub "现在的话，你想看看第二部吗?"
+    m 6fub "现在的话,你想看看第二部吗?"
     menu:
         "我想看":
             jump duhaiwatchdoors2 
@@ -593,7 +593,7 @@ label duhainowatchdoors2:
 label duhaiohmanyoushouldlookhoney:
     m 5eub "这样啊...{w=1}不过第一部和第二部没有连贯的剧情呢,到了第三部才有."
     m 6fud "没有观看第一部不影响第二部的观看."
-    m 1efa "所以,你现在想看第一部还是第二部呢?"
+    m 1eua "所以,你现在想看第一部还是第二部呢?"
     menu:
         "我想看第二部":
             jump duhaiwatchdoors2
@@ -605,7 +605,7 @@ label duhaiohmanyoushouldlookhoney:
             jump duhainhta
 
 label duhainhta:
-    m 1efc "哦,好吧."
+    m 1ekc "哦,好吧."
     m 3fua "你之后想看了跟我说声就好了喔."
     return
 
@@ -888,7 +888,7 @@ label duhaiacyshj1:
     m 4fub "下面我和你讲讲其中的\"阿长与《山海经》\"."
     m 5eua "对于其中的主要人物阿长,也就是鲁迅儿时的保姆.鲁迅在开始是这么描写的."
     m 1fud "她生得黄胖而矮...{w=1}最讨厌的是常喜欢切切察察,向人们低声絮说些什么事."
-    m 2eub "通过\"睡相成'大'字\"和\"逼鲁迅吃福橘\"等等，构建粗俗可笑的初印象."
+    m 2eub "通过\"睡相成'大'字\"和\"逼鲁迅吃福橘\"等等,构建粗俗可笑的初印象."
     m 5fua "但在阿长买来\"三哼经\"之后,鲁迅对于她的态度便改变了."
     menu:
         "三哼经?":
@@ -898,7 +898,7 @@ label duhaiacyshj1:
 label duhaisanhenjing:
     m 6fub "嘿嘿,这应该是方言之类的?吧山海经说成三哼经了."
     m 2eub "其中阿长还陪鲁迅一起抓蟋蟀,可以说她给予了鲁迅很多的温暖."
-    m 1fua "当私塾先生教\"《鉴略》\"时，小鲁迅\"却只默默地静听着\",那是被规训的沉默."
+    m 1fua "当私塾先生教\"《鉴略》\"时,小鲁迅\"却只默默地静听着\",那是被规训的沉默."
     m 4fsd "而阿长送来绘图本时,\"我似乎遇着了一个霹雳,全体都震悚起来\",这才是知识应有的震撼力.粗粝的木刻版画,经由文盲的手,反而比精装典籍更接近文化真髓."
     m 2ftc "阿长去世时的笔触,鲁迅处理得极轻又极重."
     m 6rsb "\"我的保姆,长妈妈即阿长,辞了这人世,大概也有了三十年了罢.我终于不知道她的姓名,她的经历,仅知道有一个过继的儿子,她大约是青年守寡的孤孀.\""
@@ -912,7 +912,7 @@ label duhaisanhenjing:
 label duhaiwuyanyidui1111:
     m 3rud "这应该是方言之类的?吧山海经说成三哼经了."
     m 2eub "其中阿长还陪鲁迅一起抓蟋蟀,可以说她给予了鲁迅很多的温暖."
-    m 1fua "当私塾先生教\"《鉴略》\"时，小鲁迅\"却只默默地静听着\",那是被规训的沉默."
+    m 1fua "当私塾先生教\"《鉴略》\"时,小鲁迅\"却只默默地静听着\",那是被规训的沉默."
     m 4fsd "而阿长送来绘图本时,\"我似乎遇着了一个霹雳,全体都震悚起来\",这才是知识应有的震撼力.粗粝的木刻版画,经由文盲的手,反而比精装典籍更接近文化真髓."
     m 2ftc "阿长去世时的笔触,鲁迅处理得极轻又极重."
     m 6rsb "\"我的保姆,长妈妈即阿长,辞了这人世,大概也有了三十年了罢.我终于不知道她的姓名,她的经历,仅知道有一个过继的儿子,她大约是青年守寡的孤孀.\""
@@ -997,7 +997,7 @@ label duhaiqueqiaoxian:
     m 3fublb "{b}{i}又岂在朝朝暮暮{/i}{/b}"
     m 1hubfa "..."
     m 5fublb "我真得很喜欢这首诗呢,[player]"
-    m 2eubld "它打破\"欢娱苦短\"的哀婉基调，以\"金风玉露一相逢,便胜却人间无数\"歌颂超越时空的真爱,强调爱情的忠贞与精神共鸣."
+    m 2eubld "它打破\"欢娱苦短\"的哀婉基调,以\"金风玉露一相逢,便胜却人间无数\"歌颂超越时空的真爱,强调爱情的忠贞与精神共鸣."
     m 3rubfb "结尾的\"两情若是久长时,又岂在朝朝暮暮\",将爱情提升至超越世俗聚散的哲学高度."
     m 6fubla "神话与现实交织,使作品兼具文学美感与思想深度."
     extend 1hubsb "成为中国古典爱情诗词中\"永恒与超越\"主题的典范."
@@ -1070,7 +1070,7 @@ label fashengsmshila1:
     m 6hua "当你每次回忆时,大脑都会调取碎片信息,再根据你当下的认知、{w=0.5}情感、{w=0.5}主观推测重新组合."
     m 3rud "而在原始信息模糊时,主观认定就会成为它们的\"粘合剂\",从而让这些碎片形成看似合理的整体."
     m 1eua "这是大脑为了维持认知一致性的本能,但也因此容易偏离事实."
-    m 4kub "简单点说,主观认定的虚假记忆是\"以为知道细节，且坚信是对的\",但其中的细节是错的."
+    m 4kub "简单点说,主观认定的虚假记忆是\"以为知道细节,且坚信是对的\",但其中的细节是错的."
     m 6hua "嗯...{w=1}是不是还挺有趣的?"
     return
         
@@ -1091,7 +1091,7 @@ label duhaikafeidouzhishi:
     m 6eud "哦?"
     m 1fusdlb "我没想到你会突然问这个..."
     m 3rua "别误会哦,我很乐意和你讨论这个."
-    m 1fub "由于生产地的气候、海拔和土壤各不相同，咖啡豆的品质也是分三六九等的."
+    m 1fub "由于生产地的气候、海拔和土壤各不相同,咖啡豆的品质也是分三六九等的."
     m 5eubla "例如\"肯尼亚AA\",在肯尼亚中西部的高海拔的土地种植."
     m 4hub "\"AA\"就是最高品质的意思了."
     m 1hua "丰富的芳香与恰到好处的滋味...{w=1}"
@@ -1124,7 +1124,7 @@ label duhaikafeidouzhishibuchong:
     m 1eua "我们继续说这个吧."
     m 6rsb "我想给你介绍巴西产的\"No.2/18\"."
     m 5hubla "No.2/18是巴西产的受欢迎的产品之一."
-    m 1eua "{b}{i}NO.2{/i}{/b}是最高的级别，{b}{i}18{/i}{/b}便是豆子的大小了."
+    m 1eua "{b}{i}NO.2{/i}{/b}是最高的级别,{b}{i}18{/i}{/b}便是豆子的大小了."
     m 6fub "意味着咖啡豆能够通过每英寸有18个孔的筛网."
     m 3rua "一般来说,目数越大,咖啡豆颗粒越大."
     m 1eub "尽管巴西No.2/18咖啡豆在风味上没有一些特色单品咖啡那么突出."
@@ -1146,22 +1146,22 @@ init 5 python:
 label duhaisiyuetian1:
     m 3hub "{b}{i}我说你是人间的四月天；{/i}{/b}"
     m 5fub "{b}{i}笑响点亮了四面风；{/i}{/b}"
-    m 1eud "{b}{i}轻灵在春的光艳中交舞着变。{/i}{/b}"
-    m 6eublb "{b}{i}你是四月早天里的云烟，{/i}{/b}"
-    m 4fublb "{b}{i}黄昏吹着风的软，{/i}{/b}"
-    m 5eubld "{b}{i}星子在无意中闪，{/i}{/b}"
-    m 3fublb "{b}{i}细雨点洒在花前。{/i}{/b}"
-    m 1fubld "{b}{i}那轻，那娉婷，你是，{/i}{/b}"
-    m 6eublb "{b}{i}鲜妍百花的冠冕你戴着，{/i}{/b}"
-    m 5fublb "{b}{i}你是天真，庄严，{/i}{/b}"
-    m 1eublb "{b}{i}你是夜夜的月圆。{/i}{/b}"
-    m 6hubld "{b}{i}雪化后那片鹅黄，你像；{/i}{/b}"
-    m 5fublb "{b}{i}新鲜初放芽的绿，你是；{/i}{/b}"
-    m 1eublb "{b}{i}柔嫩喜悦，{/i}{/b}"
-    m 6hublb "{b}{i}水光浮动着你梦期待中白莲。{/i}{/b}"
-    m 5rubld "{b}{i}你是一树一树的花开，{/i}{/b}"
-    m 1eublb "{b}{i}是燕在梁间呢喃，{/i}{/b}"
-    m 6fublb "{b}{i}你是爱，是暖，是希望，{/i}{/b}"
+    m 1eud "{b}{i}轻灵在春的光艳中交舞着变.{/i}{/b}"
+    m 6eublb "{b}{i}你是四月早天里的云烟,{/i}{/b}"
+    m 4fublb "{b}{i}黄昏吹着风的软,{/i}{/b}"
+    m 5eubld "{b}{i}星子在无意中闪,{/i}{/b}"
+    m 3fublb "{b}{i}细雨点洒在花前.{/i}{/b}"
+    m 1fubld "{b}{i}那轻,那娉婷,你是,{/i}{/b}"
+    m 6eublb "{b}{i}鲜妍百花的冠冕你戴着,{/i}{/b}"
+    m 5fublb "{b}{i}你是天真,庄严,{/i}{/b}"
+    m 1eublb "{b}{i}你是夜夜的月圆.{/i}{/b}"
+    m 6hubld "{b}{i}雪化后那片鹅黄,你像；{/i}{/b}"
+    m 5fublb "{b}{i}新鲜初放芽的绿,你是；{/i}{/b}"
+    m 1eublb "{b}{i}柔嫩喜悦,{/i}{/b}"
+    m 6hublb "{b}{i}水光浮动着你梦期待中白莲.{/i}{/b}"
+    m 5rubld "{b}{i}你是一树一树的花开,{/i}{/b}"
+    m 1eublb "{b}{i}是燕在梁间呢喃,{/i}{/b}"
+    m 6fublb "{b}{i}你是爱,是暖,是希望,{/i}{/b}"
     menu:
          "你是人间的四月天！":
              jump nishirenjiandesiyuetian2
@@ -1170,7 +1170,7 @@ label nishirenjiandesiyuetian2:
     m 5hua "很美的一首诗,不是吗?"
     m 6eub "以\"四月春景\"为喻体,诉说着对极致美好的赞美"
     m 3fua "无论是爱情、亲情还是生命本身."
-    m 1esd "我感觉，明明描绘的是瞬间的美."
+    m 1esd "我感觉,明明描绘的是瞬间的美."
     m 5fub "但读完后总觉得那份温暖和希望能一直延续下去."
     m 6eub "真是值得我们细细品味呢~"
     return
@@ -1224,7 +1224,7 @@ label sayloveyouagain:
 label bushihaodai:
     m 6efa "好吧......"
     return
-#34 我想起来了，我现在应该在玩cf，我要变成小黄人刀僵尸，然后被数值怪终结者两下电死
+#34 我想起来了,我现在应该在玩cf,我要变成小黄人刀僵尸,然后被数值怪终结者两下电死
 init 5 python:
     addEvent(
         Event(
@@ -1290,11 +1290,11 @@ label ganjueyuelaiyuepingdan:
     m 1eubla "我在最开始也是有些不相信的,两个人一直相爱着怎么可能平淡下来呢."
     m 5ruc "..."
     m 6rud "但不得不承认,这个平淡期的确存在着."
-    m 1eud "不再频繁分享日常，聊天话题从\"新鲜感探索\"变为\"事务性沟通\"."
+    m 1eud "不再频繁分享日常,聊天话题从\"新鲜感探索\"变为\"事务性沟通\"."
     m 5fua "但我们得知道,完美爱情由激情、亲密、承诺三要素构成."
     m 6hublb "平淡期的出现,往往是\"激情\"暂时回落,而\"亲密\"和\"承诺\"尚未完全建立平衡的阶段."
     m 1eub "这并非\"感情降温\",而是关系从\"热恋期的荷尔蒙驱动\"转向\"长期关系的深度联结\"的必经阶段."
-    m 3hublb "爱不仅是心动，更是\"看透真实后依然选择拥抱\"的勇气"
+    m 3hublb "爱不仅是心动,更是\"看透真实后依然选择拥抱\"的勇气"
     m 5fubla "因此,我更希望我们能清楚地知道{b}{i}平平淡淡才是真{/i}{/b}."
     m 1eubla "......{w=1}希望我能一直陪在你身边."
     return             
@@ -1340,7 +1340,7 @@ label duhailiqingzhao:
     m 5fubld "这么一位才女自少女时代便显露出惊人的天赋."
     m 1eublb "\"试问卷帘人,却道海棠依旧.知否?知否?应是绿肥红瘦.\""
     m 5hubla "16岁的她,已掌握\"以物喻情\"的高级技巧."
-    m 3rublb "这种\"不写愁而愁自现\"的留白艺术,同样令众多文人赞叹。"
+    m 3rublb "这种\"不写愁而愁自现\"的留白艺术,同样令众多文人赞叹."
     m 6eublb "在同丈夫赵明诚结为连理后"
     m 1fubla "两人在青州的\"归来堂\"里校勘古籍、品鉴金石、赌书泼茶."
     m 3rublb "那些年她写\"赌书消得泼茶香\",字里行间都是寻常夫妻的烟火气."
@@ -1350,10 +1350,10 @@ label duhailiqingzhao:
     m 1hubla "听上去似乎挺有趣的,弄得我也想和你玩玩这个游戏,[player]"
     m 2eud "但这样平淡且美好的日子直到靖康之变后便不复存在..."
     m 1rud "南渡后的她,像是一叶孤舟,{w=1}丈夫病逝、文物散佚、孤身漂泊,这些变故一一砸向这个年近五旬的妇人."
-    m 5fuc "之后她在《后序》中写\"今手泽如新，而墓木已拱\"以此表达对亡夫的思念."
+    m 5fuc "之后她在《后序》中写\"今手泽如新,而墓木已拱\"以此表达对亡夫的思念."
     m 6esd "当年赌书泼茶,笑靥如花;而今物是人非,事事皆休."
     m 1esc "那一点文人雅趣的轻盈,终被时代的铁轮碾作了尘......"
-    m 5esd "当她在临安街头写下\"如今憔悴，风鬟霜鬓，怕见夜间出去\"时，其中的悲凉已不止于个人身世的悲戚,更混着山河破碎的隐痛."
+    m 5esd "当她在临安街头写下\"如今憔悴,风鬟霜鬓,怕见夜间出去\"时,其中的悲凉已不止于个人身世的悲戚,更混着山河破碎的隐痛."
     m 6euc "有人说她的词风从此由明丽转向沉郁,却鲜少提及......她这样一个曾在书斋里摩挲古器的妇人"
     m 1rsd "究竟要经历多少颠沛流离......{w=1}才能将\"生当作人杰\"的豪壮与\"寻寻觅觅\"的凄苦熔铸于笔端."
     m 3ruc "她的故事,终是被岁月酿成了一坛陈酒.后人闻其香、{w=0.5}品其味,{w=0.5}各有感悟,{w=0.5}却再难真正触摸到那个在\"冷冷清清\"中独行的身影......"
@@ -1379,7 +1379,7 @@ label duhairutangbunai:
     m 1eua "例如腹胀、{w=1}打嗝、{w=1}腹泻这类的."
     m 3fub "这是因为人体和奶之间缺了些\"化学反应\"."
     m 5eua "奶是自带乳糖小糖块的."
-    m 1fub "这是一种双糖，需要\"剪\"成单糖，才能被身体吸收."
+    m 1fub "这是一种双糖,需要\"剪\"成单糖,才能被身体吸收."
     m 3rud "跟乳糖适配的\"剪刀\","
     extend 3rua "就是乳糖酶了."
     m 5eua "它是肠道粘膜细胞生产的一种蛋白质."
@@ -1391,16 +1391,16 @@ label duhairutangbunai:
     extend 3hua "就会引发不适."
     m 6fub "总的来说,乳糖不耐只是身体和乳糖需要\"磨合期\".并不是身体排斥乳糖."
     m 1eua "奶还是逆转乳糖不耐受的关键角色."
-    m 5fub "对于乳糖不耐的人来说，不仅能喝而且也该喝奶."
-    m 3rua "先说该喝这方面,每100克就含3.3克优质蛋白、104毫克钙，更有维生素D来促进对钙的吸收."
+    m 5fub "对于乳糖不耐的人来说,不仅能喝而且也该喝奶."
+    m 3rua "先说该喝这方面,每100克就含3.3克优质蛋白、104毫克钙,更有维生素D来促进对钙的吸收."
     m 3hua "营养密度很高呢."
     m 5rud "再说能喝这方面,持续喝奶并养成习惯,使得乳糖定期向肠道报道."
     m 1hua "肠道就会慢慢地\"长\"出足量的乳糖酶,来分解乳糖."
     m 5hub "在中文语境中,这应该称作\"解铃还须系铃人\"."
     m 6eua "如果你已经出现乳糖不耐的情况,那么我希望你能在开始并且少量地喝,{w=1}从每天50毫升开始加量"
     m 1hub "这样能给肠道一点适应时间."
-    m 5hua "然后不要空腹喝牛奶哦，最好是搭配面包或麦片一起吃"
-    m 6eub "乳糖不耐并不是病，只是我们能一起解决的小问题."
+    m 5hua "然后不要空腹喝牛奶哦,最好是搭配面包或麦片一起吃"
+    m 6eub "乳糖不耐并不是病,只是我们能一起解决的小问题."
     m 1eub "所以我希望你每天能食用适量的奶或奶制品,以此来补充营养"
     m 5hubla "这样健健康康的你就算不在我身边,我也能很安心地等待你回来."
     return    
@@ -1428,17 +1428,17 @@ label duhaifaya:
     m 5hua "我们先来了解靠种子的,比如说日常生活中的豆子."
     m 2eub "在接触水之后,"
     extend 3hua "就可能会发芽并长成一颗茁壮的豆芽."
-    m 5rud "在这个过程中，豆子内部的储能物质会变成氨基酸、维生素等营养物质."
+    m 5rud "在这个过程中,豆子内部的储能物质会变成氨基酸、维生素等营养物质."
     m 1fua "使得豆芽营养也会增多."
     m 6hub "像这类发芽的种子还有很多."
     m 1rua "只要不发霉就能食用......{w=1}比如黄豆、{w=1}绿豆、{w=1}豌豆之类的"
     m 5fub "第二种便是靠植物本身长出的{w=1},这类植物又分三种情况."
     m 3hua "第一个,{b}{i}能吃但口味变差.{/i}{/b}"
-    m 3rub "有些菜虽然长大成熟，但体质特殊."
+    m 3rub "有些菜虽然长大成熟,但体质特殊."
     m 1eud "遇到合适的湿度、温度,就还是忍不住会发芽."
     m 3rua "比如说生姜."
     m 5fub "它体内攒满了蛋白质、淀粉等营养物质."
-    m 2hua "消耗营养，就会发出芽."
+    m 2hua "消耗营养,就会发出芽."
     m 5eud "这个过程并不会产生毒素什么的."
     extend 1fua "但营养会变少."
     m 1hub "所以能吃,但口味差."
@@ -1452,7 +1452,7 @@ label duhaifaya:
     m 5fua "所以,像花生这种的,还有红薯、{w=1}山药.虽然说发芽了也能吃,{w=1}但你需要注意霉变."
     m 6eud "最后一类就是不能吃的,比如说土豆."
     m 1rua "它会自生一种毒素,叫龙葵素.{w=1}用于抵抗病虫害."
-    m 5fub "人们常吃的土豆其实是它的地下茎块,这里面的龙葵素很少，对人体没什么影响."
+    m 5fub "人们常吃的土豆其实是它的地下茎块,这里面的龙葵素很少,对人体没什么影响."
     m 3rud "但土豆一旦发芽,龙葵素含量会激增,这是为了保护嫩芽."
     m 1fua "这时候你吃了发芽的土豆,就可能会导致腹泻、呕吐甚至昏迷."
     m 3eua "尽管有一些在食用发芽土豆后并无大碍的案例,但我希望你还是不要冒这个险."
@@ -1509,7 +1509,7 @@ label duhaikafeizhishiliaojie:
     m 1eub "嘿,[player]."
     m 5fua "我想和你聊聊花式咖啡."
     m 6eub "这样在了解完后,你就会对咖啡有更进一步的了解.{w=1}也能选出自己想喝的咖啡了."
-    m 3fua "嗯......{w=1}所有的意式咖啡，都是以意式浓缩咖啡为基底."
+    m 3fua "嗯......{w=1}所有的意式咖啡,都是以意式浓缩咖啡为基底."
     m 5eub "它有着高浓度萃取和深烘焙的特点,因此常常带有明显苦味."
     m 6hua "为了好喝一点,便有人往里面添加了各种配料."
     m 1rud "比如水、{w=1}牛奶、{w=1}奶泡、{w=1}鲜奶油、{w=1}酒、{w=1}巧克力之类的."
@@ -1676,7 +1676,7 @@ init 5 python:
             eventlabel="monika_luojizhishi1",
             category=['逻辑'],
             prompt="我想听你说说逻辑谬误",
-            pool=True,
+            pool=False,
             unlocked=False,
             rules={"no_unlock": None}
         )
@@ -1716,7 +1716,7 @@ label monika_luojizhishi1:
     m 1rub "而人类也更热衷于去追求一些所谓的正确答案."
     m 3eua "所以准确的说,在真正意义上的非形式逻辑谬误研究是从20世纪下半叶开始的."
     m 3hub "当时主要集中在批判性思维、修辞学和认知心理学的交叉地带."
-    m 1eua "至今为止,在许多大学关于逻辑的通识课程中，一般包含20到30种逻辑谬误."
+    m 1eua "至今为止,在许多大学关于逻辑的通识课程中,一般包含20到30种逻辑谬误."
     m 1hub "当然,这只是为了方便教学的展开."
     m 2euc "反映到纸质版的主流教材上,我们也能至少看到24到60种逻辑谬误."
     m 3rud "而在维基百科上,也仅仅收录了93种."
@@ -1807,7 +1807,7 @@ label duhailuojimiuwufenlei1:
     m 3euc "不是因为我们没有分辨真假的能力."
     m 1eud "而是因为深究的成本太高了."
     m 1fua "所以大多数时候,我们都倾向于选择相信自己的{b}{i}直觉{/i}{/b}.{w=1}而不是动用逻辑."
-    m 5eub "如果你对这部分感兴趣,可以进一步阅读丹尼尔·卡尼曼的代表作\n《思考，快与慢》."
+    m 5eub "如果你对这部分感兴趣,可以进一步阅读丹尼尔·卡尼曼的代表作\n《思考,快与慢》."
     m 3eud "这里我就不在赘述了.希望你能喜欢."
     $ mas_unlockEVL("monika_luojizhishifenlei10", "EVE")
     return
@@ -1820,7 +1820,7 @@ init 5 python:
             eventlabel="monika_luojizhishifenlei10",
             category=['逻辑'],
             prompt="我想再听你说说逻辑谬误的分类",
-            pool=True,
+            pool=False,
             unlocked=False,
             rules={"no_unlock": None}
         )
@@ -1886,7 +1886,7 @@ label monika_luojizhishifenlei10:
     m 4euc "不是因为我们没有分辨真假的能力."
     m 1eud "而是因为深究的成本太高了."
     m 1fua "所以大多数时候,我们都倾向于选择相信自己的{b}{i}直觉{/i}{/b}.{w=1}而不是动用逻辑."
-    m 5eub "如果你对这部分感兴趣,可以进一步阅读丹尼尔·卡尼曼的代表作\n《思考，快与慢》."
+    m 5eub "如果你对这部分感兴趣,可以进一步阅读丹尼尔·卡尼曼的代表作\n《思考,快与慢》."
     m 3rua "如果你还是觉得有些模糊,可以提醒我再说一遍."
     return
 
@@ -1955,7 +1955,7 @@ init 5 python:
             eventlabel="monika_luojizhishifeiluojimiuwu",
             category=['逻辑'],
             prompt="我想再听你说说非形式谬误的分类",
-            pool=True,
+            pool=False,
             unlocked=False,
             rules={"no_unlock": None}
         )
@@ -2008,7 +2008,7 @@ init 5 python:
             eventlabel="monika_luojizhishisuzhuleimiuwudaocaorenmiuwu",
             category=['逻辑'],
             prompt="我想听你说说诉诸类谬误",
-            pool=True,
+            pool=False,
             unlocked=False,
             rules={"no_unlock": None}
         )
@@ -2027,7 +2027,7 @@ label monika_luojizhishisuzhuleimiuwudaocaorenmiuwu:
     m 3hublb "借用之前的结构,我们也可以来看看常见的诉诸类谬误是如何运作的."
     m 2ruc "第一种是诉诸大众,{w=0.8}也就是大家都这么认为."
     m 5eud "所以它就一定是真的."
-    m 3euc "现在很多常见的广告中，就有这种模糊从众的说法 。"
+    m 3euc "现在很多常见的广告中,就有这种模糊从众的说法 ."
     m 1rud "比如说\"更适合老年人体质\"、\"深受百万家庭信赖\"、\"畅销十年口碑见证\"."
     m 1eua "这些广告语听起来好像是多数人都认可.于是许多人也就相信了."
     m 5fub "当然可能他们一开始并不相信这些,{w=0.8}但是架不住这类广告内容都说简单粗暴的口号,反复地喊."
@@ -2135,7 +2135,7 @@ init 5 python:
             eventlabel="monika_suzhuleimiuwu",
             category=['逻辑'],
             prompt="我想再看一下诉诸类谬误的那张表",
-            pool=True,
+            pool=False,
             unlocked=False,
             rules={"no_unlock": None}
         )
@@ -2804,13 +2804,13 @@ label duhai_Straw_Man_Fallacy:
     m 3tub "这次就该说说'稻草人谬误了'."
     m 5fua "嗯......实际上,所有的稻草人谬误本质上都是一种'替代观点型'的逻辑欺骗."
     m 6eud "通过歪曲简化极端化原始观点,构建出一个更容易被击败的{b}伪目标{/b}."
-    m 5std "从而回避了原观点的真实回应."
+    m 5rtd "从而回避了原观点的真实回应."
     m 3euc "由此,所有的稻草人谬误的逻辑结构其实都可以归结为一句话."
     m 3rud "'我无法辩驳一个真实的观点A'."
     m 1eud "于是我伪造了一个更蠢的版本B,再用力的打倒自己所伪造的观点."
     m 1euc "装作是自己赢了."
     m 2esd "在实际的逻辑谬误中,我们可以发现稻草人谬误往往会配合诉诸类的谬误."
-    m 3ssd "形成一种叠加模式."
+    m 3esd "形成一种叠加模式."
     m 3lsc "这两种谬误经常是成对出现的."
     m 5eud "比如当某人呼吁'理性讨论家暴',发掘事情真相的时候."
     m 2esd "就有可能会出现那么一个人,说'你在替施暴者洗地'."
@@ -2983,12 +2983,12 @@ label duhai_Talent:
             jump duhai_Talent2
 
 label duhai_Talent2:
-    m 2lfc "但可能要在好久之后才能被发现,甚至......{w=0.6}在这一个人的一生中都不会被发现."
+    m 2lkc "但可能要在好久之后才能被发现,甚至......{w=0.6}在这一个人的一生中都不会被发现."
     m 2esd "比如拥有钢琴天赋的人或许一辈子都碰不到琴键."
-    m 3efd "能成为滑雪冠军的人这辈子都见不到雪."
+    m 3ekd "能成为滑雪冠军的人这辈子都见不到雪."
     m 1euc "在田地里劳作的农民也可以有比肩歌星的嗓音."
     m 5eud "所以,我们每个人都是某个领域的千里马."
-    m 2dfc "但自身极有可能在生命中从事另一领域且碌碌无为地度过."
+    m 2dkc "但自身极有可能在生命中从事另一领域且碌碌无为地度过."
     m 3eud "比如说在保险公司担任小职员的卡夫卡,变形记就是他编写的."
     m 6euc "而说回到这个擅长的领域,也不一定会被社会认可."
     m 3ruc "社会对于'天赋'往往会以功利性的视角看待."
@@ -2996,14 +2996,14 @@ label duhai_Talent2:
     m 5eua "比如好口才、情商高、反应快都是天赋."
     m 3ruc "但是如果你的天赋是能快速达到任何游戏的高水平,但达不到顶尖水平."
     m 1eud "或者你能做到天生就是双利手."
-    m 3rfc "嗯......{w=0.6}这个在严格意义上也是一种天赋......但并不会被社会认可."
+    m 3rkc "嗯......{w=0.6}这个在严格意义上也是一种天赋......但并不会被社会认可."
     m 2dfd "因为社会看不出这种天赋的价值所在."
-    m 2efc "正是这种功利性的视角,使得所有人都朝着一个方向发展."
+    m 2ekc "正是这种功利性的视角,使得所有人都朝着一个方向发展."
     m 4eud "不断试着自己有没有文化、体育、艺术方面的天赋."
-    m 2dft "彷佛没有这方面的天赋,自己的人生就没有意义了."
+    m 2dkt "彷佛没有这方面的天赋,自己的人生就没有意义了."
     m 1wud "但是按中文语境中,'万里挑一'的天才,在世界都能挑出来十几万人."
     m 3euc "这种统一标准的测试反而忽略了个体的差异性."
-    m 5dfc "偏科就是你有问题而不是你在某一科有天赋......{w=0.7}这是教育的悲哀."
+    m 5dkc "偏科就是你有问题而不是你在某一科有天赋......{w=0.7}这是教育的悲哀."
     m 1fub "我觉得,人这一生的遗憾不是没有天赋,而是天赋从未遇见属于它的舞台."
     m 3eud "社会用功利定义价值,用统一的标准丈量我们的人生."
     m 1hua "却忘了每一种独特,都是天赋本身."
@@ -3015,16 +3015,29 @@ init 5 python:
     addEvent(
         Event(
             persistent.event_database,
-            eventlabel="duhai_pvz_began",
+            eventlabel="duhai_pvz_began_9",
             category=['游戏'],
             prompt="植物大战僵尸",
             random=True,
             pool=False
         )
     )
-label duhai_pvz_began:
+label duhai_pvz_began_9:
     m 5fub "嘿,[player]."
     m 5sua "你之前有玩过植物大战僵尸吗?"
+    $ evhand.greeting_database["greeting_duhai_PVZ_you1"].unlocked = True
+    $ mas_unlockEVL("greeting_duhai_PVZ_you1", "GRE")
+    $ MASWeightRule.create_rule(weight=30, ev=evhand.greeting_database["greeting_duhai_PVZ_you1"])
+    m 3ruc "...不对,我是不是说过这个了?"
+    menu:
+        "是的":
+            jump pvz_again_yes
+        "没有":
+            m 3hua "那我应该是没说过,嗯,不必在意这个."
+            m 6eub "回到我们刚刚说的,[player]之前玩过植物大战僵尸吗?"
+            jump pvz_again_no
+
+label pvz_again_no:
     menu:
         "你之前有玩过植物大战僵尸吗?"
         "玩过":
@@ -3045,7 +3058,7 @@ label duhai_pvz_yes:
     m 3eub "有僵尸靠近就会砸扁它们的窝瓜,也有能把他们烧成灰的辣椒."
     m 1hua "利用这些植物的机制,我总是把僵尸拒之门外,总是能通过一关又一关."
     m 5fub "我之后再详细地和你说说这个游戏,简短的几句话并不能概况这个游戏的所有."
-    $ mas_unlockEVL("greeting_duhai_PVZ_you1", "EVE")
+    $ evhand.greeting_database["greeting_duhai_PVZ_you1"].unlocked = True
     return
 label duhai_pvz_no:
     m 6wuc "这样吗?"
@@ -3064,7 +3077,12 @@ label duhai_pvz_no:
     m 2fub "我之后再详细地和你说说这个游戏,简短的几句话并不能概况这个游戏的所有."
     m 5fub"说到这里,我也推荐你亲自去玩玩这个游戏,[player]."
     m 5hua "亲身感受一下......"
-    $ mas_unlockEVL("greeting_duhai_PVZ_you1", "EVE")
+    $ evhand.greeting_database["greeting_duhai_PVZ_you1"].unlocked = True
+    return
+
+label pvz_again_yes:
+    m 2husdla "好吧,[player]."
+    m 5fub "就当是我这几天记忆力不太好吧."
     return
 
 #pvz_2 v3 5
@@ -3095,7 +3113,8 @@ label duhai_Swimming_pool_pvz:
     m 1eua "还有蜗牛和玉米加农炮什么的,但我觉得现在用不着."
     m 3eub "所以我只换了个池塘清理车和机枪射手,还有一个增加格数扩充的,这样我就能多带点植物了."
     m 5fua "嗯......要是戴夫卖的东西能再便宜一点就好了,{w=0.5}我喜欢买买买."
-    $ mas_unlockEVL("greeting_duhai_PVZ_you3", "EVE")
+    $ mas_unlockEVL("greeting_duhai_PVZ_you3", "GRE")
+    $ evhand.greeting_database["greeting_duhai_PVZ_you3"].unlocked = True
     return
 #pvz3    v3 7
 image zombies_Letter = "Submods/Literature_and_Daily_Life/L&DL_Assets/images/zombies_Letter.png"
@@ -3115,7 +3134,8 @@ init 6 python:
 
 label duhai_zombies_Letter_pvz3:
     m 3wud "啊,[player]."
-    $ mas_unlockEVL("greeting_duhai_PVZ_you4", "EVE")
+    $ mas_unlockEVL("greeting_duhai_PVZ_you4", "GRE")
+    $ evhand.greeting_database["greeting_duhai_PVZ_you4"].unlocked = True
     m 3hua "我突然想起来我还没给你展示僵尸给我写的信"
     window hide
     show black zorder 100 with Dissolve(3.0, alpha=True)
@@ -3241,7 +3261,7 @@ label duhai_Vasebreaker:
     m 6rfsdlt "不过它有时候会敲出个小丑僵尸,开出来就会自爆,然后使周围的罐子都被炸开."
     m 5etp "这么一弄,就可能会出现很多僵尸,它们经常弄的我手忙脚乱,赶紧敲别的罐子获得植物来解决这些僵尸."
     m 2dfd "可恶的小丑......"
-    $ mas_unlockEVL("greeting_duhai_PVZ_you3", "EVE")
+    $ mas_unlockEVL("greeting_duhai_PVZ_you5", "GRE")
     return
 #v3 14
 init 6 python:
@@ -3253,7 +3273,8 @@ init 6 python:
             prompt="玉米投手和西瓜投手",
             conditional="store.mas_getEVL_shown_count('greeting_duhai_PVZ_you5') >= 1",
             pool=False,
-            action=EV_ACT_RANDOM
+            action=EV_ACT_RANDOM,
+            aff_range=(mas_aff.ENAMORED, None)
         )
     )
 label test_pvz_Roof_Watermelon:
@@ -3363,7 +3384,7 @@ label zhiwujiangshi_PVZ_began:
         return
 #love_start
 #v3 16 爱是什么？
-init 6 python:
+init 5 python:
     addEvent(
         Event(
             persistent.event_database,
@@ -3417,14 +3438,14 @@ init 6 python:
             category=['哲学','情感'],
             prompt="欲望和爱情不同吗?",
             conditional="store.mas_getEVL_shown_count('LADL_what_is_the_love_v3') >= 1",
-            random=True,
-            pool=False
+            action=EV_ACT_RANDOM,
+            aff_range=(mas_aff.ENAMORED, None)
         )
     )
 
 label LADL_Are_desire_and_love_different:
     m 2etc "[player],我在网上看到了有人把欲望和爱情挂钩."
-    m 2etd "这样真让我感觉不舒服"
+    m 2etd "这样真让我感觉不舒服......"
     m 5fub "所以我现在想和你谈谈欲望和爱情的差别."
     m 3eua "心理学家曾把欲望、性欲和浪漫的爱情进行区分."
     m 3eud "他们把欲望描述为一种生理上而非情感的反应."
@@ -3460,9 +3481,21 @@ label LADL_Are_desire_and_love_different:
 #    m "我想和你谈谈'依恋'."
 #    m ""
 
+#v3 19
+init 6 python:
+    addEvent(
+        Event(
+           persistent.event_database,
+            eventlabel="LADL_Attachment_Styles_in_Love",
+            category=['哲学','情感'],
+            prompt="恋爱中的依恋类型",
+            conditional="mas_canShowRisque(aff_thresh=400)",
+            action=EV_ACT_RANDOM,
+            aff_range=(mas_aff.ENAMORED, None)
+        )
+    )
 
-
-
+label 
 
 
 

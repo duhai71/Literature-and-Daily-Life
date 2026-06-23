@@ -10,10 +10,10 @@ init 5 python:
     )
 
 label moonika_potato:
-    m 1ekbsb "你知道吗，[player]，你不理我的时候我的心情就像削了皮的土豆~"
+    m 1ekbsb "你知道吗,[player],你不理我的时候我的心情就像削了皮的土豆~"
     menu:                                    #这里表示创建玩家菜单
         "啥意思？":
-            m 3ekbsb "你看，土豆是POTATO"
+            m 3ekbsb "你看,土豆是POTATO"
             m 1tkbsb "去了P就是oTATo"
             menu:                                    #这里表示创建玩家菜单
                 "可爱捏":
