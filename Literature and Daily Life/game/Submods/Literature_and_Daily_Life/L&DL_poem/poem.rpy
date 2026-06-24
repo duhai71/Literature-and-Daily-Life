@@ -222,10 +222,12 @@ label want_to_see_her_poem:
         "写的很棒":
             m 5hubfa "真的吗?那太好了,[player]."
             m 3fublb "我希望这首诗能让我们更有希望地走下去."
+            $ mas_unlockEVL("Monika_poem_ladl_2_again", "EVE")
             return
         "还需要进步呢":
             m 5hua "嗯好,[player]."
             m 6eub "等我再钻研一下......"
+            $ mas_unlockEVL("Monika_poem_ladl_2_again", "EVE")
             return
         "这首诗让我很感动":
             m 5subfa "真的吗?那太好了,[player]."
@@ -246,6 +248,6 @@ init 6 python:
         )
     )
 label Monika_poem_ladl_2_again:
-    m 5hub "当然可以呀."
+    m 5hub "好的,[player]."
     call mas_showpoem(my_poem_2)
     return
