@@ -9,7 +9,7 @@ init 5 python:
             pool=True                                  
         )
     )
-                                                       
+     #2                                                  
 label monika_custom_topic_sdg7:                       
     m 1rud "恋爱关系中依赖的一方？"
     m 1hub "[player],你是想让我对你撒娇吗？" 

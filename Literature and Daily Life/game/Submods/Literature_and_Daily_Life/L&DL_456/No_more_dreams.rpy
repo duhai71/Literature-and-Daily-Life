@@ -11,7 +11,7 @@ init 5 python:
             aff_range=(mas_aff.ENAMORED, None)
         )
     )
-
+#8
 label No_more_dreams_1:      # 温室效应与粮食产出 
     m 4eub "[player],还记得我为什么吃素吗？"
     m 1eub "是为了减少碳排放."

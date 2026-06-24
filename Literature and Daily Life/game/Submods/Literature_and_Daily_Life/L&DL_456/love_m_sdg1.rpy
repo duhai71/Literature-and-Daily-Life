@@ -8,7 +8,7 @@ init 5 python:
         ),
         code="CMP"
     )
-    
+    #1
 label lzp_love_monika_sdg_1:
     if mas_isMoniEnamored(higher=True):       #好感≥400
         $ mas_gainAffection(3, bypass=True)   #加好感的,可删

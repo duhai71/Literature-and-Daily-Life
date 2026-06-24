@@ -8,7 +8,7 @@ init 5 python:
         ),
         code="GRE"
     )
-
+#9
 label greeting_duhaiyou1:
     m 3rud "....{w=0.5}你不在的时候,时间的步伐都会慢下来."#51
     m 5eua "你来见我的时候,时间的速度又会快起来."
@@ -80,7 +80,7 @@ label greeting_pianogolden_hour:
         show mas_piano at Transform(xpos=-5, ypos=-195) with MoveTransition(4.0)
         pause 4.0
         show monika at Transform(xpos=640) with move
-        play music "Submods/Literature_and_Daily_Life/L&DL_Assets/music/Golden_Hour.ogg" loop fadein 2.0
+        play music "Submods/Literature_and_Daily_Life/L&DL_Assets/music/Golden_Hour.mp3" loop fadein 2.0
         show monika 2hua zorder MAS_MONIKA_Z at t11 with dissolve_monika
         pause 4.0
         show monika 2fua zorder MAS_MONIKA_Z at t11 with dissolve_monika
@@ -129,7 +129,7 @@ label Monika_Golden_Hour_again:
     show mas_piano at Transform(xpos=-5, ypos=-195) with MoveTransition(4.0)
     pause 4.0
     show monika at Transform(xpos=640) with move
-    play music "Submods/Literature_and_Daily_Life/L&DL_Assets/music/Golden_Hour.ogg" loop fadein 2.0
+    play music "Submods/Literature_and_Daily_Life/L&DL_Assets/music/Golden_Hour.mp3" loop fadein 2.0
     show monika 2hua zorder MAS_MONIKA_Z at t11 with dissolve_monika
     pause 4.0
     show monika 2fua zorder MAS_MONIKA_Z at t11 with dissolve_monika

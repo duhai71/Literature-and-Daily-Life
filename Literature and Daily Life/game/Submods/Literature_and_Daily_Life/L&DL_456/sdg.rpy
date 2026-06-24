@@ -1,6 +1,6 @@
 init 5 python:
     addEvent(Event(persistent.event_database,eventlabel="monika_love_of_road2",unlocked=True,category=['扮演'],prompt="三体",pool=True))
-
+#1
 label monika_love_of_road2:  # 需与eventlabel完全一致
     m 1eua "[player],你想怎么扮演？"
     

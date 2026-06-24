@@ -9,7 +9,7 @@ init 5 python:
             pool=True
         )
     )
-
+#1
 label monika_custom_topic_sdg2:
     m 1esd "[player],有一件事我想问你很久了."
     m 7etd "你为什么会来玩心跳文学部这个游戏？"
