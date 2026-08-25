@@ -374,7 +374,9 @@ label greeting_fanghuaman:
         m 2eud "{b}{i}未察觉难熬的是从前~~{/i}{/b}"
         m 2rud "{b}{i}离别以何物妆点~~{/i}{/b}"
         m 1hua "......"
-        extend 
+        extend 5fub "哦,你好啊,[player]."
+        m 6eub "我刚刚唱的是'芳华慢'哦."
+        m 6hua "嗯,这首歌真好听."
         $ persistent.monika_greeting_fanghuaman = True
         return
     elif not persistent.monika_greeting_fanghuaman2:  
@@ -382,7 +384,9 @@ label greeting_fanghuaman:
         m 6hubfd "{b}{i}是故人走远 尘埃染了绣鞋~~{/i}{/b}"
         m 2fubld "{b}{i}原来难熬的应是从前~~{/i}{/b}"
         m 1hubfd "{b}{i}离别以相思妆点~~{/i}{/b}"
+        $ persistent.monika_greeting_fanghuaman2 = True
         return
     else:
-        m   
+        m 6hua "欢迎回来,[player]."
+        m 5fub "今天也辛苦了哦."  
         return
