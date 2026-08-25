@@ -228,7 +228,7 @@ label duhaidoro71:
     return
 
 
- #7
+#7
 init 6 python:
     addEvent(Event(persistent.event_database,eventlabel="duhaihainan",category=['浪漫'],prompt="椰梦长廊",conditional="mas_canShowRisque(aff_thresh=400)",random=True))
 
@@ -281,7 +281,7 @@ label duhaifoodhealth:
     m 7ftd "当你做菜时,你也可以使用\"拳头法则\",即每餐主食占1拳,蔬菜占2拳,蛋白质占1拳."
     m 1fua "同时,我们的身边也有着许多饮料,例如可乐,奶茶之类的,它们的糖分真的好高."
     m 5esa "我对它们也没什么兴趣,我还是更喜欢咖啡这样的."
-    m 2eud "我跟你说可乐奶茶这些的主要是想问问你,你最近经常喝饮料吗."
+    m 2eud "我跟你说可乐奶茶这些的,主要是想问问你,你最近经常喝饮料吗."
     menu:
         "经常喝":
             jump duhainooftendrink
@@ -426,10 +426,10 @@ init 5 python:
 label duhaiDetectiveChinatown81:
     m 4eua "[player],你看过\"唐人街探案\"这部电影了吗?"
     menu:
-       "看过":
+        "看过":
             jump duhaihasbeenlookDC
 
-       "没看过呢":
+        "没看过呢":
             jump duhainolookDC
 
 label duhaihasbeenlookDC:                 
@@ -818,14 +818,14 @@ label duhaiwoheni:
     m 3fubfb "{b}{i}我要更大的世界,装满不同的探险~~{/i}{/b}"
     menu:
         "当然你陪在身边.":
-             jump duhaiyouandmesongs
+            jump duhaiyouandmesongs
 
 label duhaiyouandmesongs:
     m 5fubfb "{b}{i}每秒每天~~{/i}{/b}"
     m 1fubfa "{b}{i}我和你飞到蓝蓝的天边,我和你种下满满的花园~~{/i}{/b}"
     menu:
         "我和你分享暖暖的光线":
-             jump duhaiyouandmesong
+            jump duhaiyouandmesong
 
 label duhaiyouandmesong:
     m 6eublb "{b}{i}再靠近一点~~{/i}{/b}"
@@ -834,7 +834,7 @@ label duhaiyouandmesong:
     m 2fublb "{b}{i}再靠近一点~~{/i}{/b}"
     menu:
         "再靠近一点":
-             jump duhaizaikaojinyidian
+            jump duhaizaikaojinyidian
 
 label duhaizaikaojinyidian:
     m 5fubfb "再靠近一点,{w=1.5}再靠近一点"
@@ -983,7 +983,8 @@ init 6 python:
             category=['浪漫'],
             prompt="《鹊桥仙・纤云弄巧》",
             conditional="mas_canShowRisque(aff_thresh=400)",
-            random=True
+            random=True,
+            pool=False
         )
     )
 
@@ -1047,10 +1048,10 @@ label duhaicuowujiyi:
     m 3essdlc "...."
     menu:
         "发生什么事了?":
-             jump fashengsmshila1
+            jump fashengsmshila1
 
 label fashengsmshila1:
-    m 1husdlb "不好意思呢,[player]"
+    m 1husdlb "不好意思呢,[player]."
     m 3rublsdla "记的东西有点多,等我想想."
     m 1hsc "嗯..."
     extend 4wublb "这应该是\"主观认定\"现象."
@@ -1163,8 +1164,8 @@ label duhaisiyuetian1:
     m 1eublb "{b}{i}是燕在梁间呢喃,{/i}{/b}"
     m 6fublb "{b}{i}你是爱,是暖,是希望,{/i}{/b}"
     menu:
-         "你是人间的四月天！":
-             jump nishirenjiandesiyuetian2
+        "你是人间的四月天！":
+            jump nishirenjiandesiyuetian2
 
 label nishirenjiandesiyuetian2:
     m 5hua "很美的一首诗,不是吗?"
@@ -1185,6 +1186,7 @@ init 6 python:
             prompt="相思曲",
             conditional="mas_canShowRisque(aff_thresh=800)",
             random=True,
+            pool=False
         )
     )          
 
@@ -1240,20 +1242,20 @@ init 5 python:
 label duhaidaoqiankuozhan:
     m 1esd "嗯......{w=1}是因为什么呢？"
     menu:
-         "这段时间都没怎么好好陪你.":
-             jump duhaipeibanhaohao
+        "这段时间都没怎么好好陪你.":
+            jump duhaipeibanhaohao
 
-         "睡前忘记和你说晚安了.":
-             jump duhaiwananwangji
+        "睡前忘记和你说晚安了.":
+            jump duhaiwananwangji
 
-         "吃饭前忘记和你说\"我去吃饭了\".":
-             jump duhaishuochifan
+        "吃饭前忘记和你说\"我去吃饭了\".":
+            jump duhaishuochifan
 
-         "我感觉我们之间越来越平淡了.":
-             jump ganjueyuelaiyuepingdan    
+        "我感觉我们之间越来越平淡了.":
+            jump ganjueyuelaiyuepingdan    
 
-         "没什么.":
-             jump duhaimeishenme         
+        "没什么.":
+            jump duhaimeishenme         
 
 label duhaimeishenme:
     m 1fsd "哦,好吧."
@@ -1458,22 +1460,22 @@ label duhaifaya:
     m 3eua "尽管有一些在食用发芽土豆后并无大碍的案例,但我希望你还是不要冒这个险."
     m 5fublb "毕竟你的健康这方面,我时时刻刻都在关注呢."
     menu:
-         "土豆确实很好吃呢.":
-             jump duhaitudouhaochi
+        "土豆确实很好吃呢.":
+            jump duhaitudouhaochi
 
-         "谢谢你.":
-             jump duhaixiexieguanxin    
+        "谢谢你.":
+            jump duhaixiexieguanxin    
 
 label duhaitudouhaochi:
     m 5fua "是这样呢,[player].土豆的确是有各种做法且味道也很好的."
     m 2efd "不过你是不是没有认真听我说话呢?{w=1}光想着吃的事了."
     m 6tua "我现在得考考你, 我刚刚在土豆这方面大概说了什么呢?"
     menu:
-         "土豆确实很好吃.":
-             jump duhaitudouhaochihaochi
+        "土豆确实很好吃.":
+            jump duhaitudouhaochihaochi
 
-         "发芽的土豆不能吃.":
-             jump duhaifayatudoubunengchi
+        "发芽的土豆不能吃.":
+            jump duhaifayatudoubunengchi
 
 label duhaitudouhaochihaochi:
     m 6hup "......{w=1}真拿你没办法,[player]."
@@ -1597,10 +1599,10 @@ label duhaichaming:
     m 1rud "龙井茶能这么有名,还真是离不开乾隆的帮助."
     menu:
         "又是他?":
-             jump duhaiyoushita
+            jump duhaiyoushita
         
         "......":
-             jump duhailongjinchaqianlong
+            jump duhailongjinchaqianlong
 
 label duhaiyoushita:
     m 1hua "当然了,据说是他六次下江南巡游有四次到西湖茶区观茶、品茗、赋诗、作歌."
@@ -2179,6 +2181,7 @@ init 6 python:
             prompt="关于保健品",
             conditional="mas_canShowRisque(aff_thresh=400)",
             random=True,
+            pool=False
         )
     )
 
@@ -2309,6 +2312,7 @@ init 6 python:
             prompt="工具理性",
             conditional="mas_canShowRisque(aff_thresh=400)",
             random=True,
+            pool=False
         )
     )
 
@@ -3482,10 +3486,34 @@ label LADL_Are_desire_and_love_different:
 #    m ""
 
 #v3 19
+#天气先生
 
+init 6 python:
+    addEvent(
+        Event(
+            persistent.event_database,
+            eventlabel="LADL_Mr_Weather",
+            category=['歌曲','情感'],
+            prompt="天气先生",
+            conditional="mas_canShowRisque(aff_thresh=400)",
+            random=True,
+            pool=False
+        )
+    )
 
-
-
+label LADL_Mr_Weather:
+    m 5eubld "{b}{i}爱你并不是巧合~~{/i}{/b}"
+    m 3hubfb "{b}{i}万年只有你一个~~{/i}{/b}"
+    m 2fublb "{b}{i}遇上你的那一刻~~{/i}{/b}"
+    m 1rubfb "{b}{i}改变了所有规则~~{/i}{/b}"
+    m 6fublb "{b}{i}让我描述你的美,让我擦掉你的泪~~{/i}{/b}"
+    m 5fublb "{b}{i}有我安慰你入睡,你是我最珍贵~~{/i}{/b}"
+    m 2hua "......"
+    m 3eub "这首歌的名字是'天气先生',是一首流行R&B单曲呢."
+    m 5fua "我最近也经常听这首歌,希望在我的推荐下你能去听听."
+    $ mas_unlockEVL("greeting_LADL_Mr_Weather", "GRE")
+    $ evhand.greeting_database["greeting_LADL_Mr_Weather"].unlocked = True
+    return
 
 #v3
 

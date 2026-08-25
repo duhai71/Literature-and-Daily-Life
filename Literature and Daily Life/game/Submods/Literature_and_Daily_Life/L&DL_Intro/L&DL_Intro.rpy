@@ -10,7 +10,7 @@ init 5 python:
     )
 #9
 label greeting_duhaiyou1:
-    m 3rud "....{w=0.5}你不在的时候,时间的步伐都会慢下来."#51
+    m 3rud "......{w=0.5}你不在的时候,时间的步伐都会慢下来."#51
     m 5eua "你来见我的时候,时间的速度又会快起来."
     m 6fua "但和你共度的时光,我始终珍视."
     m 1fublb "即便能通过读书打发时间,{w=1}但我还是很难集中注意力."
@@ -289,7 +289,100 @@ label greeting_duhai_PVZ_you5:
         m 1eub "在屋顶可没有草坪,不过游戏给我提供了花盆."
         m 3hua "这样就能在屋顶上种植物了."
     else:
-        m 3eua "哎,[player]？"
+        m 3wua "哎,[player]？"
         m 1eub "你终于来了."    
         m 5fub "嗯,今天还要做什么呢?"
     return
+
+#
+init 5 python:
+    addEvent(
+        Event(
+            persistent.greeting_database,
+            eventlabel="greeting_LADL_Mr_Weather",
+            unlocked=False,
+            aff_range=(mas_aff.NORMAL, None),
+        ),
+        code="GRE"
+    )    
+
+label greeting_LADL_Mr_Weather:
+    if not persistent.greeting_1_LADL_Mr_Weather:
+        $ persistent.greeting_1_LADL_Mr_Weather = True
+        m 6fub "{b}{i}一百多年,{w=1.2}不如一面,{w=1.9}在你身边~~{/i}{/b}"
+        m 5hubfb "{b}{i}再多留几天,{w=1.5}珍惜这时间~~{/i}{/b}"
+        m 4hublb "{b}{i}最终的起点~~{/i}{/b}"
+        m 6eud "{b}{i}我会一直想起~~{/i}{/b}"
+        m 1eubfb "{b}{i}一直一直想起,{w=1}岁月留下的回忆.{/i}{/b}"
+        m 5rubfa "嘿嘿,这也是我们之前提到的'天气先生'哦,[player]."
+        m 3fuc "还有就是,欢迎回来."
+    else:
+        m 6eua "又是新的一天."
+        m 2hublb "我看到了[player]."    
+        m 1fub "他看着我的眼睛."
+        m 5fubfa "我希望满怀爱意."
+        m 6hua "嘿嘿,欢迎回来哦,[player]."
+    return
+
+
+#+1
+init 5 python:
+    addEvent(
+        Event(
+            persistent.greeting_database,
+            eventlabel="greeting_duhaiyou114514",
+            unlocked=True,
+            aff_range=(mas_aff.NORMAL, None),
+        ),
+        code="GRE"
+    )
+
+label greeting_duhaiyou114514:
+    if not persistent.greeting_1_LADL_Mr_Weather:
+        $ persistent.greeting_1_LADL_Mr_Weather = True
+        m 5esd "{b}{i}I've never felt like...{w=0.9}so miserable~~{/i}{/b}"
+        m 3rud "{b}{i}I've never felt like thinking this will last forever~~{/i}{/b}"
+        m 2hublb "{b}{i}Baby stay with me~~{/i}{/b}"
+        m 2fuflb "{b}{i}You gotta tell now, your love came all over me~~{/i}{/b}"
+        m 6eua "...{w=0.5}嗯,[player]."
+        m 5hua "我又在练习歌曲哦."
+        m 1eub "说不定会在哪天再给你一个惊喜?哈哈."
+    else:
+        m 6hua "哼哼哼,是谁来了呀?"
+        m 1eub "当然是我的宝贝哦~"   
+    return
+
+init 5 python:
+    addEvent(
+        Event(
+            persistent.greeting_database,
+            eventlabel="greeting_fanghuaman",
+            unlocked=True,
+            aff_range=(mas_aff.NORMAL, None),
+        ),
+        code="GRE"
+    )
+#芳华慢
+label greeting_fanghuaman:
+    if not persistent.monika_greeting_fanghuaman:
+        m 5fublb "{b}{i}枕上鸳鸯睡红莲 叙几个当年~~{/i}{/b}"
+        m 6hubfb "{b}{i}身外满风月 姑娘桃花映面~~{/i}{/b}"
+        m 2fub "{b}{i}孤枕某夜笛声绕长街~~{/i}{/b}"
+        m 1rud "{b}{i}错待这岁月~~{/i}{/b}"
+        m 6eud "{b}{i}提灯春秋间 年年拾得落叶~~{/i}{/b}"
+        m 3dud "{b}{i}是故人走远 尘埃染了绣鞋~~{/i}{/b}"
+        m 2eud "{b}{i}未察觉难熬的是从前~~{/i}{/b}"
+        m 2rud "{b}{i}离别以何物妆点~~{/i}{/b}"
+        m 1hua "......"
+        extend 
+        $ persistent.monika_greeting_fanghuaman = True
+        return
+    elif not persistent.monika_greeting_fanghuaman2:  
+        m 3rubld "{b}{i}提灯春秋间 年年拾得落叶~~{/i}{/b}"
+        m 6hubfd "{b}{i}是故人走远 尘埃染了绣鞋~~{/i}{/b}"
+        m 2fubld "{b}{i}原来难熬的应是从前~~{/i}{/b}"
+        m 1hubfd "{b}{i}离别以相思妆点~~{/i}{/b}"
+        return
+    else:
+        m   
+        return

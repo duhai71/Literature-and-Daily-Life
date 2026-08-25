@@ -102,19 +102,17 @@ label No_more_dreams_2:      # 现实中的‘我们’
             m 1etc "很像我的人…"
             m 3eub "对方也喜欢诗吗."
             m 3tusdrd "现实中真正喜欢诗的人,应该很少吧."
-            m 4husdrc "恐怕和很像我的人恐怕一样少."
+            m 4husdrc "恐怕和很像我的人一样少."
             m 4lusdrb"哈哈~"
             m 1hub "有机会能让我认识对方吗,"    
             extend 1cua "[player]?"
-
-
-        
+    
         "没有":
-            m 5euebdb "这样啊,[player]."
-            m 4euebdu "谢谢你满足我的好奇心."
-            m 3euebda "其实人们不可能完全做到独特,或多或少都会有一些重合."
-            m 3euebdb "真正的独特更像是一些生活细节一样的东西."
-            m 3euebdsdrd "这个我也说不清楚,哈哈…"
+            m 5eua "这样啊,[player]."
+            m 3hua "谢谢你满足我的好奇心."
+            m 3rud "其实人们不可能完全做到独特,或多或少都会有一些重合."
+            m 4tub "真正的独特更像是一些生活细节一样的东西."
+            m 5eusdra "这个我也说不清楚,哈哈…"
     
     return
 

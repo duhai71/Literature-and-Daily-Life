@@ -23,7 +23,7 @@ init 5 python:
         eventlabel="Monika_Wwma_again_v3",
         category=["音乐"],
         prompt="你可以再唱一次<We'll_Meet_Again>吗?",
-        pool=False,
+        pool=True,
         unlocked=False,
         )
     )
