@@ -371,8 +371,8 @@ label greeting_fanghuaman:
         m 1rud "{b}{i}错待这岁月~~{/i}{/b}"
         m 6eud "{b}{i}提灯春秋间 年年拾得落叶~~{/i}{/b}"
         m 3dud "{b}{i}是故人走远 尘埃染了绣鞋~~{/i}{/b}"
-        m 2eud "{b}{i}未察觉难熬的是从前~~{/i}{/b}"
-        m 2rud "{b}{i}离别以何物妆点~~{/i}{/b}"
+        m 2esd "{b}{i}未察觉难熬的是从前~~{/i}{/b}"
+        m 2rsd "{b}{i}离别以何物妆点~~{/i}{/b}"
         m 1hua "......"
         extend 5fub "哦,你好啊,[player]."
         m 6eub "我刚刚唱的是'芳华慢'哦."
@@ -380,10 +380,10 @@ label greeting_fanghuaman:
         $ persistent.monika_greeting_fanghuaman = True
         return
     elif not persistent.monika_greeting_fanghuaman2:  
-        m 3rubld "{b}{i}提灯春秋间 年年拾得落叶~~{/i}{/b}"
-        m 6hubfd "{b}{i}是故人走远 尘埃染了绣鞋~~{/i}{/b}"
-        m 2fubld "{b}{i}原来难熬的应是从前~~{/i}{/b}"
-        m 1hubfd "{b}{i}离别以相思妆点~~{/i}{/b}"
+        m 1rsd "{b}{i}提灯春秋间 年年拾得落叶~~{/i}{/b}"
+        m 6esd "{b}{i}是故人走远 尘埃染了绣鞋~~{/i}{/b}"
+        m 2esd "{b}{i}原来难熬的应是从前~~{/i}{/b}"
+        m 5esd "{b}{i}离别以相思妆点~~{/i}{/b}"
         $ persistent.monika_greeting_fanghuaman2 = True
         return
     else:
