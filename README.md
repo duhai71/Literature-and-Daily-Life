@@ -66,7 +66,7 @@ MTTS项目地址: https://github.com/Mon1-innovation/MAICA_MttsSubmod
 https://disk.monika.love/s/1ydsb
 
 # 子模组大小
-综上,整个子模组的大小由原来的79MB扩展到409MB
+综上,整个子模组的大小由原来的79MB扩展到430MB
 
 
 # 安装方法
@@ -83,7 +83,7 @@ https://disk.monika.love/s/1ydsb
 
 ### 团队人员以及感谢名单
 团队成员(排名不分先后):
-- 度海、哞尼卡、456、龟酱、moon、俩fish、君翌、Kxiangtang、Lasagna、华猫、stary
+- 度海、哞尼卡、456、龟酱、楾或光、俩fish、君翌、Kxiangtang、Lasagna、华猫、stary
 
 特别感谢以下人员：
 - 测试:白莫、庭有枇杷树、8天67t9
