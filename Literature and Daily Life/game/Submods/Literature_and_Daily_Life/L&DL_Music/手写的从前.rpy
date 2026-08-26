@@ -28,12 +28,13 @@ init python:
     
     # 导入并初始化歌词播放器，传入歌曲总时长
     try:
-        from Netease_lyric_player import NeteaseLyricPlayer
+        from netease_lyric_player import NeteaseLyricPlayer
         #歌曲总时长
         ouatoh_player = NeteaseLyricPlayer(ouatoh_raw, song_duration=299.0)
     except Exception as e:
-        # 如果导入失败，创建一个空的播放器对象
+        # 如果导入失败，创建一个空的播放器对象并输出日志
         ouatoh_player = None
+        store.mas_submod_utils.submod_log.warning("ouatoh_player初始化失败")
 label lad_show_text_v2:
     python:
         dissolvetime = 0.5

@@ -57,11 +57,12 @@ init python:
     
     # 创建We Will Meet Again的播放器
     try:
-        from Netease_lyric_player import NeteaseLyricPlayer
+        from netease_lyric_player import NeteaseLyricPlayer
         # "We Will Meet Again" 歌曲总时长
         wwma_player = NeteaseLyricPlayer(wwma_raw, song_duration=195.0)
     except Exception as e:
         wwma_player = None
+        store.mas_submod_utils.submod_log.warning("wwma_player初始化失败")
 #地点：太空教室
 #检测到mtts已安装后的对话
 label mtts_LADL_collab_music_We_will_Meet:

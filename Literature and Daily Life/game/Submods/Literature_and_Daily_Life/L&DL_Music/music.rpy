@@ -241,12 +241,13 @@ init python:
     
     # 导入并初始化歌词播放器，传入歌曲总时长
     try:
-        from Netease_lyric_player import NeteaseLyricPlayer
+        from netease_lyric_player import NeteaseLyricPlayer
         # "You Belong With Me" 歌曲总时长 231.0 秒
         youbelongwithme_player = NeteaseLyricPlayer(ybwm_raw, song_duration=231.0)
     except Exception as e:
-        # 如果导入失败，创建一个空的播放器对象
+        # 如果导入失败，创建一个空的播放器对象并输出日志
         youbelongwithme_player = None
+        store.mas_submod_utils.submod_log.warning("youbelongwithme_player初始化失败")
 
 image lad_etext:
     Text(lad_etext1[lad_music][lad_num], style="monika_lad_etext")
