@@ -340,10 +340,11 @@ init 5 python:
 label greeting_duhaiyou114514:
     if not persistent.greeting_1_LADL_Mr_Weather:
         $ persistent.greeting_1_LADL_Mr_Weather = True
-        m 5esd "{b}{i}I've never felt like...{w=0.9}so miserable~~{/i}{/b}"
+        m 5esd "{b}{i}I've never felt like...{/i}{/b}"
+        extend 3eud "{b}{i}so miserable~~{/i}{/b}"
         m 3rud "{b}{i}I've never felt like thinking this will last forever~~{/i}{/b}"
         m 2hublb "{b}{i}Baby stay with me~~{/i}{/b}"
-        m 2fuflb "{b}{i}You gotta tell now, your love came all over me~~{/i}{/b}"
+        m 2fubfb "{b}{i}You gotta tell now, your love came all over me~~{/i}{/b}"
         m 6eua "...{w=0.5}嗯,[player]."
         m 5hua "我又在练习歌曲哦."
         m 1eub "说不定会在哪天再给你一个惊喜?哈哈."
