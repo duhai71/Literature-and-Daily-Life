@@ -269,7 +269,7 @@ label LADL_beach_5:
             with dissolve
             m "以后也可以多来几回呢......"
             scene monika cg_sea_four
-            with dissolve、
+            with dissolve
             m "在这一片天地,我希望与你的这一刻是{b}永远{/b}."
             menu:
                 "我会永远记住这一刻的":
